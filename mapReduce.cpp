@@ -83,15 +83,15 @@
 // 		long int i=0;		 
 // 		dp = opendir(directoryName);
 
-// 		int partitionSize = 26/(noOfProcesses-1);
-// 		int remainder = 26%(noOfProcesses-1);
+// 		int partitionSize = 26/(noOfProcesses);
+// 		int remainder = 26%(noOfProcesses);
 		
 
-// 		//array containing the partition index (0...(noOfProcesses-1)) for each alphabet
+// 		//array containing the partition index (0...(noOfProcesses)) for each alphabet
 // 		int partitionIndex[26];
 
 // 		int low,high;		
-// 		for(int k=0;k<(noOfProcesses-1);k++)
+// 		for(int k=0;k<(noOfProcesses);k++)
 // 		{
 // 			low = partitionSize*k;
 // 			high = partitionSize*(k+1) - 1;
@@ -358,7 +358,7 @@ int main(int argc, char** argv)
 	err = MPI_Comm_size(MPI_COMM_WORLD, &noOfProcesses);
 
 	//Mappers
-	if(processId != 0)
+	if(1)
 	{
 		char filename[MAX_FILE_NAME_SIZE];
 
@@ -371,15 +371,15 @@ int main(int argc, char** argv)
 		long int i=0;		 
 		dp = opendir(directoryName);
 
-		int partitionSize = 26/(noOfProcesses-1);
-		int remainder = 26%(noOfProcesses-1);
+		int partitionSize = 26/(noOfProcesses);
+		int remainder = 26%(noOfProcesses);
 		
 
-		//array containing the partition index (0...(noOfProcesses-1)) for each alphabet
+		//array containing the partition index (0...(noOfProcesses)) for each alphabet
 		int partitionIndex[26];
 
 		int low,high;		
-		for(int k=0;k<(noOfProcesses-1);k++)
+		for(int k=0;k<(noOfProcesses);k++)
 		{
 			low = partitionSize*k;
 			high = partitionSize*(k+1) - 1;
@@ -537,7 +537,7 @@ int main(int argc, char** argv)
 
 		//sort the vectors containing word frequency along with document ID according to frequency for each word in invertedIndexMap
 		unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
-		for(int k=0;k<(noOfProcesses-1);k++)
+		for(int k=0;k<(noOfProcesses);k++)
 		{
 			for(mapItr=invertedIndexMap[k].begin();mapItr!=invertedIndexMap[k].end();mapItr++)
 			{
