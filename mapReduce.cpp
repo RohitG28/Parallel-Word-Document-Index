@@ -383,7 +383,7 @@ int main(int argc, char** argv)
 		{
 			low = partitionSize*k;
 			high = partitionSize*(k+1) - 1;
-			if(k == (noOfProcesses-2))
+			if(k == (noOfProcesses-1))
 				high = high + remainder;
 
 			for(int j=low;j<=high;j++)
@@ -415,7 +415,7 @@ int main(int argc, char** argv)
 
 				//Current file read
 
-				cout<< ep->d_name <<endl;
+				// cout<< ep->d_name <<endl;
 				sprintf(filename,"%d/%s",processId,ep->d_name);
 				fp.open(filename);
 
@@ -482,11 +482,11 @@ int main(int argc, char** argv)
 			    for (itr= wordCountMap.begin(); itr != wordCountMap.end(); itr++)
 			    {
 		        	string currentWord = itr->first;
-		        	int wordFreq = itr->second;
+		        	long int wordFreq = itr->second;
 		        	
 		        	
 		        	correspondingPartition = partitionIndex[currentWord[0]-LOWEST_ALPHABET_ASCII];
-		        	cout<<currentWord<<" : "<<wordFreq << endl;
+		        	// cout<<currentWord<<" : "<<wordFreq << endl;
 		        	 
 		        	//If the currentWord doesn't exist in invertedIndexMap
 		        	if(invertedIndexMap[correspondingPartition].find(currentWord) == invertedIndexMap[correspondingPartition].end())
@@ -522,7 +522,7 @@ int main(int argc, char** argv)
 		        
 		        //Clearing the wordCountMap for processing new document
 		        wordCountMap.clear();
-
+	
 		        //Now go to the next document in next iteration
 		        i++;
 			}
@@ -537,17 +537,32 @@ int main(int argc, char** argv)
 
 		//sort the vectors containing word frequency along with document ID according to frequency for each word in invertedIndexMap
 		unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
+		string wordString[noOfProcesses];
+		vector<pair<long int,long int>> freqIDVec[noOfProcesses];
+		vector<long int> indices[noOfProcesses];
+		long int index = 0; 
 		for(int k=0;k<(noOfProcesses);k++)
 		{
 			for(mapItr=invertedIndexMap[k].begin();mapItr!=invertedIndexMap[k].end();mapItr++)
 			{
 				sort((mapItr->second).begin(), (mapItr->second).end(), sortinrev);
+				wordString[k].append(mapItr->first);
+				// cout << processId << ":" << mapItr->first << endl;
+				wordString[k].append(":");
+				freqIDVec[k].insert(freqIDVec[k].begin(),(mapItr->second).begin(),(mapItr->second).end());
+				indices[k].push_back(index);
+				index += (mapItr->second).size();
 			}
 		}
+
+		// cout << "0 " << processId << " " << wordString[0] << endl;
+		// cout << "1 " << processId << " " << wordString[1] << endl;
+		// cout << "2 " << processId << " " << wordString[2] << endl;
 		
 		//*******************************************ALL DOCUMENTS IN NODE ARE PROCESSESED****************************************//
 		
 		//send the invertedMapIndex vector to root process
+
 	}
 
 	//Let every process finish off the mapping phase
@@ -555,6 +570,6 @@ int main(int argc, char** argv)
 
 	//*****************************************************REDUCE PHASE BEGINS******************************************************//
 
-
+	err = MPI_Finalize();
 	return 0;
 }
