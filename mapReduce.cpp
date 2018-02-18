@@ -357,6 +357,38 @@ int main(int argc, char** argv)
 	err = MPI_Comm_rank(MPI_COMM_WORLD, &processId);
 	err = MPI_Comm_size(MPI_COMM_WORLD, &noOfProcesses);
 
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//Load Stopwords into the set
+	//https://algs4.cs.princeton.edu/35applications/stopwords.txt//
+	unordered_set<string> stopwords;
+	ifstream stopwordsStream;
+	stopwordsStream.open("stopwords.txt");
+
+
+	while(!stopwordsStream.eof())
+	{
+		string stopWord;		
+	   	getline(stopwordsStream, stopWord);
+
+	   	if(stopWord.empty())
+	   	{
+	   		continue;
+	   	}	 
+
+	   	if (stopWord[stopWord.size()-1]=='\n')
+	   	{
+	   		stopWord.erase(stopWord.size()-1, 1);
+	   	}					        
+	   	
+	   	stopwords.insert(stopWord);
+	}	
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 		
+
+
+
+
 	//Mappers
 	if(1)
 	{
@@ -462,8 +494,11 @@ int main(int argc, char** argv)
 
 	
 					    //Check for stopword
-					    
-					    
+						if(stopwords.find(currentWord)!=stopwords.end()){
+							//Ignore the stopword
+							continue;
+						}
+
 
 
 
@@ -536,6 +571,8 @@ int main(int argc, char** argv)
 		    perror("Couldn't open the directory");
 		}
 
+		/**
+
 		//sort the vectors containing word frequency along with document ID according to frequency for each word in invertedIndexMap
 		unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
 		string wordString[noOfProcesses];
@@ -560,6 +597,8 @@ int main(int argc, char** argv)
 		// cout << "0 " << processId << " " << wordString[0] << endl;
 		// cout << "1 " << processId << " " << wordString[1] << endl;
 		// cout << "2 " << processId << " " << wordString[2] << endl;
+
+		**/
 		
 		//*******************************************ALL DOCUMENTS IN NODE ARE PROCESSESED****************************************//
 		
@@ -646,14 +685,14 @@ int main(int argc, char** argv)
 
 	//New Implementation
 
-	unordered_map<string, vector<pair<long int,long int>>> final_map, invertedIndexMap;
+	unordered_map<string, vector<pair<long int,long int>>> final_map, localMap;
 	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
 
 	//Received Maps from AllGatherV
 	vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps (noOfProcesses);
 
 	//Postings list for a word
-	vector<pair<long int,long int>> documentsWithWord;
+	vector<pair<long int,long int>> documentsWithWord,mergedVector;
 
 	
 	//An entry for a map ---- word and its postings list
@@ -665,10 +704,10 @@ int main(int argc, char** argv)
 	for(int k = 0; k<noOfProcesses;k++)
 	{
 
-		invertedIndexMap = receivedMaps[k];
+		localMap = receivedMaps[k];
 
 		//Iterate over one map
-		for(mapItr = invertedIndexMap.begin(), mapItr!= invertedIndexMap.end();mapItr++)
+		for(mapItr = localMap.begin(); mapItr!= localMap.end(); mapItr++)
 		{
 			
 			//Get one entry from a map
@@ -698,8 +737,46 @@ int main(int argc, char** argv)
 
 	//Now write it into file
 
+	//Assuming the distributed global index files are in a folder and file name will be the process id
 
+	string globalIndexFolder = "GlobalIndex";
+
+	char filename[MAX_FILE_NAME_SIZE];
+
+	sprintf(filename,"%s/%d.txt",globalIndexFolder,processId);
+
+	FILE* fp = fopen(filename,"w");
+
+	vector<pair<long int, long int>>::iterator itr;
+
+	long int documentID, wordFreq;
+
+	fprintf(fp,"\n--------------Index Begin--------------\n\n");
+
+	//Iterate over FINAL MAP
+	for(mapItr = final_map.begin(); mapItr!= final_map.end();mapItr++)
+	{	
+
+		//Get one entry from a map
+		currentWord = mapItr->first;
+		postingsForWord = mapItr->second;
+
+		fprintf(fp,"%s:\n",currentWord);
+
+		for(itr = postingsForWord.begin(); itr!=postingsForWord.end(); itr++)
+		{
+			documentID = itr->first;
+			wordFreq = itr->second;
+			fprintf(fp, "\t%ld : %ld \n", documentID, wordFreq);
+		}	
 	
+	}
+
+	fprintf(fp,"\n\n--------------Index Over--------------\n\n");
+
+	fclose(fp);
+
 	err = MPI_Finalize();
 	return 0;
+		
 }
