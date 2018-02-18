@@ -194,10 +194,8 @@ int main(int argc, char** argv)
 				    	continue;
 
 
-
 				    //Check for stopword
-				    
-
+			
 
 
    			 		
@@ -373,7 +371,135 @@ int main(int argc, char** argv)
 	err = MPI_Barrier(MPI_COMM_WORLD);
 		
 	//*****************************************************REDUCE PHASE BEGINS******************************************************//
+	
+	//I have a string 
+	//I have vector of indices
+	//I have vector of postings -- i.e vector of pairs
 
+	/**str1:str2
+	long long ----- 2*size
+	indices 0 -- according to pairs
+	**/
+
+	/********************************************Previous Implementation***********************************************
+
+	unordered_map<string, vector<pair<long int,long int>>> final_map;
+	vector<pair<long int,long int>> mergedVector;
+
+	string words;
+	vector<long int> indices;
+	vector <long int> :: iterator indicesItr = indices.begin();
+	vector<long int> postings;
+	vector <long int> :: iterator postingsItr = postings.begin();
+
+	long int indexBegin, indexEnd;
+
+	istringstream iss(words);
+	string currentWord;
+
+	//Tokenize string using ':' as delimiter
+	while(getline(words, currentWord, ":"))
+	{		
+
+		indexBegin = *indicesItr;
+		++indicesItr;
+
+		if(indicesItr!=indices.end()){
+			indexEnd = *(indicesItr) -1;
+		}
+		else{
+			indexEnd = postings.size()-2;
+		}
+
+		//Make a new vector
+		vector<pair<long int , long int>> postingsForWord;
+		for(int j=0;j<(indexEnd - indexBegin)+1;j++){
+			
+			long int wordFreq = *postingsItr;
+			
+			*postingsItr++;
+			long int documentID = *postingsItr;
+			
+			postingsForWord.push_back(make_pair(wordFreq,documentID));
+
+
+			//Move in stride of two
+			*postingsItr++; 
+		}
+
+		//Put the posting list for the word in the map
+		if(final_map.find(currentWord) == final_map.end())
+		{
+			final_map[currentWord] = postingsForWord;
+		}
+
+       	//Otherwise merge the existing posting list with this one
+       	else
+       	{
+       		vector<pair<long int,long int>> documentsWithWord = final_map[currentWord];
+       		mergedVector = mergeVectors(documentsWithWord, postingsForWord);
+       		final_map[currentWord] = mergedVector;
+       	}
+	}
+
+	*********************************************************************************************************************/
+
+	//New Implementation
+
+	unordered_map<string, vector<pair<long int,long int>>> final_map, invertedIndexMap;
+	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
+
+	//Received Maps from AllGatherV
+	vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps (noOfProcesses);
+
+	//Postings list for a word
+	vector<pair<long int,long int>> documentsWithWord;
+
+	
+	//An entry for a map ---- word and its postings list
+	string currentWord;
+	vector<pair<long int , long int>> postingsForWord;
+
+
+	//Iterate over all maps
+	for(int k = 0; k<noOfProcesses;k++)
+	{
+
+		invertedIndexMap = receivedMaps[k];
+
+		//Iterate over one map
+		for(mapItr = invertedIndexMap.begin(), mapItr!= invertedIndexMap.end();mapItr++)
+		{
+			
+			//Get one entry from a map
+			currentWord = mapItr->first;
+			postingsForWord = mapItr->second;
+
+			//If it doesn't exists in the final map, make a new entry
+			if(final_map.find(currentWord) == final_map.end())
+			{
+				final_map[currentWord] = postingsForWord;
+			}
+
+	       	//Otherwise merge the existing posting list with this one
+	       	else
+	       	{
+	       		documentsWithWord = final_map[currentWord];
+	       		mergedVector = mergeVectors(documentsWithWord, postingsForWord);
+	       		final_map[currentWord] = mergedVector;
+	       	}
+
+		}	
+
+	}
+
+
+	/*****************************************************Final Map is Ready********************************************/
+
+	//Now write it into file
+
+
+	
 	err = MPI_Finalize();
 	return 0;
 }
