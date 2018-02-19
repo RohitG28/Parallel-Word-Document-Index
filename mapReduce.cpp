@@ -78,12 +78,11 @@ int main(int argc, char** argv)
 	//Hard Coded Variable for the time being
 	long int noOfFiles = 3;
 
-
 	//Word Count Map for each document
    	unordered_map<string, long int> wordCountMap;
 
    	//Inverted Index Map for whole documents in the local node
-   	vector<unordered_map<string, vector<pair<long int,long int>>>> invertedIndexMap(20);
+   	vector<unordered_map<string, vector<pair<long int,long int>>>> invertedIndexMap(noOfProcesses);
 
 	//Parallelization starts
 	err = MPI_Init(&argc, &argv);
@@ -99,7 +98,6 @@ int main(int argc, char** argv)
 	unordered_set<string> stopwords;
 	ifstream stopwordsStream;
 	stopwordsStream.open("stopwords.txt");
-
 
 	while(!stopwordsStream.eof())
 	{
@@ -121,9 +119,6 @@ int main(int argc, char** argv)
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 		
 
-
-
-
 	//Mappers
 	char filename[MAX_FILE_NAME_SIZE];
 
@@ -140,7 +135,6 @@ int main(int argc, char** argv)
 	int remainder = 26%(noOfProcesses);
 	vector<pair<long int,long int>>::iterator vecItr;
 	
-
 	//array containing the partition index (0...(noOfProcesses)) for each alphabet
 	int partitionIndex[26];
 
@@ -187,7 +181,6 @@ int main(int argc, char** argv)
 
    			string readLine;
 
-
    			//Reading the document
    			while(!fp.eof())
    			{
@@ -204,10 +197,8 @@ int main(int argc, char** argv)
 
    			 	while(iss >> currentWord)
    			 	{
-
    			 		//Remove special characters and check if its a stopword
-   			 		int len;
-   			 		
+   			 		int len;	
 				    for (int j = 0, len = currentWord.size(); j < len; j++)
 				    {
 				        // check whether parsing character is punctuation or not
@@ -227,14 +218,12 @@ int main(int argc, char** argv)
 
 
 				    //Check for stopword
-					if(stopwords.find(currentWord)!=stopwords.end()){
+					if(stopwords.find(currentWord)!=stopwords.end())
+					{
 						//Ignore the stopword
 						continue;
 					}
 
-
-
-   			 		
    			 		//Update its frequency
 		            wordCountMap[currentWord]++;
    			 	}
@@ -274,7 +263,6 @@ int main(int argc, char** argv)
 	        	}
 
 	        	
-
 	        	//Only for printing
 	        	vector<pair<long int,long int>> documentsWithWord = invertedIndexMap[correspondingPartition][currentWord];
 			    
@@ -282,7 +270,6 @@ int main(int argc, char** argv)
 			    {
 			    	cout << " DOC ID: " << vecItr->second << "  ==>  FREQ: " << vecItr->first << endl;
 			    }
-  				
 	        }
 
 	        cout << "One Document over" << endl;
@@ -322,13 +309,13 @@ int main(int argc, char** argv)
 	cereal::BinaryOutputArchive outArchive(ss);
 
 	string serializedMap[noOfProcesses];
-	long int serializedStringSizes[noOfProcesses];
+	int serializedStringSizes[noOfProcesses];
 	string combinedSerializedMapString;
-	long int sendDisp[noOfProcesses];
-	long int receiveDisp[noOfProcesses];
-	long int receiveSizes[noOfProcesses];
-	long int totalReceiveSize = 0;
-	long int previousStringSize = 0;
+	int sendDisp[noOfProcesses];
+	int receiveDisp[noOfProcesses];
+	int receiveSizes[noOfProcesses];
+	int totalReceiveSize = 0;
+	int previousStringSize = 0;
 
 	for(int k=0;k<noOfProcesses;k++)
 	{
@@ -346,20 +333,22 @@ int main(int argc, char** argv)
 	
 	MPI_Alltoall(&(serializedStringSizes[0]), 1, MPI_LONG, &(receiveSizes[0]), 1, MPI_LONG, MPI_COMM_WORLD);
 
-
+	previousStringSize = 0;
 	for(int k=0;k<noOfProcesses;k++)
 	{
-		totalReceiveSize += receiveSizes[k];	
+		totalReceiveSize += receiveSizes[k];
+		receiveDisp[k] = previousStringSize;
+		previousStringSize += receiveSizes[k];	
 	}
 	
 	string receivedSerializedMapString;
-	receiveString.resize(totalReceiveSize);
+	receivedSerializedMapString.resize(totalReceiveSize);
 
-	MPI_Alltoallv(&(combinedSerializedMapString[0]), &(sendSizes[0]), &(sendDisp[0]), MPI_CHAR, &(receivedSerializedMapString[0]), &(receiveSizes[0]), &(receiveDisp[0]), MPI_CHAR, MPI_COMM_WORLD);
+	MPI_Alltoallv(&(combinedSerializedMapString[0]), &(serializedStringSizes[0]), &(sendDisp[0]), MPI_CHAR, &(receivedSerializedMapString[0]), &(receiveSizes[0]), &(receiveDisp[0]), MPI_CHAR, MPI_COMM_WORLD);
 
 	previousStringSize = 0;
 	stringstream newSS;
-	cereal::BinaryOutputArchive outArchive(newSS);	
+	cereal::BinaryInputArchive inArchive(newSS);	
 	for(int k=0;k<noOfProcesses;k++)
 	{
 		newSS << receivedSerializedMapString.substr(previousStringSize,receiveSizes[k]);
@@ -377,29 +366,43 @@ int main(int argc, char** argv)
 	//**************** large sized documents ************************//
 	ofstream serializeFile;
 	cereal::BinaryOutputArchive outArchive(serializeFile);
-	char sourceProcess[10];
-	char destinationProcess[10];
+	
+	printf("hello %d\n",processId);
 
 	for(int k=0;k<noOfProcesses;k++)
 	{
-		sprintf(sourceProcess,"%d",processId);
-		sprintf(destinationProcess,"%d",k);
-
-		serializeFile.open(destinationProcess+sourceProcess, std::ofstream::out | std::ofstream::trunc);
+		serializeFile.open(to_string(k)+to_string(processId), std::ofstream::out | std::ofstream::trunc);
 		outArchive(invertedIndexMap[k]);
 		serializeFile.close();
 	}
 	
+	MPI_Barrier(MPI_COMM_WORLD);
+
 	ifstream inputSerializeFile;
 	cereal::BinaryInputArchive inArchive(inputSerializeFile);
 	for(int k=0;k<noOfProcesses;k++)
 	{
-		sprintf(sourceProcess,"%d",k);
-		sprintf(destinationProcess,"%d",processId);
-
-		inputSerializeFile.open(destinationProcess+sourceProcess);
+		inputSerializeFile.open(to_string(processId)+to_string(k));
 		outArchive(invertedIndexMap[k]);
 		inputSerializeFile.close();
+	}
+
+	if(processId == 0)
+	{
+		unordered_map<string, vector<pair<long int,long int>>>::iterator itrBro;
+		vector<pair<long int,long int>>::iterator vecitr;
+		for(int k=0;k<noOfProcesses;k++)
+		{
+			cout << "invertedIndexMap " << k << endl;
+			for(itrBro=invertedIndexMap[k].begin();itrBro!=invertedIndexMap[k].end();itrBro++)
+			{
+				cout << itrBro->first << endl;
+				for(vecitr=(itrBro->second).begin();vecitr!=(itrBro->second).end();vecitr++)
+				{
+					cout << (vecitr->first) << " " << (vecitr->second) << endl;
+				}
+			}
+		}
 	}	
 	//**************** end ************************//
 
@@ -482,7 +485,7 @@ int main(int argc, char** argv)
 	*********************************************************************************************************************/
 
 	//New Implementation
-
+/*
 	unordered_map<string, vector<pair<long int,long int>>> final_map, localMap;
 	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
 
@@ -536,7 +539,7 @@ int main(int argc, char** argv)
 	//Now write it into file
 
 	//Assuming the distributed global index files are in a folder and file name will be the process id
-
+/*
 	string globalIndexFolder = "GlobalIndex";
 
 	char filename[MAX_FILE_NAME_SIZE];
@@ -573,7 +576,7 @@ int main(int argc, char** argv)
 	fprintf(fp,"\n\n--------------Index Over--------------\n\n");
 
 	fclose(fp);
-
+*/
 	err = MPI_Finalize();
 	return 0;
 		
