@@ -3,1373 +3,1373 @@
 
 Partition 0 ===> 
 
-affronting:
-	5 : 1 
-excellent:
-	5 : 1 
-dispatched:
-	5 : 1 
-dependent:
-	5 : 2 
-adapted:
-	5 : 1 
-full:
-	5 : 2 
-expense:
-	5 : 1 
-drawn:
-	5 : 1 
-feel:
-	5 : 1 
-found:
-	5 : 1 
-door:
-	5 : 1 
-acuteness:
-	5 : 2 
-apartments:
-	5 : 1 
-allowance:
-	5 : 1 
-early:
-	5 : 1 
-domestic:
-	5 : 1 
-forfeited:
-	5 : 1 
-connection:
-	5 : 2 
-direct:
-	5 : 2 
-extremity:
-	5 : 2 
-fruit:
-	5 : 1 
-distant:
-	5 : 1 
-dare:
-	5 : 1 
-brother:
-	5 : 1 
-collecting:
-	4 : 1 
-entered:
-	4 : 1 
-	5 : 1 
-company:
-	4 : 1 
-discretion:
-	3 : 1 
-bred:
-	5 : 1 
-begin:
-	3 : 1 
-enjoyment:
-	5 : 1 
-desirous:
-	3 : 1 
-enquire:
-	3 : 1 
-	5 : 1 
-ashamed:
-	3 : 1 
-drift:
-	3 : 1 
-fact:
-	3 : 1 
-boy:
-	5 : 2 
-	4 : 1 
-extensive:
-	4 : 1 
-	5 : 1 
-beloved:
-	4 : 1 
-blush:
-	3 : 1 
-	4 : 1 
-barton:
-	3 : 1 
-exeter:
-	3 : 2 
-education:
-	4 : 1 
-	5 : 1 
-affixed:
-	4 : 1 
-age:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-fat:
-	3 : 2 
-certainty:
-	4 : 2 
-	5 : 2 
-cottage:
-	3 : 2 
-	4 : 1 
-agreeable:
-	3 : 1 
-behaved:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-drawings:
-	5 : 1 
-end:
-	4 : 4 
-	5 : 3 
-admiration:
-	3 : 2 
-answered:
-	3 : 1 
-confined:
-	3 : 1 
-evil:
-	5 : 1 
-agreed:
-	3 : 2 
-	5 : 1 
-curiosity:
-	4 : 1 
-enabled:
-	3 : 1 
-	4 : 1 
-formal:
-	3 : 1 
-	5 : 1 
-enjoyed:
-	3 : 1 
-dried:
-	3 : 1 
-concerns:
-	3 : 1 
-arrived:
-	4 : 2 
-considered:
-	3 : 1 
-	4 : 1 
-chicken:
-	4 : 1 
-	5 : 1 
-eldest:
-	5 : 1 
-entreaties:
-	4 : 1 
-abilities:
-	3 : 1 
-	5 : 1 
-attended:
-	4 : 1 
-afraid:
-	3 : 1 
-	4 : 1 
-draw:
-	5 : 1 
-demands:
-	3 : 1 
-eyes:
-	3 : 1 
-	4 : 1 
-compass:
-	5 : 1 
-directly:
-	3 : 1 
-burst:
-	4 : 1 
-fortune:
-	3 : 1 
-discovered:
-	4 : 2 
-drew:
-	5 : 1 
-enable:
-	3 : 1 
-estimable:
-	3 : 1 
-abroad:
-	3 : 1 
-amiable:
-	3 : 1 
-	4 : 1 
-books:
-	4 : 1 
-concealed:
-	4 : 1 
-entrance:
-	4 : 1 
-furniture:
-	4 : 1 
-assurance:
-	3 : 1 
-	5 : 1 
-absolute:
-	4 : 2 
-aware:
-	4 : 1 
-dissimilar:
-	3 : 1 
-	5 : 1 
-betrayed:
-	3 : 1 
-	4 : 1 
-cordially:
-	3 : 2 
-	5 : 2 
-friends:
-	3 : 1 
-	4 : 1 
-fond:
-	3 : 1 
-	5 : 1 
-cheerful:
-	3 : 2 
-design:
-	3 : 2 
-devonshire:
-	4 : 2 
-	5 : 2 
-conviction:
-	3 : 1 
-	4 : 1 
-depending:
-	4 : 1 
-	5 : 1 
-cheered:
-	4 : 1 
-elderly:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-address:
-	3 : 1 
-dashwood:
-	4 : 2 
-clothes:
-	4 : 2 
-	3 : 1 
-concern:
-	3 : 1 
-behaviour:
-	5 : 1 
-contempt:
-	3 : 1 
-	4 : 1 
 branch:
-	3 : 1 
-charmed:
-	3 : 1 
-find:
-	3 : 1 
-	4 : 1 
-future:
-	3 : 1 
-dinner:
-	3 : 1 
-bore:
-	4 : 1 
-eat:
-	4 : 2 
-	3 : 1 
-	5 : 1 
-forming:
-	3 : 2 
-feebly:
-	3 : 1 
-announcing:
-	3 : 1 
-	4 : 1 
-extended:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-chief:
-	4 : 1 
-dissuade:
-	3 : 1 
-debating:
-	4 : 1 
+	2-3 : 1 
+begin:
+	2-3 : 1 
 expect:
-	3 : 2 
-fine:
-	5 : 1 
-concluded:
-	4 : 1 
-	5 : 1 
-arise:
-	5 : 1 
-arranging:
-	4 : 1 
-applauded:
-	5 : 1 
-denote:
-	3 : 1 
-delicate:
-	4 : 1 
-children:
-	4 : 1 
-advantages:
-	3 : 1 
-	5 : 1 
-ferrars:
-	3 : 3 
-	5 : 1 
-celebrated:
-	5 : 2 
-	3 : 1 
-dwelling:
-	3 : 1 
-	5 : 1 
-advanced:
-	3 : 1 
-	4 : 1 
-conveying:
-	4 : 1 
-ample:
-	4 : 1 
-dear:
-	4 : 1 
-	5 : 1 
-favourite:
-	3 : 1 
-	4 : 1 
-child:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-active:
-	3 : 1 
-esteem:
-	3 : 2 
-dull:
-	3 : 1 
+	2-3 : 2 
 breeding:
-	3 : 1 
-fertile:
-	3 : 1 
-comfort:
-	4 : 1 
+	2-3 : 1 
+confined:
+	2-3 : 1 
+dinner:
+	2-3 : 1 
+answered:
+	2-3 : 1 
+fact:
+	2-3 : 1 
 cold:
-	3 : 1 
-appetite:
-	3 : 1 
-furnished:
-	4 : 1 
-colonel:
-	4 : 1 
-bachelor:
-	4 : 1 
-convinced:
-	5 : 1 
-country:
-	4 : 1 
-cultivated:
-	5 : 1 
-contained:
-	4 : 1 
-	5 : 1 
-exercise:
-	4 : 1 
-arose:
-	4 : 1 
-advantage:
-	4 : 1 
-	5 : 1 
-depart:
-	5 : 1 
-enjoy:
-	4 : 1 
-	5 : 1 
-friendship:
-	4 : 1 
-	5 : 1 
-decisively:
-	4 : 1 
-	5 : 1 
-attacks:
-	4 : 1 
-busy:
-	3 : 1 
-explain:
-	4 : 1 
-forty:
-	4 : 1 
-exquisite:
-	5 : 1 
-daughter:
-	4 : 1 
-ecstatic:
-	4 : 1 
-dashwoods:
-	4 : 1 
-agreement:
-	5 : 2 
-	4 : 1 
-carriage:
-	4 : 1 
-astonished:
-	4 : 1 
-doubt:
-	4 : 1 
-chamber:
-	5 : 1 
-detract:
-	4 : 1 
-appearance:
-	3 : 1 
-attempt:
-	4 : 1 
-excellence:
-	3 : 2 
-	4 : 1 
-fifteen:
-	4 : 1 
-fully:
-	4 : 1 
-building:
-	4 : 2 
-	3 : 1 
-doubtful:
-	4 : 3 
-declared:
-	4 : 2 
-distance:
-	3 : 1 
-	4 : 1 
-frequently:
-	4 : 2 
-breakfast:
-	4 : 1 
-	5 : 1 
-engaged:
-	4 : 1 
-commanded:
-	5 : 1 
-assistance:
-	3 : 1 
-	4 : 1 
-delay:
-	4 : 1 
-began:
-	4 : 1 
-conduct:
-	4 : 2 
-belonging:
-	4 : 2 
-frankness:
-	4 : 2 
-	5 : 2 
-attachment:
-	4 : 2 
-	3 : 1 
-felicity:
-	4 : 1 
-departure:
-	4 : 2 
-	5 : 1 
-add:
-	3 : 2 
-	4 : 2 
-blessing:
-	4 : 1 
+	2-3 : 1 
+enable:
+	2-3 : 1 
+design:
+	2-3 : 2 
+esteem:
+	2-3 : 2 
+agreeable:
+	2-3 : 1 
+drift:
+	2-3 : 1 
+address:
+	2-3 : 1 
+dull:
+	2-3 : 1 
+dissuade:
+	2-3 : 1 
+dried:
+	2-3 : 1 
+exeter:
+	2-3 : 2 
+barton:
+	2-3 : 1 
+fat:
+	2-3 : 2 
 case:
-	4 : 1 
-	5 : 1 
-front:
-	4 : 1 
+	2-1 : 1 
+	2-2 : 1 
+adapted:
+	2-1 : 1 
+furniture:
+	2-2 : 1 
+ashamed:
+	2-3 : 1 
+enquire:
+	2-1 : 1 
+	2-3 : 1 
 court:
-	4 : 2 
-bed:
-	5 : 2 
+	2-2 : 2 
 direction:
-	4 : 1 
-	5 : 1 
-explained:
-	5 : 2 
-	4 : 1 
-deal:
-	4 : 1 
-exertion:
-	5 : 1 
-believing:
-	5 : 1 
-engrossed:
-	4 : 1 
-desire:
-	4 : 2 
-alteration:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-downs:
-	4 : 1 
-attention:
-	4 : 2 
-	5 : 1 
-effects:
-	4 : 1 
-females:
-	4 : 1 
-difficulty:
-	4 : 1 
-existence:
-	4 : 2 
-	5 : 1 
-day:
-	4 : 2 
-delightful:
-	4 : 1 
-abode:
-	4 : 1 
-	5 : 1 
-additions:
-	4 : 1 
-	5 : 1 
-formed:
-	5 : 1 
-collected:
-	4 : 1 
-account:
-	3 : 1 
-extremely:
-	5 : 1 
-feeling:
-	5 : 1 
-discourse:
-	5 : 1 
-cordial:
-	5 : 1 
-consulted:
-	5 : 1 
-calm:
-	4 : 1 
-eagerness:
-	5 : 1 
+	2-1 : 1 
+	2-2 : 1 
+bed:
+	2-1 : 2 
+commanded:
+	2-1 : 1 
 change:
-	5 : 1 
+	2-1 : 1 
+friendship:
+	2-1 : 1 
+	2-2 : 1 
+find:
+	2-2 : 1 
+	2-3 : 1 
+drawings:
+	2-1 : 1 
+end:
+	2-2 : 4 
+	2-1 : 3 
+behaved:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+formal:
+	2-1 : 1 
+	2-3 : 1 
+boy:
+	2-1 : 2 
+	2-2 : 1 
+forfeited:
+	2-1 : 1 
+extensive:
+	2-1 : 1 
+	2-2 : 1 
+direct:
+	2-1 : 2 
+concealed:
+	2-2 : 1 
+entrance:
+	2-2 : 1 
+females:
+	2-2 : 1 
+feel:
+	2-1 : 1 
+drawn:
+	2-1 : 1 
+advantage:
+	2-1 : 1 
+	2-2 : 1 
+active:
+	2-3 : 1 
+favourite:
+	2-2 : 1 
+	2-3 : 1 
+child:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+debating:
+	2-2 : 1 
+existence:
+	2-2 : 2 
+	2-1 : 1 
+difficulty:
+	2-2 : 1 
+full:
+	2-1 : 2 
+fruit:
+	2-1 : 1 
+dependent:
+	2-1 : 2 
+dare:
+	2-1 : 1 
+distant:
+	2-1 : 1 
+denote:
+	2-3 : 1 
+applauded:
+	2-1 : 1 
+demands:
+	2-3 : 1 
+draw:
+	2-1 : 1 
+dwelling:
+	2-1 : 1 
+	2-3 : 1 
+ferrars:
+	2-3 : 3 
+	2-1 : 1 
+celebrated:
+	2-1 : 2 
+	2-3 : 1 
+bred:
+	2-1 : 1 
+discretion:
+	2-3 : 1 
+frankness:
+	2-1 : 2 
+	2-2 : 2 
+chief:
+	2-2 : 1 
+acuteness:
+	2-1 : 2 
+dissimilar:
+	2-1 : 1 
+	2-3 : 1 
+excellent:
+	2-1 : 1 
+formed:
+	2-1 : 1 
+additions:
+	2-1 : 1 
+	2-2 : 1 
+ample:
+	2-2 : 1 
+dear:
+	2-1 : 1 
+	2-2 : 1 
+advanced:
+	2-2 : 1 
+	2-3 : 1 
+conveying:
+	2-2 : 1 
+discourse:
+	2-1 : 1 
+engaged:
+	2-2 : 1 
+breakfast:
+	2-1 : 1 
+	2-2 : 1 
+fully:
+	2-2 : 1 
+assurance:
+	2-1 : 1 
+	2-3 : 1 
+entered:
+	2-1 : 1 
+	2-2 : 1 
+convinced:
+	2-1 : 1 
+chicken:
+	2-1 : 1 
+	2-2 : 1 
+eldest:
+	2-1 : 1 
+considered:
+	2-2 : 1 
+	2-3 : 1 
+concerns:
+	2-3 : 1 
+arrived:
+	2-2 : 2 
+abilities:
+	2-1 : 1 
+	2-3 : 1 
+directly:
+	2-3 : 1 
+compass:
+	2-1 : 1 
+attended:
+	2-2 : 1 
+cheerful:
+	2-3 : 2 
+fond:
+	2-1 : 1 
+	2-3 : 1 
+behaviour:
+	2-1 : 1 
+elderly:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+age:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+affixed:
+	2-2 : 1 
+cordial:
+	2-1 : 1 
+education:
+	2-1 : 1 
+	2-2 : 1 
+fortune:
+	2-3 : 1 
+burst:
+	2-2 : 1 
+collecting:
+	2-2 : 1 
+delicate:
+	2-2 : 1 
+children:
+	2-2 : 1 
+certainty:
+	2-1 : 2 
+	2-2 : 2 
+concern:
+	2-3 : 1 
+clothes:
+	2-2 : 2 
+	2-3 : 1 
+cultivated:
+	2-1 : 1 
+country:
+	2-2 : 1 
+decisively:
+	2-1 : 1 
+	2-2 : 1 
+connection:
+	2-1 : 2 
+domestic:
+	2-1 : 1 
+apartments:
+	2-1 : 1 
+enjoy:
+	2-1 : 1 
+	2-2 : 1 
+depart:
+	2-1 : 1 
+early:
+	2-1 : 1 
+contempt:
+	2-2 : 1 
+	2-3 : 1 
+devonshire:
+	2-1 : 2 
+	2-2 : 2 
+astonished:
+	2-2 : 1 
+expense:
+	2-1 : 1 
+attacks:
+	2-2 : 1 
+busy:
+	2-3 : 1 
+explain:
+	2-2 : 1 
+forty:
+	2-2 : 1 
+door:
+	2-1 : 1 
+found:
+	2-1 : 1 
+abode:
+	2-1 : 1 
+	2-2 : 1 
+curiosity:
+	2-2 : 1 
+extremity:
+	2-1 : 2 
+dispatched:
+	2-1 : 1 
+consulted:
+	2-1 : 1 
+calm:
+	2-2 : 1 
+eagerness:
+	2-1 : 1 
+agreed:
+	2-3 : 2 
+	2-1 : 1 
+evil:
+	2-1 : 1 
+engrossed:
+	2-2 : 1 
+believing:
+	2-1 : 1 
+exertion:
+	2-1 : 1 
+entreaties:
+	2-2 : 1 
+allowance:
+	2-1 : 1 
+fine:
+	2-1 : 1 
+concluded:
+	2-1 : 1 
+	2-2 : 1 
+arise:
+	2-1 : 1 
+arranging:
+	2-2 : 1 
+advantages:
+	2-1 : 1 
+	2-3 : 1 
+account:
+	2-3 : 1 
+extremely:
+	2-1 : 1 
+drew:
+	2-1 : 1 
+eyes:
+	2-2 : 1 
+	2-3 : 1 
+discovered:
+	2-2 : 2 
+contained:
+	2-1 : 1 
+	2-2 : 1 
+affronting:
+	2-1 : 1 
+brother:
+	2-1 : 1 
+feeling:
+	2-1 : 1 
+depending:
+	2-1 : 1 
+	2-2 : 1 
+cheered:
+	2-2 : 1 
+cordially:
+	2-1 : 2 
+	2-3 : 2 
+betrayed:
+	2-2 : 1 
+	2-3 : 1 
+forming:
+	2-3 : 2 
+eat:
+	2-2 : 2 
+	2-1 : 1 
+	2-3 : 1 
+bore:
+	2-2 : 1 
+company:
+	2-2 : 1 
+chamber:
+	2-1 : 1 
+doubt:
+	2-2 : 1 
+beloved:
+	2-2 : 1 
+appetite:
+	2-3 : 1 
+furnished:
+	2-2 : 1 
+enabled:
+	2-2 : 1 
+	2-3 : 1 
+colonel:
+	2-2 : 1 
+bachelor:
+	2-2 : 1 
+afraid:
+	2-2 : 1 
+	2-3 : 1 
+cottage:
+	2-3 : 2 
+	2-2 : 1 
+exercise:
+	2-2 : 1 
+arose:
+	2-2 : 1 
+extended:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+announcing:
+	2-2 : 1 
+	2-3 : 1 
+exquisite:
+	2-1 : 1 
+daughter:
+	2-2 : 1 
+ecstatic:
+	2-2 : 1 
+dashwoods:
+	2-2 : 1 
+agreement:
+	2-1 : 2 
+	2-2 : 1 
+carriage:
+	2-2 : 1 
+conviction:
+	2-2 : 1 
+	2-3 : 1 
+blush:
+	2-2 : 1 
+	2-3 : 1 
+aware:
+	2-2 : 1 
+absolute:
+	2-2 : 2 
+detract:
+	2-2 : 1 
+appearance:
+	2-3 : 1 
+attempt:
+	2-2 : 1 
+excellence:
+	2-3 : 2 
+	2-2 : 1 
+fifteen:
+	2-2 : 1 
+fertile:
+	2-3 : 1 
+comfort:
+	2-2 : 1 
+building:
+	2-2 : 2 
+	2-3 : 1 
+doubtful:
+	2-2 : 3 
+books:
+	2-2 : 1 
+abroad:
+	2-3 : 1 
+estimable:
+	2-3 : 1 
+amiable:
+	2-2 : 1 
+	2-3 : 1 
+declared:
+	2-2 : 2 
+delay:
+	2-2 : 1 
+began:
+	2-2 : 1 
+assistance:
+	2-2 : 1 
+	2-3 : 1 
+conduct:
+	2-2 : 2 
+belonging:
+	2-2 : 2 
+departure:
+	2-2 : 2 
+	2-1 : 1 
+felicity:
+	2-2 : 1 
+attachment:
+	2-2 : 2 
+	2-3 : 1 
+frequently:
+	2-2 : 2 
+distance:
+	2-2 : 1 
+	2-3 : 1 
+blessing:
+	2-2 : 1 
+add:
+	2-2 : 2 
+	2-3 : 2 
+front:
+	2-2 : 1 
+dashwood:
+	2-2 : 2 
+explained:
+	2-1 : 2 
+	2-2 : 1 
+deal:
+	2-2 : 1 
+desire:
+	2-2 : 2 
+friends:
+	2-2 : 1 
+	2-3 : 1 
+alteration:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+downs:
+	2-2 : 1 
+attention:
+	2-2 : 2 
+	2-1 : 1 
+effects:
+	2-2 : 1 
+day:
+	2-2 : 2 
+delightful:
+	2-2 : 1 
+collected:
+	2-2 : 1 
+future:
+	2-3 : 1 
+feebly:
+	2-3 : 1 
+charmed:
+	2-3 : 1 
+enjoyed:
+	2-3 : 1 
+admiration:
+	2-3 : 2 
+enjoyment:
+	2-1 : 1 
+desirous:
+	2-3 : 1 
 Partition 1 ===> 
 
-journey:
-	5 : 1 
-limited:
-	5 : 2 
-house:
-	5 : 2 
-jennings:
-	5 : 1 
-instrument:
-	5 : 1 
-hastily:
-	5 : 1 
-learning:
-	5 : 1 
-giving:
-	5 : 1 
-ignorant:
-	5 : 1 
-hill:
-	4 : 1 
-ham:
-	4 : 3 
-letters:
-	4 : 1 
-heard:
-	4 : 1 
-game:
-	4 : 1 
-hours:
-	5 : 1 
-happiness:
-	4 : 1 
-household:
-	5 : 1 
-landlord:
-	4 : 1 
-hills:
-	4 : 1 
-ladyship:
-	5 : 2 
-	4 : 1 
-lasting:
-	4 : 1 
-insensible:
-	4 : 2 
-	5 : 2 
-garrets:
-	5 : 3 
-	3 : 2 
-imagine:
-	5 : 1 
-intention:
-	4 : 2 
-	3 : 1 
-increasing:
-	4 : 1 
-judgment:
-	3 : 1 
-	4 : 1 
-inhabiting:
-	4 : 1 
-joy:
-	5 : 4 
-	4 : 1 
-lasted:
-	4 : 1 
-	5 : 1 
-high:
-	3 : 1 
-graceful:
-	3 : 2 
-life:
-	5 : 1 
-limits:
-	5 : 1 
-kindness:
-	3 : 1 
-luckily:
-	4 : 1 
-	5 : 1 
-ladies:
-	3 : 1 
-inquiry:
-	4 : 1 
-justice:
-	3 : 1 
-	5 : 1 
-happen:
-	3 : 1 
-guest:
-	3 : 1 
-instantly:
-	3 : 1 
-	4 : 1 
-indulgence:
-	5 : 3 
-	3 : 1 
-highly:
-	3 : 1 
-good:
-	3 : 1 
-	5 : 1 
-hoped:
-	5 : 1 
-introduced:
-	3 : 1 
-	4 : 1 
-happy:
-	4 : 1 
-gentleman:
-	5 : 2 
-jokes:
-	4 : 1 
-inhabit:
-	3 : 1 
-	5 : 1 
-informed:
-	3 : 1 
-left:
-	3 : 1 
-great:
-	5 : 1 
-imprudence:
-	5 : 2 
-	3 : 1 
-learn:
-	3 : 1 
-greatest:
-	3 : 1 
-listening:
-	4 : 2 
-	5 : 1 
-late:
-	3 : 1 
-hearted:
-	5 : 1 
-linen:
-	3 : 1 
-hearing:
-	5 : 2 
-impossible:
-	3 : 3 
-gave:
-	3 : 1 
-insisted:
-	4 : 2 
 invited:
-	3 : 1 
+	2-3 : 1 
+graceful:
+	2-3 : 2 
+late:
+	2-3 : 1 
+learn:
+	2-3 : 1 
+greatest:
+	2-3 : 1 
+guest:
+	2-3 : 1 
+left:
+	2-3 : 1 
+happen:
+	2-3 : 1 
+hill:
+	2-2 : 1 
+ham:
+	2-2 : 3 
+instantly:
+	2-2 : 1 
+	2-3 : 1 
+letters:
+	2-2 : 1 
+heard:
+	2-2 : 1 
+game:
+	2-2 : 1 
+hills:
+	2-2 : 1 
 hopes:
-	3 : 1 
+	2-3 : 1 
 humoured:
-	3 : 1 
-	4 : 1 
-law:
-	4 : 4 
-	3 : 1 
-	5 : 1 
-lose:
-	4 : 1 
-literature:
-	4 : 2 
-	5 : 2 
-	3 : 1 
+	2-2 : 1 
+	2-3 : 1 
+listening:
+	2-2 : 2 
+	2-1 : 1 
+lasting:
+	2-2 : 1 
+insensible:
+	2-1 : 2 
+	2-2 : 2 
+ladyship:
+	2-1 : 2 
+	2-2 : 1 
 large:
-	3 : 1 
-gay:
-	5 : 3 
-	4 : 1 
-laughter:
-	4 : 1 
-	5 : 1 
-highest:
-	4 : 1 
-	5 : 1 
-interest:
-	4 : 1 
-	5 : 1 
-garden:
-	4 : 1 
+	2-3 : 1 
+lose:
+	2-2 : 1 
+literature:
+	2-1 : 2 
+	2-2 : 2 
+	2-3 : 1 
+increasing:
+	2-2 : 1 
+judgment:
+	2-2 : 1 
+	2-3 : 1 
+limited:
+	2-1 : 2 
+gave:
+	2-3 : 1 
+insisted:
+	2-2 : 2 
+kindness:
+	2-3 : 1 
+life:
+	2-1 : 1 
+limits:
+	2-1 : 1 
+highly:
+	2-3 : 1 
+good:
+	2-1 : 1 
+	2-3 : 1 
 improving:
-	4 : 1 
-long:
-	3 : 1 
-	5 : 1 
+	2-2 : 1 
 impression:
-	4 : 1 
-	5 : 1 
+	2-1 : 1 
+	2-2 : 1 
+long:
+	2-1 : 1 
+	2-3 : 1 
+high:
+	2-3 : 1 
+lasted:
+	2-1 : 1 
+	2-2 : 1 
+impossible:
+	2-3 : 3 
+hearing:
+	2-1 : 2 
+jennings:
+	2-1 : 1 
+inquiry:
+	2-2 : 1 
+justice:
+	2-1 : 1 
+	2-3 : 1 
+intention:
+	2-2 : 2 
+	2-3 : 1 
+imagine:
+	2-1 : 1 
+inhabiting:
+	2-2 : 1 
+joy:
+	2-1 : 4 
+	2-2 : 1 
+linen:
+	2-3 : 1 
+hearted:
+	2-1 : 1 
+garrets:
+	2-1 : 3 
+	2-3 : 2 
+informed:
+	2-3 : 1 
+jokes:
+	2-2 : 1 
+inhabit:
+	2-1 : 1 
+	2-3 : 1 
+gentleman:
+	2-1 : 2 
+indulgence:
+	2-1 : 3 
+	2-3 : 1 
+happiness:
+	2-2 : 1 
+hours:
+	2-1 : 1 
+laughter:
+	2-1 : 1 
+	2-2 : 1 
+gay:
+	2-1 : 3 
+	2-2 : 1 
+house:
+	2-1 : 2 
+giving:
+	2-1 : 1 
 likewise:
-	3 : 2 
-	4 : 2 
+	2-2 : 2 
+	2-3 : 2 
 led:
-	4 : 3 
-	5 : 2 
-	3 : 1 
+	2-2 : 3 
+	2-1 : 2 
+	2-3 : 1 
 incommode:
-	4 : 1 
-	5 : 1 
+	2-1 : 1 
+	2-2 : 1 
+ignorant:
+	2-1 : 1 
+highest:
+	2-1 : 1 
+	2-2 : 1 
+imprudence:
+	2-1 : 2 
+	2-3 : 1 
+great:
+	2-1 : 1 
+landlord:
+	2-2 : 1 
+household:
+	2-1 : 1 
+instrument:
+	2-1 : 1 
+hastily:
+	2-1 : 1 
+learning:
+	2-1 : 1 
+journey:
+	2-1 : 1 
+law:
+	2-2 : 4 
+	2-1 : 1 
+	2-3 : 1 
+interest:
+	2-1 : 1 
+	2-2 : 1 
+ladies:
+	2-3 : 1 
+luckily:
+	2-1 : 1 
+	2-2 : 1 
+hoped:
+	2-1 : 1 
+introduced:
+	2-2 : 1 
+	2-3 : 1 
+happy:
+	2-2 : 1 
+garden:
+	2-2 : 1 
 Partition 2 ===> 
 
-request:
-	5 : 2 
-proposal:
-	5 : 1 
-passed:
-	5 : 1 
-objection:
-	5 : 1 
-natural:
-	5 : 1 
-part:
-	5 : 1 
-rendered:
-	5 : 1 
-newspaper:
-	5 : 1 
-motionless:
-	5 : 1 
-perceived:
-	5 : 1 
-promotion:
-	4 : 1 
-margaret:
-	4 : 1 
-	5 : 1 
-nearer:
-	5 : 1 
-made:
-	4 : 1 
-man:
-	4 : 2 
-	5 : 1 
-packages:
-	4 : 1 
-neglected:
-	4 : 1 
-pretended:
-	5 : 1 
-put:
-	4 : 2 
-	5 : 2 
-peculiar:
-	4 : 1 
-	5 : 1 
-narrow:
-	3 : 1 
-noisier:
-	4 : 1 
-meant:
-	3 : 1 
-result:
-	3 : 2 
-prevent:
-	3 : 1 
-reached:
-	4 : 1 
-raptures:
-	4 : 1 
-pursuit:
-	3 : 1 
-noisy:
-	5 : 1 
-pleasure:
-	4 : 2 
-mrs:
-	3 : 3 
-	4 : 1 
-mr:
-	3 : 5 
-	4 : 3 
-	5 : 3 
-merry:
-	4 : 1 
-	5 : 1 
-performed:
-	3 : 1 
-	5 : 1 
-painful:
-	4 : 2 
-	3 : 1 
 residence:
-	3 : 1 
+	2-3 : 1 
 power:
-	3 : 1 
-resolving:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-offices:
-	3 : 1 
-mistake:
-	3 : 1 
-	4 : 1 
-make:
-	5 : 1 
-rich:
-	3 : 1 
-	4 : 1 
-outweigh:
-	4 : 1 
+	2-3 : 1 
+result:
+	2-3 : 2 
 questions:
-	3 : 1 
-rose:
-	5 : 1 
-pleased:
-	5 : 1 
-property:
-	3 : 1 
-nature:
-	3 : 2 
-	5 : 1 
-prevailed:
-	4 : 1 
-	5 : 1 
-merit:
-	3 : 1 
-	5 : 1 
+	2-3 : 1 
 position:
-	3 : 2 
-pianoforte:
-	4 : 2 
-	3 : 1 
-	5 : 1 
-place:
-	4 : 1 
-	5 : 1 
-music:
-	4 : 2 
-	3 : 1 
-	5 : 1 
-pasture:
-	5 : 1 
-men:
-	4 : 4 
-offering:
-	3 : 1 
-remainder:
-	3 : 1 
-minuter:
-	4 : 1 
-	5 : 1 
-received:
-	5 : 2 
-	3 : 1 
-remark:
-	3 : 1 
-	5 : 1 
-remember:
-	3 : 1 
-	4 : 1 
-preferred:
-	3 : 1 
-passage:
-	3 : 1 
-pressed:
-	3 : 1 
-	4 : 1 
-reasonable:
-	3 : 1 
-mention:
-	3 : 1 
-	4 : 1 
-resembled:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-points:
-	4 : 2 
-observe:
-	4 : 2 
-	3 : 1 
-rest:
-	4 : 1 
-match:
-	3 : 2 
-recommend:
-	3 : 1 
-	5 : 1 
-perpetual:
-	4 : 1 
-resolve:
-	3 : 1 
-procuring:
-	3 : 1 
-	4 : 1 
-needed:
-	3 : 1 
-occasional:
-	3 : 1 
-rank:
-	3 : 1 
-parlors:
-	3 : 3 
-regret:
-	3 : 1 
-open:
-	3 : 1 
-present:
-	4 : 1 
-removed:
-	4 : 3 
-remarkably:
-	3 : 2 
-	5 : 1 
-marry:
-	3 : 1 
-	4 : 1 
-moderate:
-	3 : 1 
-regular:
-	3 : 1 
-quitting:
-	3 : 1 
-rooms:
-	4 : 2 
-moonlight:
-	3 : 1 
-number:
-	3 : 1 
-rent:
-	5 : 2 
-	3 : 1 
-possession:
-	5 : 2 
-	4 : 1 
-perceive:
-	5 : 2 
-	3 : 1 
-pointed:
-	5 : 1 
-projection:
-	5 : 4 
-	3 : 1 
-outlived:
-	3 : 2 
-	5 : 1 
-partiality:
-	4 : 2 
-	5 : 1 
-offending:
-	4 : 1 
-	5 : 1 
-prospect:
-	3 : 1 
-	4 : 1 
-marianne:
-	3 : 2 
-	4 : 2 
+	2-3 : 2 
+prevent:
+	2-3 : 1 
 park:
-	3 : 1 
-maids:
-	4 : 2 
-	3 : 1 
-period:
-	3 : 1 
-	5 : 1 
-manners:
-	3 : 1 
-mistress:
-	4 : 1 
-returned:
-	4 : 1 
-occasion:
-	4 : 2 
+	2-3 : 1 
+open:
+	2-3 : 1 
+passage:
+	2-3 : 1 
 opinion:
-	3 : 1 
-required:
-	4 : 1 
-prepare:
-	3 : 1 
-	5 : 1 
-piqued:
-	3 : 1 
-offended:
-	3 : 1 
-	4 : 1 
-resolution:
-	4 : 1 
-	5 : 1 
-party:
-	3 : 1 
-rejoiced:
-	4 : 1 
-regard:
-	4 : 1 
-rapturous:
-	4 : 1 
-	5 : 1 
-provision:
-	4 : 1 
-northward:
-	3 : 1 
-nay:
-	4 : 1 
+	2-3 : 1 
+quitting:
+	2-3 : 1 
+resolve:
+	2-3 : 1 
+parlors:
+	2-3 : 3 
+rank:
+	2-3 : 1 
+meant:
+	2-3 : 1 
+moonlight:
+	2-3 : 1 
+number:
+	2-3 : 1 
+narrow:
+	2-3 : 1 
+manners:
+	2-3 : 1 
+occasional:
+	2-3 : 1 
+needed:
+	2-3 : 1 
+offices:
+	2-3 : 1 
+reasonable:
+	2-3 : 1 
+regret:
+	2-3 : 1 
+maids:
+	2-2 : 2 
+	2-3 : 1 
+promotion:
+	2-2 : 1 
+place:
+	2-1 : 1 
+	2-2 : 1 
+preferred:
+	2-3 : 1 
+remember:
+	2-2 : 1 
+	2-3 : 1 
 removal:
-	4 : 1 
-private:
-	5 : 1 
-rapid:
-	3 : 1 
-miles:
-	4 : 2 
-marriage:
-	5 : 1 
-middletons:
-	4 : 1 
+	2-2 : 1 
+natural:
+	2-1 : 1 
+mr:
+	2-3 : 5 
+	2-1 : 3 
+	2-2 : 3 
+merry:
+	2-1 : 1 
+	2-2 : 1 
+mrs:
+	2-3 : 3 
+	2-2 : 1 
+outlived:
+	2-3 : 2 
+	2-1 : 1 
+motionless:
+	2-1 : 1 
+rendered:
+	2-1 : 1 
+party:
+	2-3 : 1 
+rejoiced:
+	2-2 : 1 
+packages:
+	2-2 : 1 
+nature:
+	2-3 : 2 
+	2-1 : 1 
+request:
+	2-1 : 2 
+remark:
+	2-1 : 1 
+	2-3 : 1 
+newspaper:
+	2-1 : 1 
+resolving:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+make:
+	2-1 : 1 
+rich:
+	2-2 : 1 
+	2-3 : 1 
+outweigh:
+	2-2 : 1 
+mistake:
+	2-2 : 1 
+	2-3 : 1 
+part:
+	2-1 : 1 
+pianoforte:
+	2-2 : 2 
+	2-1 : 1 
+	2-3 : 1 
+perpetual:
+	2-2 : 1 
+resembled:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+merit:
+	2-1 : 1 
+	2-3 : 1 
+prevailed:
+	2-1 : 1 
+	2-2 : 1 
+occasion:
+	2-2 : 2 
 repeated:
-	3 : 1 
+	2-3 : 1 
 morning:
-	4 : 1 
-preference:
-	5 : 1 
+	2-2 : 1 
+moderate:
+	2-3 : 1 
+regular:
+	2-3 : 1 
+marry:
+	2-2 : 1 
+	2-3 : 1 
+peculiar:
+	2-1 : 1 
+	2-2 : 1 
+objection:
+	2-1 : 1 
+rent:
+	2-1 : 2 
+	2-3 : 1 
+performed:
+	2-1 : 1 
+	2-3 : 1 
+painful:
+	2-2 : 2 
+	2-3 : 1 
+received:
+	2-1 : 2 
+	2-3 : 1 
+match:
+	2-3 : 2 
+recommend:
+	2-1 : 1 
+	2-3 : 1 
+rest:
+	2-2 : 1 
+music:
+	2-2 : 2 
+	2-1 : 1 
+	2-3 : 1 
+perceive:
+	2-1 : 2 
+	2-3 : 1 
+possession:
+	2-1 : 2 
+	2-2 : 1 
+rapturous:
+	2-1 : 1 
+	2-2 : 1 
+provision:
+	2-2 : 1 
+proposal:
+	2-1 : 1 
+mention:
+	2-2 : 1 
+	2-3 : 1 
+property:
+	2-3 : 1 
+pleased:
+	2-1 : 1 
+rose:
+	2-1 : 1 
+passed:
+	2-1 : 1 
+resolution:
+	2-1 : 1 
+	2-2 : 1 
+piqued:
+	2-3 : 1 
+offended:
+	2-2 : 1 
+	2-3 : 1 
+projection:
+	2-1 : 4 
+	2-3 : 1 
+pointed:
+	2-1 : 1 
+prospect:
+	2-2 : 1 
+	2-3 : 1 
+marianne:
+	2-2 : 2 
+	2-3 : 2 
+offending:
+	2-1 : 1 
+	2-2 : 1 
+partiality:
+	2-2 : 2 
+	2-1 : 1 
+prepare:
+	2-1 : 1 
+	2-3 : 1 
+man:
+	2-2 : 2 
+	2-1 : 1 
+regard:
+	2-2 : 1 
+margaret:
+	2-1 : 1 
+	2-2 : 1 
+period:
+	2-1 : 1 
+	2-3 : 1 
+pretended:
+	2-1 : 1 
+put:
+	2-1 : 2 
+	2-2 : 2 
+rooms:
+	2-2 : 2 
+offering:
+	2-3 : 1 
+pasture:
+	2-1 : 1 
+men:
+	2-2 : 4 
+perceived:
+	2-1 : 1 
+remainder:
+	2-3 : 1 
+minuter:
+	2-1 : 1 
+	2-2 : 1 
+returned:
+	2-2 : 1 
+mistress:
+	2-2 : 1 
+reached:
+	2-2 : 1 
+required:
+	2-2 : 1 
+northward:
+	2-3 : 1 
+nay:
+	2-2 : 1 
+points:
+	2-2 : 2 
+observe:
+	2-2 : 2 
+	2-3 : 1 
+rapid:
+	2-3 : 1 
+private:
+	2-1 : 1 
+miles:
+	2-2 : 2 
+noisier:
+	2-2 : 1 
+marriage:
+	2-1 : 1 
+middletons:
+	2-2 : 1 
 projecting:
-	5 : 1 
+	2-1 : 1 
+preference:
+	2-1 : 1 
 propriety:
-	4 : 1 
+	2-2 : 1 
+pressed:
+	2-2 : 1 
+	2-3 : 1 
+noisy:
+	2-1 : 1 
+pleasure:
+	2-2 : 2 
 mistaken:
-	4 : 1 
-	5 : 1 
+	2-1 : 1 
+	2-2 : 1 
 opinions:
-	4 : 1 
+	2-2 : 1 
+remarkably:
+	2-3 : 2 
+	2-1 : 1 
+removed:
+	2-2 : 3 
+present:
+	2-2 : 1 
+neglected:
+	2-2 : 1 
+procuring:
+	2-2 : 1 
+	2-3 : 1 
+pursuit:
+	2-3 : 1 
+raptures:
+	2-2 : 1 
+nearer:
+	2-1 : 1 
+made:
+	2-2 : 1 
 Partition 3 ===> 
 
-travelling:
-	5 : 1 
-wrote:
-	5 : 1 
-speaking:
-	5 : 1 
-scarcely:
-	5 : 1 
-sportsman:
-	5 : 1 
-windows:
-	5 : 1 
-total:
-	5 : 1 
-sex:
-	5 : 2 
-wrong:
-	5 : 1 
-walls:
-	5 : 1 
-years:
-	5 : 2 
-told:
-	5 : 1 
-tastes:
-	5 : 1 
-valley:
-	5 : 2 
-supply:
-	5 : 1 
-sell:
-	5 : 1 
-sigh:
-	5 : 1 
-warmly:
-	5 : 1 
-wholly:
-	5 : 1 
-tolerably:
-	5 : 2 
-	4 : 1 
-shutters:
-	3 : 2 
-sir:
-	4 : 1 
-understood:
-	3 : 1 
-	5 : 1 
-talked:
-	3 : 2 
-	5 : 1 
-screened:
-	3 : 1 
-unreserved:
-	5 : 3 
-	3 : 1 
-worth:
-	3 : 1 
-subject:
-	3 : 1 
-	5 : 1 
-stood:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-sentiments:
-	3 : 3 
-	5 : 1 
-surrounded:
-	4 : 1 
-stimulated:
-	3 : 1 
-silent:
-	3 : 1 
-	5 : 1 
-winter:
-	3 : 1 
-wished:
-	3 : 1 
-unable:
-	3 : 2 
-	5 : 1 
-sincerity:
-	5 : 3 
-unaffected:
-	3 : 2 
-	4 : 2 
-	5 : 2 
-unlocked:
-	3 : 1 
-	4 : 1 
-stronger:
-	3 : 1 
-	4 : 1 
-totally:
-	3 : 1 
-supposing:
-	4 : 2 
-visit:
-	3 : 1 
 sense:
-	3 : 1 
-talent:
-	4 : 1 
-taste:
-	4 : 1 
-stand:
-	5 : 1 
-trees:
-	5 : 1 
-sociable:
-	4 : 1 
-solicitude:
-	5 : 3 
-	3 : 1 
-	4 : 1 
-trifling:
-	3 : 3 
-started:
-	4 : 1 
-uneasy:
-	3 : 2 
-shed:
-	3 : 1 
-tedious:
-	3 : 1 
-	4 : 1 
-solid:
-	3 : 1 
-	4 : 1 
-wound:
-	3 : 1 
-stanhill:
-	3 : 1 
-stairs:
-	3 : 1 
-ye:
-	3 : 4 
-	5 : 3 
-	4 : 1 
+	2-3 : 1 
+shutters:
+	2-3 : 2 
+screened:
+	2-3 : 1 
 wishes:
-	3 : 1 
-songs:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-terminated:
-	5 : 2 
-	3 : 1 
-wise:
-	3 : 1 
-written:
-	3 : 3 
-surprise:
-	3 : 1 
-ten:
-	5 : 3 
-	3 : 1 
-	4 : 1 
-settling:
-	4 : 1 
-wanted:
-	5 : 1 
-weather:
-	3 : 1 
-	5 : 1 
-sons:
-	3 : 1 
-worse:
-	4 : 2 
-	3 : 1 
-	5 : 1 
-striking:
-	3 : 1 
-	4 : 1 
-unwilling:
-	4 : 1 
-sympathize:
-	3 : 1 
-sold:
-	3 : 1 
-	4 : 1 
-	5 : 1 
-spoke:
-	4 : 1 
-vicinity:
-	3 : 1 
-unpleasing:
-	3 : 1 
-	4 : 1 
-september:
-	5 : 1 
-unknown:
-	5 : 1 
-shyness:
-	3 : 1 
-	5 : 1 
-situation:
-	5 : 1 
-time:
-	3 : 1 
-	4 : 1 
-settled:
-	3 : 1 
-	5 : 1 
-view:
-	4 : 1 
-shewing:
-	3 : 1 
-	5 : 1 
+	2-3 : 1 
+wished:
+	2-3 : 1 
+visit:
+	2-3 : 1 
+stanhill:
+	2-3 : 1 
+stairs:
+	2-3 : 1 
+worth:
+	2-3 : 1 
 unpacked:
-	3 : 1 
-suspicion:
-	5 : 1 
-weeks:
-	3 : 2 
-talking:
-	5 : 1 
-uncommonly:
-	5 : 1 
-spirit:
-	3 : 2 
+	2-3 : 1 
 venture:
-	3 : 1 
+	2-3 : 1 
+stimulated:
+	2-3 : 1 
+winter:
+	2-3 : 1 
+wound:
+	2-3 : 1 
 terms:
-	3 : 1 
-son:
-	5 : 2 
-	3 : 1 
-true:
-	4 : 1 
-unpleasant:
-	4 : 1 
-	5 : 1 
-sooner:
-	5 : 1 
-wicket:
-	4 : 1 
-	5 : 1 
-sufficient:
-	4 : 1 
+	2-3 : 1 
+sympathize:
+	2-3 : 1 
+sons:
+	2-3 : 1 
+totally:
+	2-3 : 1 
+wise:
+	2-3 : 1 
+ye:
+	2-3 : 4 
+	2-1 : 3 
+	2-2 : 1 
+shewing:
+	2-1 : 1 
+	2-3 : 1 
+supply:
+	2-1 : 1 
+scarcely:
+	2-1 : 1 
+unreserved:
+	2-1 : 3 
+	2-3 : 1 
+surprise:
+	2-3 : 1 
+written:
+	2-3 : 3 
+ten:
+	2-1 : 3 
+	2-2 : 1 
+	2-3 : 1 
+settling:
+	2-2 : 1 
+sell:
+	2-1 : 1 
+supposing:
+	2-2 : 2 
 thoughts:
-	4 : 1 
-	5 : 1 
-settle:
-	3 : 1 
-truth:
-	3 : 1 
-	4 : 1 
-speedily:
-	4 : 2 
-young:
-	4 : 2 
-sweetness:
-	5 : 1 
-show:
-	3 : 1 
-shade:
-	4 : 1 
-wondered:
-	4 : 2 
+	2-1 : 1 
+	2-2 : 1 
+tastes:
+	2-1 : 1 
+travelling:
+	2-1 : 1 
+told:
+	2-1 : 1 
+understood:
+	2-1 : 1 
+	2-3 : 1 
+terminated:
+	2-1 : 2 
+	2-3 : 1 
+songs:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+wholly:
+	2-1 : 1 
+tolerably:
+	2-1 : 2 
+	2-2 : 1 
+shyness:
+	2-1 : 1 
+	2-3 : 1 
+true:
+	2-2 : 1 
+son:
+	2-1 : 2 
+	2-3 : 1 
+unpleasant:
+	2-1 : 1 
+	2-2 : 1 
+sooner:
+	2-1 : 1 
+wicket:
+	2-1 : 1 
+	2-2 : 1 
+sufficient:
+	2-2 : 1 
+talked:
+	2-3 : 2 
+	2-1 : 1 
+wrong:
+	2-1 : 1 
 thought:
-	5 : 1 
-unsatiable:
-	5 : 3 
-uncivil:
-	4 : 1 
-set:
-	5 : 2 
-views:
-	3 : 1 
-	4 : 1 
-shy:
-	4 : 3 
-spirits:
-	4 : 1 
+	2-1 : 1 
+wondered:
+	2-2 : 2 
+subject:
+	2-1 : 1 
+	2-3 : 1 
+stood:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+sentiments:
+	2-3 : 3 
+	2-1 : 1 
+surrounded:
+	2-2 : 1 
+valley:
+	2-1 : 2 
+stronger:
+	2-2 : 1 
+	2-3 : 1 
+sex:
+	2-1 : 2 
 size:
-	5 : 1 
+	2-1 : 1 
 shameless:
-	4 : 1 
-suppose:
-	4 : 1 
-	5 : 1 
-style:
-	4 : 1 
-short:
-	5 : 1 
-state:
-	4 : 1 
+	2-2 : 1 
+september:
+	2-1 : 1 
+unknown:
+	2-1 : 1 
+vicinity:
+	2-3 : 1 
+spoke:
+	2-2 : 1 
+unpleasing:
+	2-2 : 1 
+	2-3 : 1 
+weeks:
+	2-3 : 2 
+suspicion:
+	2-1 : 1 
+unlocked:
+	2-2 : 1 
+	2-3 : 1 
+sportsman:
+	2-1 : 1 
+unable:
+	2-3 : 2 
+	2-1 : 1 
+walls:
+	2-1 : 1 
+years:
+	2-1 : 2 
+young:
+	2-2 : 2 
+speaking:
+	2-1 : 1 
+total:
+	2-1 : 1 
+spirit:
+	2-3 : 2 
+talking:
+	2-1 : 1 
+uncommonly:
+	2-1 : 1 
+sigh:
+	2-1 : 1 
+unaffected:
+	2-1 : 2 
+	2-2 : 2 
+	2-3 : 2 
+sincerity:
+	2-1 : 3 
 voice:
-	3 : 1 
+	2-3 : 1 
+state:
+	2-2 : 1 
+short:
+	2-1 : 1 
 suffering:
-	4 : 1 
-	5 : 1 
-woman:
-	4 : 1 
+	2-1 : 1 
+	2-2 : 1 
+silent:
+	2-1 : 1 
+	2-3 : 1 
+sold:
+	2-1 : 1 
+	2-2 : 1 
+	2-3 : 1 
+wrote:
+	2-1 : 1 
+windows:
+	2-1 : 1 
+weather:
+	2-1 : 1 
+	2-3 : 1 
+wanted:
+	2-1 : 1 
+trees:
+	2-1 : 1 
+solicitude:
+	2-1 : 3 
+	2-2 : 1 
+	2-3 : 1 
+sociable:
+	2-2 : 1 
+stand:
+	2-1 : 1 
+unsatiable:
+	2-1 : 3 
+uncivil:
+	2-2 : 1 
 square:
-	5 : 1 
+	2-1 : 1 
+warmly:
+	2-1 : 1 
+talent:
+	2-2 : 1 
+taste:
+	2-2 : 1 
+trifling:
+	2-3 : 3 
+started:
+	2-2 : 1 
+unwilling:
+	2-2 : 1 
+worse:
+	2-2 : 2 
+	2-1 : 1 
+	2-3 : 1 
+striking:
+	2-2 : 1 
+	2-3 : 1 
+show:
+	2-3 : 1 
+sweetness:
+	2-1 : 1 
+shade:
+	2-2 : 1 
+solid:
+	2-2 : 1 
+	2-3 : 1 
+shed:
+	2-3 : 1 
+uneasy:
+	2-3 : 2 
+tedious:
+	2-2 : 1 
+	2-3 : 1 
+spirits:
+	2-2 : 1 
+settle:
+	2-3 : 1 
+speedily:
+	2-2 : 2 
+truth:
+	2-2 : 1 
+	2-3 : 1 
+view:
+	2-2 : 1 
+situation:
+	2-1 : 1 
+settled:
+	2-1 : 1 
+	2-3 : 1 
+time:
+	2-2 : 1 
+	2-3 : 1 
+suppose:
+	2-1 : 1 
+	2-2 : 1 
+style:
+	2-2 : 1 
+sir:
+	2-2 : 1 
+set:
+	2-1 : 2 
+shy:
+	2-2 : 3 
+views:
+	2-2 : 1 
+	2-3 : 1 
+woman:
+	2-2 : 1 
 
 
 --------------Index Over--------------

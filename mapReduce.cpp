@@ -54,14 +54,14 @@ using namespace std;
 #define LOWEST_ALPHABET_ASCII 97
 #define LONG_DIGIT_NO 10
 
-bool sortinrev(const pair<long int,long int> &a, const pair<long int,long int> &b)
+bool sortinrev(const pair<long int,string> &a, const pair<long int,string> &b)
 {
        return (a.first > b.first);
 }
 
-vector<pair<long int, long int>> mergeVectors(vector<pair<long int, long int>> vec1,vector<pair<long int, long int>> vec2)
+vector<pair<long int, string>> mergeVectors(vector<pair<long int, string>> vec1,vector<pair<long int, string>> vec2)
 {
-	vector<pair<long int, long int>> mergedVec(vec1.size()+vec2.size());
+	vector<pair<long int, string>> mergedVec(vec1.size()+vec2.size());
 	merge(vec1.begin(),vec1.end(),vec2.begin(),vec2.end(),mergedVec.begin(),sortinrev);
 	vec1.clear();
 	vec2.clear();
@@ -72,26 +72,27 @@ vector<pair<long int, long int>> mergeVectors(vector<pair<long int, long int>> v
 /********************************************UTILITY FUNCTION FOR PRINTING LOCAL INDEX INTO FILES**************************************************************/
 
 //Function to print vector of maps
-void printMaps(vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps, int noOfProcesses, int processId, string globalIndexFolder)
+void printMaps(vector<unordered_map<string, vector<pair<long int,string>>>> receivedMaps, int noOfProcesses, int processId, string globalIndexFolder)
 {
-	unordered_map<string, vector<pair<long int,long int>>> final_map;
-	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
+	unordered_map<string, vector<pair<long int,string>>> final_map;
+	unordered_map<string, vector<pair<long int,string>>>::iterator mapItr;
 
 	//Postings list for a word
-	vector<pair<long int,long int>> documentsWithWord,mergedVector;
+	vector<pair<long int,string>> documentsWithWord,mergedVector;
 
 	//An entry for a map ---- word and its postings list
 	string currentWord;
-	vector<pair<long int , long int>> postingsForWord;
+	vector<pair<long int , string>> postingsForWord;
 
 	char filename[MAX_FILE_NAME_SIZE];
-	long int documentID, wordFreq;
+	long int wordFreq;
+	string documentID;
 
 	sprintf(filename,"%s/%d.txt",globalIndexFolder.c_str(),processId);
 
 	FILE* fp = fopen(filename,"w");
 
-	vector<pair<long int, long int>>::iterator itr;
+	vector<pair<long int, string>>::iterator itr;
 
 	fprintf(fp,"\n--------------Index Begin--------------\n\n");
 
@@ -115,7 +116,7 @@ void printMaps(vector<unordered_map<string, vector<pair<long int,long int>>>> re
 			{
 				documentID = itr->second;
 				wordFreq = itr->first;
-				fprintf(fp, "\t%ld : %ld \n", documentID, wordFreq);
+				fprintf(fp, "\t%s : %ld \n", documentID.c_str(), wordFreq);
 			}	
 		
 		}
@@ -153,7 +154,7 @@ int main(int argc, char** argv)
 	err = MPI_Comm_size(MPI_COMM_WORLD, &noOfProcesses);
 
    	//Inverted Index Map for whole documents in the local node
-   	vector<unordered_map<string, vector<pair<long int,long int>>>> invertedIndexMap(noOfProcesses);
+   	vector<unordered_map<string, vector<pair<long int,string>>>> invertedIndexMap(noOfProcesses);
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -192,12 +193,12 @@ int main(int argc, char** argv)
 
 	DIR *dp; 
 	struct dirent *ep;    
-	long int i=0;		 
+	 
 	dp = opendir(directoryName);
 
 	int partitionSize = 26/(noOfProcesses);
 	int remainder = 26%(noOfProcesses);
-	vector<pair<long int,long int>>::iterator vecItr;
+	vector<pair<long int,string>>::iterator vecItr;
 	
 	//array containing the partition index (0...(noOfProcesses)) for each alphabet
 	int partitionIndex[26];
@@ -219,16 +220,19 @@ int main(int argc, char** argv)
 
 	//partition to which a given word belongs
 	int correspondingPartition;
-	long int documentID, wordFreq;
+	long int documentNo, wordFreq;
 	ifstream inputFile;
 	string readLine;
 	int len;	
  	string currentWord;
     unordered_map<string, long int>::iterator mapItr;
-    vector<pair<long int,long int>> documentsWithWord,mergedVector;
+    vector<pair<long int,string>> documentsWithWord,mergedVector;
+    string documentID;
+    
 
 	if (dp != NULL)
 	{
+		documentNo = 0;
 		//Start creating the local index in the node -- read each file one by one
 		while ((ep = readdir(dp))!=NULL)
 		{
@@ -239,8 +243,13 @@ int main(int argc, char** argv)
 				continue;
 			}
 
-			//REVISIT IT
-			documentID = (processId-1)*noOfFiles+i;
+			documentNo++;			
+			stringstream s;
+			s << processId << "-" << documentNo;
+			documentID = s.str();
+
+			//Deallocating Memory
+			s.str().clear();
 
 			//Current file read
 
@@ -278,8 +287,9 @@ int main(int argc, char** argv)
 				        }
 				    }
 
-				    if(currentWord.empty())
+				    if(currentWord.empty() || currentWord.size()==1)
 				    	continue;
+				    
 				    
 				    //Check for stopword
 					if(stopwords.find(currentWord)!=stopwords.end())
@@ -287,10 +297,14 @@ int main(int argc, char** argv)
 						//Ignore the stopword
 						continue;
 					}
+					
 
-   			 		//Update its frequency
+					//Update its frequency
 		            wordCountMap[currentWord]++;
    			 	}
+
+   			 	//Deallocating Memory
+   			 	iss.str().clear();
    			}
 
    			//Closing the file
@@ -310,7 +324,7 @@ int main(int argc, char** argv)
 	        	//If the currentWord doesn't exist in invertedIndexMap
 	        	if(invertedIndexMap[correspondingPartition].find(currentWord) == invertedIndexMap[correspondingPartition].end())
 	        	{
-	        		vector<pair<long int,long int>> newVector;
+	        		vector<pair<long int,string>> newVector;
 	        		newVector.push_back(make_pair(wordFreq,documentID)); 
 	        		invertedIndexMap[correspondingPartition][currentWord] = newVector;
 	        	}
@@ -337,7 +351,7 @@ int main(int argc, char** argv)
 	        wordCountMap.clear();
 
 	        //Now go to the next document in next iteration
-	        i++;
+	        
 		}
 	    
 	    //Close the directory
@@ -348,7 +362,9 @@ int main(int argc, char** argv)
 	    perror("Couldn't open the directory");
 	}
 
-	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr1;
+	/****************************************************Sorting the vectors in the local Map******************************************/
+
+	unordered_map<string, vector<pair<long int,string>>>::iterator mapItr1;
 	for(int k=0;k<(noOfProcesses);k++)
 	{
 		for(mapItr1=(invertedIndexMap[k]).begin();mapItr1!=(invertedIndexMap[k]).end();mapItr1++)
@@ -362,10 +378,18 @@ int main(int argc, char** argv)
 	printMaps(invertedIndexMap, noOfProcesses, processId, "LocalIndex");
 
 	//*******************************************ALL DOCUMENTS IN NODE ARE PROCESSESED****************************************//
+
+
+
+	/********************************************************* COMMUNICATION BEGINS ***********************************************/
+
+
+
 	
 	//send/receive the invertedIndexMap vector to/from other process
 
-	//***************** if documents size less ************************//
+	//******************** if documents size less ************************//
+
 	if(0)
 	{
 		stringstream ss;
@@ -452,19 +476,24 @@ int main(int argc, char** argv)
 	printMaps(invertedIndexMap, noOfProcesses, processId, "Merged");
 
 	//**************** end ************************//
+
+
+
+
+
 	
 	//*****************************************************REDUCE PHASE BEGINS******************************************************//
 	
 	//New Implementation
-	unordered_map<string, vector<pair<long int,long int>>> final_map, localMap;
+	unordered_map<string, vector<pair<long int,string>>> final_map, localMap;
 	
 	//Received Maps from AllGatherV
-	//vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps (noOfProcesses);
+	//vector<unordered_map<string, vector<pair<long int,string>>>> receivedMaps (noOfProcesses);
 
-	vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps = invertedIndexMap;
+	vector<unordered_map<string, vector<pair<long int,string>>>> receivedMaps = invertedIndexMap;
 	
 	//An entry for a map ---- word and its postings list
-	vector<pair<long int , long int>> postingsForWord;
+	vector<pair<long int , string>> postingsForWord;
 
 
 	//Iterate over all maps
@@ -511,7 +540,7 @@ int main(int argc, char** argv)
 
 	FILE* fp = fopen(filename,"w");
 
-	vector<pair<long int, long int>>::iterator itr;
+	vector<pair<long int, string>>::iterator itr;
 
 	fprintf(fp,"\n--------------Index Begin--------------\n\n");
 
@@ -528,7 +557,7 @@ int main(int argc, char** argv)
 		{
 			documentID = itr->second;
 			wordFreq = itr->first;
-			fprintf(fp, "\t%ld : %ld \n", documentID, wordFreq);
+			fprintf(fp, "\t%s : %ld \n", documentID.c_str(), wordFreq);
 		}	
 	
 	}
