@@ -33,6 +33,7 @@
 #include "cereal/types/utility.hpp"
 #include "cereal/archives/binary.hpp"
 
+
 using namespace std;
 
 /************************************************************************************************************************************
@@ -41,12 +42,13 @@ using namespace std;
 2. Assuming the query can only be of the form -- give the list of documents containing the word in decreasing ordre of frequency.
    If the query is of the form -- whether the document contains this word or not? - we have travese whole list of documnet ids 
    associated with a word.
-3. Map doc - docId
-4. IMPLEMENT : EFFICIENT IO
-5. To compile: mpiCC -Iinclude filename -std=c++11
+3. IMPLEMENT : EFFICIENT IO
+4. To compile: mpiCC -Iinclude filename -std=c++11
+5. DOCID 
+6. partition
+7. document size
 
 ************************************************************************************************************************************/
-
 
 #define MAX_FILE_NAME_SIZE 30
 #define LOWEST_ALPHABET_ASCII 97
@@ -60,16 +62,78 @@ bool sortinrev(const pair<long int,long int> &a, const pair<long int,long int> &
 vector<pair<long int, long int>> mergeVectors(vector<pair<long int, long int>> vec1,vector<pair<long int, long int>> vec2)
 {
 	vector<pair<long int, long int>> mergedVec(vec1.size()+vec2.size());
-	merge(vec1.begin(),vec1.end(),vec2.begin(),vec2.end(),mergedVec.begin());
+	merge(vec1.begin(),vec1.end(),vec2.begin(),vec2.end(),mergedVec.begin(),sortinrev);
 	vec1.clear();
 	vec2.clear();
 
 	return mergedVec;
 }
 
+/********************************************UTILITY FUNCTION FOR PRINTING LOCAL INDEX INTO FILES**************************************************************/
+
+//Function to print vector of maps
+void printMaps(vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps, int noOfProcesses, int processId, string globalIndexFolder)
+{
+	unordered_map<string, vector<pair<long int,long int>>> final_map;
+	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
+
+	//Postings list for a word
+	vector<pair<long int,long int>> documentsWithWord,mergedVector;
+
+	//An entry for a map ---- word and its postings list
+	string currentWord;
+	vector<pair<long int , long int>> postingsForWord;
+
+	char filename[MAX_FILE_NAME_SIZE];
+	long int documentID, wordFreq;
+
+	sprintf(filename,"%s/%d.txt",globalIndexFolder.c_str(),processId);
+
+	FILE* fp = fopen(filename,"w");
+
+	vector<pair<long int, long int>>::iterator itr;
+
+	fprintf(fp,"\n--------------Index Begin--------------\n\n");
+
+	for(int i=0;i<noOfProcesses;i++)
+	{
+		final_map = receivedMaps[i];
+
+		fprintf(fp, "Partition %d ===> \n\n",i);
+
+		//Iterate over FINAL MAP
+		for(mapItr = final_map.begin(); mapItr!= final_map.end();mapItr++)
+		{	
+
+			//Get one entry from a map
+			currentWord = mapItr->first;
+			postingsForWord = mapItr->second;
+
+			fprintf(fp,"%s:\n",currentWord.c_str());
+
+			for(itr = postingsForWord.begin(); itr!=postingsForWord.end(); itr++)
+			{
+				documentID = itr->second;
+				wordFreq = itr->first;
+				fprintf(fp, "\t%ld : %ld \n", documentID, wordFreq);
+			}	
+		
+		}
+	}
+
+	fprintf(fp,"\n\n--------------Index Over--------------\n\n");
+
+	fclose(fp);
+}
+
+
+
+/***********************************************************************************************************************/
+
+
+
 int main(int argc, char** argv)
 {
-
 	int err;
 	int processId,noOfProcesses;
 	string currentFolder = ".";
@@ -81,15 +145,15 @@ int main(int argc, char** argv)
 	//Word Count Map for each document
    	unordered_map<string, long int> wordCountMap;
 
-   	//Inverted Index Map for whole documents in the local node
-   	vector<unordered_map<string, vector<pair<long int,long int>>>> invertedIndexMap(noOfProcesses);
-
 	//Parallelization starts
 	err = MPI_Init(&argc, &argv);
 
 	//Get Rank and Total no of processes
 	err = MPI_Comm_rank(MPI_COMM_WORLD, &processId);
 	err = MPI_Comm_size(MPI_COMM_WORLD, &noOfProcesses);
+
+   	//Inverted Index Map for whole documents in the local node
+   	vector<unordered_map<string, vector<pair<long int,long int>>>> invertedIndexMap(noOfProcesses);
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -98,10 +162,10 @@ int main(int argc, char** argv)
 	unordered_set<string> stopwords;
 	ifstream stopwordsStream;
 	stopwordsStream.open("stopwords.txt");
+	string stopWord;		
 
 	while(!stopwordsStream.eof())
 	{
-		string stopWord;		
 	   	getline(stopwordsStream, stopWord);
 
 	   	if(stopWord.empty())
@@ -116,7 +180,7 @@ int main(int argc, char** argv)
 	   	
 	   	stopwords.insert(stopWord);
 	}	
-
+	
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 		
 
 	//Mappers
@@ -138,7 +202,8 @@ int main(int argc, char** argv)
 	//array containing the partition index (0...(noOfProcesses)) for each alphabet
 	int partitionIndex[26];
 
-	int low,high;		
+	int low,high;
+
 	for(int k=0;k<(noOfProcesses);k++)
 	{
 		low = partitionSize*k;
@@ -154,6 +219,13 @@ int main(int argc, char** argv)
 
 	//partition to which a given word belongs
 	int correspondingPartition;
+	long int documentID, wordFreq;
+	ifstream inputFile;
+	string readLine;
+	int len;	
+ 	string currentWord;
+    unordered_map<string, long int>::iterator mapItr;
+    vector<pair<long int,long int>> documentsWithWord,mergedVector;
 
 	if (dp != NULL)
 	{
@@ -168,41 +240,34 @@ int main(int argc, char** argv)
 			}
 
 			//REVISIT IT
-			long int documentID = (processId-1)*noOfFiles+i;
-
-			//Start processing one document
-			ifstream fp;
+			documentID = (processId-1)*noOfFiles+i;
 
 			//Current file read
 
-			// cout<< ep->d_name <<endl;
 			sprintf(filename,"%d/%s",processId,ep->d_name);
-			fp.open(filename);
-
-   			string readLine;
+			inputFile.open(filename);
 
    			//Reading the document
-   			while(!fp.eof())
+   			while(!inputFile.eof())
    			{
    				//Reading document line by line 
-   			 	getline(fp, readLine);
+   			 	getline(inputFile, readLine);
 
    			 	if(readLine.empty())
    			 	{	 
    			 		continue;
    			 	}
 
-   			 	istringstream iss(readLine);
-   			 	string currentWord;
+   			 	istringstream iss(readLine);///////////////////////////////////////////////////////////
 
    			 	while(iss >> currentWord)
    			 	{
    			 		//Remove special characters and check if its a stopword
-   			 		int len;	
 				    for (int j = 0, len = currentWord.size(); j < len; j++)
 				    {
 				        // check whether parsing character is punctuation or not
-				        if (ispunct(currentWord[j]))
+				        //if (ispunct(currentWord[j]))
+				        if(!((currentWord[j]>='a' && currentWord[j]<='z')||(currentWord[j]>='A' && currentWord[j]<='Z')))
 				        {
 				            currentWord.erase(j--, 1);
 				            len = currentWord.size();
@@ -215,8 +280,7 @@ int main(int argc, char** argv)
 
 				    if(currentWord.empty())
 				    	continue;
-
-
+				    
 				    //Check for stopword
 					if(stopwords.find(currentWord)!=stopwords.end())
 					{
@@ -230,49 +294,44 @@ int main(int argc, char** argv)
    			}
 
    			//Closing the file
-   			fp.close();
+   			inputFile.close();
 
    			//When the document is processed and the file is closed
 
 		    //Start adding the words from the word count map to the inverted index map
-		    unordered_map<string, long int>::iterator itr;
-		    for (itr= wordCountMap.begin(); itr != wordCountMap.end(); itr++)
+		    for (mapItr= wordCountMap.begin(); mapItr != wordCountMap.end(); mapItr++)
 		    {
-	        	string currentWord = itr->first;
-	        	long int wordFreq = itr->second;
-	        	
-	        	
+	        	currentWord = mapItr->first;
+	        	wordFreq = mapItr->second;
+
 	        	correspondingPartition = partitionIndex[currentWord[0]-LOWEST_ALPHABET_ASCII];
-	        	// cout<<currentWord<<" : "<<wordFreq << endl;
-	        	 
+				//printf("%d %d %c\n",correspondingPartition,processId,currentWord[0]);
+	        	
 	        	//If the currentWord doesn't exist in invertedIndexMap
 	        	if(invertedIndexMap[correspondingPartition].find(currentWord) == invertedIndexMap[correspondingPartition].end())
 	        	{
-
 	        		vector<pair<long int,long int>> newVector;
 	        		newVector.push_back(make_pair(wordFreq,documentID)); 
 	        		invertedIndexMap[correspondingPartition][currentWord] = newVector;
 	        	}
-
 	        	//Otherwise make the document ID entry for the current word in its already existing map
 	        	else
 	        	{
-	        		vector<pair<long int,long int>> documentsWithWord = invertedIndexMap[correspondingPartition][currentWord];
+	        		documentsWithWord = invertedIndexMap[correspondingPartition][currentWord];
 	        		documentsWithWord.push_back(make_pair(wordFreq,documentID));
 	        		invertedIndexMap[correspondingPartition][currentWord] = documentsWithWord;
 	        	}
 
-	        	
 	        	//Only for printing
-	        	vector<pair<long int,long int>> documentsWithWord = invertedIndexMap[correspondingPartition][currentWord];
+	        	documentsWithWord = invertedIndexMap[correspondingPartition][currentWord];
 			    
 			    for (vecItr = documentsWithWord.begin(); vecItr != documentsWithWord.end(); vecItr++)
 			    {
-			    	cout << " DOC ID: " << vecItr->second << "  ==>  FREQ: " << vecItr->first << endl;
+			    	//cout << " DOC ID: " << vecItr->second << "  ==>  FREQ: " << vecItr->first << endl;
 			    }
 	        }
 
-	        cout << "One Document over" << endl;
+	        cout << "One Document over from Process: "<<filename<<" : " <<processId << endl;
 	        
 	        //Clearing the wordCountMap for processing new document
 	        wordCountMap.clear();
@@ -289,215 +348,122 @@ int main(int argc, char** argv)
 	    perror("Couldn't open the directory");
 	}
 
-	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
+	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr1;
 	for(int k=0;k<(noOfProcesses);k++)
 	{
-		for(mapItr=(invertedIndexMap[k]).begin();mapItr!=(invertedIndexMap[k]).end();mapItr++)
+		for(mapItr1=(invertedIndexMap[k]).begin();mapItr1!=(invertedIndexMap[k]).end();mapItr1++)
 		{
 			//sort the vectors containing word frequency along with document ID according to frequency for each word in invertedIndexMap
-			sort((mapItr->second).begin(), (mapItr->second).end(), sortinrev);
+			sort((mapItr1->second).begin(), (mapItr1->second).end(), sortinrev);
 		}
 	}
+
+	//Only for debugging - i.e printing local index into the files
+	printMaps(invertedIndexMap, noOfProcesses, processId, "LocalIndex");
 
 	//*******************************************ALL DOCUMENTS IN NODE ARE PROCESSESED****************************************//
 	
 	//send/receive the invertedIndexMap vector to/from other process
 
-
 	//***************** if documents size less ************************//
-	stringstream ss;
-	cereal::BinaryOutputArchive outArchive(ss);
-
-	string serializedMap[noOfProcesses];
-	int serializedStringSizes[noOfProcesses];
-	string combinedSerializedMapString;
-	int sendDisp[noOfProcesses];
-	int receiveDisp[noOfProcesses];
-	int receiveSizes[noOfProcesses];
-	int totalReceiveSize = 0;
-	int previousStringSize = 0;
-
-	for(int k=0;k<noOfProcesses;k++)
+	if(0)
 	{
-		outArchive(invertedIndexMap[k]);
-		serializedMap[k] = ss.str();
-		serializedStringSizes[k] = serializedMap[k].size();
-	
-		combinedSerializedMapString += serializedMap[k];
-	
-		sendDisp[k] = previousStringSize;
-		previousStringSize += serializedStringSizes[k];
-		ss.str("");
-		ss.clear();
-	}
-	
-	MPI_Alltoall(&(serializedStringSizes[0]), 1, MPI_LONG, &(receiveSizes[0]), 1, MPI_LONG, MPI_COMM_WORLD);
+		stringstream ss;
+		cereal::BinaryOutputArchive outArchive(ss);
 
-	previousStringSize = 0;
-	for(int k=0;k<noOfProcesses;k++)
-	{
-		totalReceiveSize += receiveSizes[k];
-		receiveDisp[k] = previousStringSize;
-		previousStringSize += receiveSizes[k];	
-	}
-	
-	string receivedSerializedMapString;
-	receivedSerializedMapString.resize(totalReceiveSize);
+		string serializedMap[noOfProcesses];
+		int serializedStringSizes[noOfProcesses];
+		string combinedSerializedMapString;
+		int sendDisp[noOfProcesses];
+		int receiveDisp[noOfProcesses];
+		int receiveSizes[noOfProcesses];
+		int totalReceiveSize = 0;
+		int previousStringSize = 0;
 
-	MPI_Alltoallv(&(combinedSerializedMapString[0]), &(serializedStringSizes[0]), &(sendDisp[0]), MPI_CHAR, &(receivedSerializedMapString[0]), &(receiveSizes[0]), &(receiveDisp[0]), MPI_CHAR, MPI_COMM_WORLD);
-
-	previousStringSize = 0;
-	stringstream newSS;
-	cereal::BinaryInputArchive inArchive(newSS);	
-	for(int k=0;k<noOfProcesses;k++)
-	{
-		newSS << receivedSerializedMapString.substr(previousStringSize,receiveSizes[k]);
-		cereal::BinaryInputArchive inArchive(newSS);
-		inArchive(invertedIndexMap[k]);
-		previousStringSize += receiveSizes[k];
-		newSS.str("");
-		newSS.clear();
-	}	
-
-	//**************** end ************************//
-
-
-
-	//**************** large sized documents ************************//
-	ofstream serializeFile;
-	cereal::BinaryOutputArchive outArchive(serializeFile);
-	
-	printf("hello %d\n",processId);
-
-	for(int k=0;k<noOfProcesses;k++)
-	{
-		serializeFile.open(to_string(k)+to_string(processId), std::ofstream::out | std::ofstream::trunc);
-		outArchive(invertedIndexMap[k]);
-		serializeFile.close();
-	}
-	
-	MPI_Barrier(MPI_COMM_WORLD);
-
-	ifstream inputSerializeFile;
-	cereal::BinaryInputArchive inArchive(inputSerializeFile);
-	for(int k=0;k<noOfProcesses;k++)
-	{
-		inputSerializeFile.open(to_string(processId)+to_string(k));
-		outArchive(invertedIndexMap[k]);
-		inputSerializeFile.close();
-	}
-
-	if(processId == 0)
-	{
-		unordered_map<string, vector<pair<long int,long int>>>::iterator itrBro;
-		vector<pair<long int,long int>>::iterator vecitr;
 		for(int k=0;k<noOfProcesses;k++)
 		{
-			cout << "invertedIndexMap " << k << endl;
-			for(itrBro=invertedIndexMap[k].begin();itrBro!=invertedIndexMap[k].end();itrBro++)
-			{
-				cout << itrBro->first << endl;
-				for(vecitr=(itrBro->second).begin();vecitr!=(itrBro->second).end();vecitr++)
-				{
-					cout << (vecitr->first) << " " << (vecitr->second) << endl;
-				}
-			}
-		}
-	}	
-	//**************** end ************************//
-
-
-	//Let every process finish off the mapping phase
-	err = MPI_Barrier(MPI_COMM_WORLD);
+			outArchive(invertedIndexMap[k]);
+			serializedMap[k] = ss.str();
+			serializedStringSizes[k] = serializedMap[k].size();	
+			combinedSerializedMapString += serializedMap[k];
 		
-	//*****************************************************REDUCE PHASE BEGINS******************************************************//
-	
-	//I have a string 
-	//I have vector of indices
-	//I have vector of postings -- i.e vector of pairs
-
-	/**str1:str2
-	long long ----- 2*size
-	indices 0 -- according to pairs
-	**/
-
-	/********************************************Previous Implementation***********************************************
-
-	unordered_map<string, vector<pair<long int,long int>>> final_map;
-	vector<pair<long int,long int>> mergedVector;
-
-	string words;
-	vector<long int> indices;
-	vector <long int> :: iterator indicesItr = indices.begin();
-	vector<long int> postings;
-	vector <long int> :: iterator postingsItr = postings.begin();
-
-	long int indexBegin, indexEnd;
-
-	istringstream iss(words);
-	string currentWord;
-
-	//Tokenize string using ':' as delimiter
-	while(getline(words, currentWord, ":"))
-	{		
-
-		indexBegin = *indicesItr;
-		++indicesItr;
-
-		if(indicesItr!=indices.end()){
-			indexEnd = *(indicesItr) -1;
+			sendDisp[k] = previousStringSize;
+			previousStringSize += serializedStringSizes[k];
+			ss.str("");
+			ss.clear();
 		}
-		else{
-			indexEnd = postings.size()-2;
-		}
+		
+		MPI_Alltoall(&(serializedStringSizes[0]), 1, MPI_INT, &(receiveSizes[0]), 1, MPI_INT, MPI_COMM_WORLD);
 
-		//Make a new vector
-		vector<pair<long int , long int>> postingsForWord;
-		for(int j=0;j<(indexEnd - indexBegin)+1;j++){
-			
-			long int wordFreq = *postingsItr;
-			
-			*postingsItr++;
-			long int documentID = *postingsItr;
-			
-			postingsForWord.push_back(make_pair(wordFreq,documentID));
-
-
-			//Move in stride of two
-			*postingsItr++; 
-		}
-
-		//Put the posting list for the word in the map
-		if(final_map.find(currentWord) == final_map.end())
+		previousStringSize = 0;
+		for(int k=0;k<noOfProcesses;k++)
 		{
-			final_map[currentWord] = postingsForWord;
+			totalReceiveSize += receiveSizes[k];
+			receiveDisp[k] = previousStringSize;
+			previousStringSize += receiveSizes[k];	
 		}
+		
+		string receivedSerializedMapString;
+		receivedSerializedMapString.resize(totalReceiveSize);
 
-       	//Otherwise merge the existing posting list with this one
-       	else
-       	{
-       		vector<pair<long int,long int>> documentsWithWord = final_map[currentWord];
-       		mergedVector = mergeVectors(documentsWithWord, postingsForWord);
-       		final_map[currentWord] = mergedVector;
-       	}
+		MPI_Alltoallv(&(combinedSerializedMapString[0]), &(serializedStringSizes[0]), &(sendDisp[0]), MPI_CHAR, &(receivedSerializedMapString[0]), &(receiveSizes[0]), &(receiveDisp[0]), MPI_CHAR, MPI_COMM_WORLD);
+
+		previousStringSize = 0;
+		stringstream newSS;
+		cereal::BinaryInputArchive inArchive(newSS);	
+		for(int k=0;k<noOfProcesses;k++)
+		{
+			newSS << receivedSerializedMapString.substr(previousStringSize,receiveSizes[k]);
+			cereal::BinaryInputArchive inArchive(newSS);
+			inArchive(invertedIndexMap[k]);
+			previousStringSize += receiveSizes[k];
+			newSS.str("");
+			newSS.clear();
+		}	
 	}
 
-	*********************************************************************************************************************/
+	//**************** end ************************//
 
+	//**************** large sized documents ************************//
+	else
+	{
+		ofstream serializeFile;
+		cereal::BinaryOutputArchive outArchive(serializeFile);
+		
+		for(int k=0;k<noOfProcesses;k++)
+		{
+			serializeFile.open(to_string(k)+to_string(processId), std::ofstream::out | std::ofstream::trunc);
+			outArchive(invertedIndexMap[k]);
+			serializeFile.close();
+		}
+		
+		MPI_Barrier(MPI_COMM_WORLD);
+
+		ifstream inputSerializeFile;
+		cereal::BinaryInputArchive inArchive(inputSerializeFile);
+		for(int k=0;k<noOfProcesses;k++)
+		{
+			inputSerializeFile.open(to_string(processId)+to_string(k));
+			inArchive(invertedIndexMap[k]);
+			inputSerializeFile.close();
+		}
+	}
+
+	printMaps(invertedIndexMap, noOfProcesses, processId, "Merged");
+
+	//**************** end ************************//
+	
+	//*****************************************************REDUCE PHASE BEGINS******************************************************//
+	
 	//New Implementation
-/*
 	unordered_map<string, vector<pair<long int,long int>>> final_map, localMap;
-	unordered_map<string, vector<pair<long int,long int>>>::iterator mapItr;
-
+	
 	//Received Maps from AllGatherV
-	vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps (noOfProcesses);
+	//vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps (noOfProcesses);
 
-	//Postings list for a word
-	vector<pair<long int,long int>> documentsWithWord,mergedVector;
-
+	vector<unordered_map<string, vector<pair<long int,long int>>>> receivedMaps = invertedIndexMap;
 	
 	//An entry for a map ---- word and its postings list
-	string currentWord;
 	vector<pair<long int , long int>> postingsForWord;
 
 
@@ -508,12 +474,12 @@ int main(int argc, char** argv)
 		localMap = receivedMaps[k];
 
 		//Iterate over one map
-		for(mapItr = localMap.begin(); mapItr!= localMap.end(); mapItr++)
+		for(mapItr1 = localMap.begin(); mapItr1!= localMap.end(); mapItr1++)
 		{
 			
 			//Get one entry from a map
-			currentWord = mapItr->first;
-			postingsForWord = mapItr->second;
+			currentWord = mapItr1->first;
+			postingsForWord = mapItr1->second;
 
 			//If it doesn't exists in the final map, make a new entry
 			if(final_map.find(currentWord) == final_map.end())
@@ -533,41 +499,35 @@ int main(int argc, char** argv)
 
 	}
 
-
 	/*****************************************************Final Map is Ready********************************************/
 
 	//Now write it into file
 
 	//Assuming the distributed global index files are in a folder and file name will be the process id
-/*
+
 	string globalIndexFolder = "GlobalIndex";
-
-	char filename[MAX_FILE_NAME_SIZE];
-
-	sprintf(filename,"%s/%d.txt",globalIndexFolder,processId);
+	
+	sprintf(filename,"%s/%d.txt",globalIndexFolder.c_str(),processId);
 
 	FILE* fp = fopen(filename,"w");
 
 	vector<pair<long int, long int>>::iterator itr;
 
-	long int documentID, wordFreq;
-
 	fprintf(fp,"\n--------------Index Begin--------------\n\n");
 
 	//Iterate over FINAL MAP
-	for(mapItr = final_map.begin(); mapItr!= final_map.end();mapItr++)
+	for(mapItr1 = final_map.begin(); mapItr1!= final_map.end();mapItr1++)
 	{	
-
 		//Get one entry from a map
-		currentWord = mapItr->first;
-		postingsForWord = mapItr->second;
+		currentWord = mapItr1->first;
+		postingsForWord = mapItr1->second;
 
-		fprintf(fp,"%s:\n",currentWord);
+		fprintf(fp,"%s:\n",currentWord.c_str());
 
 		for(itr = postingsForWord.begin(); itr!=postingsForWord.end(); itr++)
 		{
-			documentID = itr->first;
-			wordFreq = itr->second;
+			documentID = itr->second;
+			wordFreq = itr->first;
 			fprintf(fp, "\t%ld : %ld \n", documentID, wordFreq);
 		}	
 	
@@ -576,8 +536,9 @@ int main(int argc, char** argv)
 	fprintf(fp,"\n\n--------------Index Over--------------\n\n");
 
 	fclose(fp);
-*/
+
 	err = MPI_Finalize();
 	return 0;
 		
 }
+

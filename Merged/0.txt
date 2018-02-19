@@ -1,0 +1,2068 @@
+
+--------------Index Begin--------------
+
+Partition 0 ===> 
+
+disposal:
+	-2 : 1 
+desirous:
+	-2 : 1 
+	-1 : 1 
+begin:
+	-2 : 1 
+difficult:
+	-2 : 1 
+	-1 : 1 
+favourite:
+	-2 : 1 
+boy:
+	-3 : 2 
+	-1 : 2 
+	-2 : 1 
+extensive:
+	-1 : 1 
+favour:
+	-2 : 1 
+bore:
+	-3 : 1 
+eat:
+	-1 : 2 
+dependent:
+	-2 : 2 
+	-1 : 2 
+feet:
+	-2 : 1 
+children:
+	-2 : 1 
+believing:
+	-2 : 1 
+delicate:
+	-1 : 1 
+cold:
+	-2 : 1 
+contrasted:
+	-1 : 2 
+attention:
+	-2 : 1 
+cottage:
+	-2 : 2 
+certainty:
+	-2 : 1 
+fat:
+	-2 : 2 
+dried:
+	-2 : 1 
+enjoyed:
+	-2 : 1 
+dearest:
+	-2 : 1 
+arose:
+	-3 : 1 
+carried:
+	-2 : 1 
+	-1 : 1 
+anxious:
+	-2 : 1 
+apartments:
+	-2 : 1 
+enjoyment:
+	-2 : 1 
+arise:
+	-2 : 1 
+disposed:
+	-2 : 1 
+concern:
+	-2 : 1 
+behaviour:
+	-2 : 1 
+figure:
+	-2 : 1 
+	-1 : 1 
+bred:
+	-2 : 1 
+discretion:
+	-3 : 1 
+	-1 : 1 
+demesne:
+	-1 : 1 
+case:
+	-2 : 1 
+	-1 : 1 
+blessing:
+	-2 : 1 
+future:
+	-2 : 1 
+debating:
+	-2 : 1 
+believed:
+	-2 : 1 
+declared:
+	-2 : 1 
+forming:
+	-2 : 3 
+draw:
+	-2 : 1 
+	-1 : 1 
+county:
+	-1 : 1 
+early:
+	-2 : 1 
+	-1 : 1 
+afraid:
+	-2 : 1 
+demands:
+	-2 : 1 
+	-1 : 1 
+allowance:
+	-1 : 1 
+estimating:
+	-3 : 1 
+	-2 : 1 
+	-1 : 1 
+found:
+	-3 : 1 
+families:
+	-1 : 1 
+evening:
+	-2 : 2 
+arrived:
+	-3 : 1 
+	-1 : 1 
+considered:
+	-3 : 2 
+	-2 : 1 
+	-1 : 1 
+dispatched:
+	-3 : 1 
+	-1 : 1 
+extremity:
+	-2 : 1 
+add:
+	-3 : 2 
+	-2 : 1 
+directly:
+	-2 : 1 
+	-1 : 1 
+discovered:
+	-3 : 1 
+	-1 : 1 
+drew:
+	-1 : 1 
+exquisite:
+	-3 : 1 
+	-1 : 1 
+concealed:
+	-2 : 1 
+denied:
+	-3 : 1 
+article:
+	-2 : 2 
+	-3 : 1 
+abroad:
+	-2 : 1 
+feelings:
+	-1 : 1 
+dear:
+	-3 : 1 
+favourable:
+	-2 : 2 
+	-1 : 1 
+alteration:
+	-2 : 2 
+	-3 : 1 
+	-1 : 1 
+collecting:
+	-1 : 1 
+calm:
+	-3 : 1 
+admiration:
+	-2 : 1 
+	-1 : 1 
+elegance:
+	-1 : 2 
+	-3 : 1 
+company:
+	-1 : 1 
+feel:
+	-3 : 1 
+	-2 : 1 
+	-1 : 1 
+females:
+	-1 : 1 
+estimable:
+	-2 : 1 
+	-1 : 1 
+expense:
+	-2 : 1 
+explain:
+	-1 : 1 
+basket:
+	-2 : 1 
+esteem:
+	-2 : 1 
+evil:
+	-2 : 2 
+expression:
+	-3 : 2 
+	-2 : 2 
+	-1 : 2 
+evident:
+	-3 : 1 
+	-1 : 1 
+face:
+	-2 : 2 
+	-3 : 1 
+express:
+	-3 : 1 
+	-2 : 1 
+discovery:
+	-3 : 1 
+	-2 : 1 
+existence:
+	-1 : 1 
+felicity:
+	-2 : 1 
+admitted:
+	-2 : 1 
+delay:
+	-1 : 1 
+afford:
+	-2 : 1 
+	-1 : 1 
+front:
+	-1 : 1 
+admire:
+	-3 : 1 
+	-2 : 1 
+entreaties:
+	-3 : 2 
+	-1 : 1 
+account:
+	-2 : 1 
+	-1 : 1 
+contented:
+	-1 : 1 
+downs:
+	-3 : 1 
+easy:
+	-1 : 1 
+domestic:
+	-2 : 2 
+design:
+	-2 : 1 
+devonshire:
+	-1 : 2 
+day:
+	-1 : 4 
+	-3 : 1 
+conviction:
+	-2 : 1 
+	-1 : 1 
+fine:
+	-2 : 1 
+chatty:
+	-2 : 1 
+additions:
+	-2 : 1 
+entered:
+	-2 : 1 
+fertile:
+	-1 : 1 
+comfort:
+	-3 : 1 
+	-1 : 1 
+advantage:
+	-1 : 2 
+	-2 : 1 
+exposed:
+	-2 : 1 
+	-1 : 1 
+disposing:
+	-2 : 1 
+concerns:
+	-1 : 1 
+conduct:
+	-2 : 1 
+attending:
+	-2 : 1 
+china:
+	-1 : 1 
+cordial:
+	-2 : 1 
+admitting:
+	-2 : 1 
+delighted:
+	-1 : 1 
+feeling:
+	-1 : 1 
+civility:
+	-2 : 1 
+direction:
+	-2 : 1 
+	-1 : 1 
+belonging:
+	-2 : 1 
+	-1 : 1 
+chiefly:
+	-2 : 1 
+earnestly:
+	-1 : 2 
+behaved:
+	-2 : 1 
+end:
+	-1 : 5 
+drawings:
+	-2 : 1 
+find:
+	-1 : 1 
+advantages:
+	-2 : 2 
+	-1 : 1 
+effect:
+	-1 : 1 
+friendship:
+	-2 : 1 
+elinor:
+	-2 : 1 
+departure:
+	-1 : 1 
+answered:
+	-2 : 2 
+excuse:
+	-2 : 2 
+doubtful:
+	-2 : 1 
+determine:
+	-2 : 1 
+enable:
+	-1 : 2 
+	-2 : 1 
+compliment:
+	-2 : 1 
+dwelling:
+	-1 : 2 
+decay:
+	-2 : 1 
+bed:
+	-1 : 3 
+	-2 : 1 
+commanded:
+	-1 : 1 
+country:
+	-2 : 1 
+easily:
+	-2 : 1 
+	-1 : 1 
+change:
+	-2 : 1 
+calling:
+	-2 : 1 
+	-1 : 1 
+estate:
+	-1 : 1 
+blind:
+	-1 : 1 
+ferrars:
+	-1 : 1 
+assure:
+	-1 : 1 
+adapted:
+	-1 : 1 
+chamber:
+	-1 : 1 
+full:
+	-1 : 1 
+cousins:
+	-1 : 1 
+delight:
+	-1 : 1 
+dissimilar:
+	-1 : 2 
+dining:
+	-1 : 1 
+elderly:
+	-1 : 1 
+added:
+	-1 : 1 
+diminution:
+	-1 : 1 
+excellent:
+	-1 : 2 
+asked:
+	-1 : 1 
+deal:
+	-1 : 1 
+continual:
+	-1 : 1 
+fancy:
+	-1 : 1 
+connection:
+	-1 : 1 
+distance:
+	-1 : 1 
+acceptance:
+	-1 : 1 
+civilly:
+	-1 : 1 
+enabled:
+	-1 : 1 
+companions:
+	-1 : 2 
+agreed:
+	-1 : 1 
+father:
+	-1 : 1 
+expenses:
+	-1 : 1 
+affronting:
+	-1 : 1 
+frankness:
+	-1 : 1 
+assurance:
+	-1 : 1 
+aware:
+	-1 : 1 
+collected:
+	-1 : 1 
+denoting:
+	-1 : 1 
+affixed:
+	-1 : 2 
+age:
+	-1 : 3 
+address:
+	-1 : 1 
+effects:
+	-1 : 1 
+diverted:
+	-1 : 1 
+appetite:
+	-1 : 2 
+Partition 1 ===> 
+
+admiration:
+	2 : 1 
+affronting:
+	2 : 1 
+finished:
+	2 : 1 
+company:
+	1 : 1 
+contempt:
+	2 : 1 
+ability:
+	1 : 1 
+cheerful:
+	2 : 1 
+china:
+	1 : 2 
+doors:
+	2 : 1 
+convinced:
+	2 : 1 
+denoting:
+	1 : 1 
+begin:
+	0 : 2 
+abroad:
+	1 : 1 
+estimable:
+	2 : 2 
+feelings:
+	2 : 2 
+	1 : 1 
+bringing:
+	2 : 1 
+dwelling:
+	1 : 1 
+	2 : 1 
+effects:
+	1 : 1 
+engage:
+	1 : 1 
+aware:
+	1 : 2 
+friendship:
+	1 : 2 
+	2 : 1 
+evening:
+	1 : 2 
+estimating:
+	1 : 2 
+debating:
+	2 : 1 
+day:
+	2 : 3 
+	1 : 1 
+fail:
+	1 : 1 
+end:
+	0 : 4 
+	1 : 2 
+	2 : 1 
+calling:
+	1 : 1 
+confined:
+	1 : 1 
+change:
+	1 : 1 
+advantages:
+	1 : 1 
+	2 : 1 
+connection:
+	1 : 1 
+	2 : 1 
+explain:
+	0 : 1 
+forty:
+	0 : 1 
+blush:
+	0 : 1 
+face:
+	2 : 2 
+curiosity:
+	0 : 1 
+agreed:
+	1 : 2 
+admitted:
+	0 : 1 
+	1 : 1 
+child:
+	0 : 1 
+draw:
+	0 : 1 
+attended:
+	2 : 1 
+extremity:
+	0 : 1 
+	1 : 1 
+direct:
+	0 : 1 
+concealed:
+	0 : 1 
+entrance:
+	0 : 1 
+delightful:
+	1 : 1 
+	2 : 1 
+boisterous:
+	0 : 1 
+	1 : 1 
+extensive:
+	1 : 1 
+fact:
+	0 : 1 
+boy:
+	0 : 2 
+	2 : 1 
+determine:
+	0 : 1 
+	1 : 1 
+	2 : 1 
+concluded:
+	1 : 2 
+	0 : 1 
+arranging:
+	0 : 1 
+	1 : 1 
+carried:
+	0 : 1 
+	1 : 1 
+bed:
+	0 : 3 
+	2 : 3 
+	1 : 1 
+breakfast:
+	0 : 2 
+engaged:
+	0 : 1 
+	1 : 1 
+entered:
+	0 : 1 
+additions:
+	0 : 1 
+	2 : 1 
+chief:
+	0 : 1 
+	1 : 1 
+	2 : 1 
+decisively:
+	0 : 2 
+companions:
+	0 : 1 
+	1 : 1 
+discovered:
+	0 : 2 
+	1 : 1 
+	2 : 1 
+eyes:
+	1 : 1 
+compass:
+	0 : 1 
+directly:
+	1 : 1 
+event:
+	1 : 1 
+ecstatic:
+	0 : 1 
+	1 : 1 
+agreeable:
+	0 : 1 
+extent:
+	1 : 1 
+	2 : 1 
+compact:
+	0 : 1 
+devonshire:
+	0 : 1 
+design:
+	2 : 1 
+ferrars:
+	0 : 2 
+assure:
+	0 : 1 
+adapted:
+	1 : 1 
+feeling:
+	1 : 1 
+behaved:
+	1 : 2 
+	0 : 1 
+difficulty:
+	1 : 1 
+existence:
+	0 : 2 
+	2 : 1 
+discovery:
+	0 : 1 
+	1 : 1 
+	2 : 1 
+case:
+	0 : 1 
+	2 : 1 
+blessing:
+	2 : 1 
+add:
+	0 : 2 
+	2 : 1 
+depending:
+	0 : 2 
+disposal:
+	0 : 1 
+	2 : 1 
+children:
+	0 : 1 
+delicate:
+	0 : 1 
+	2 : 1 
+edward:
+	0 : 1 
+	1 : 1 
+extremely:
+	0 : 1 
+front:
+	0 : 1 
+	1 : 1 
+dull:
+	0 : 1 
+cold:
+	2 : 1 
+contrasted:
+	1 : 3 
+avoid:
+	0 : 1 
+	2 : 1 
+elderly:
+	0 : 1 
+differed:
+	2 : 1 
+believed:
+	0 : 2 
+arose:
+	2 : 1 
+continual:
+	0 : 3 
+entire:
+	2 : 1 
+elinor:
+	0 : 1 
+esteem:
+	2 : 1 
+explained:
+	0 : 1 
+chatty:
+	2 : 1 
+effect:
+	2 : 1 
+excuse:
+	2 : 1 
+cordially:
+	2 : 2 
+danger:
+	2 : 1 
+eagerness:
+	0 : 1 
+calm:
+	2 : 1 
+called:
+	2 : 1 
+answered:
+	2 : 1 
+fruit:
+	0 : 1 
+collected:
+	2 : 1 
+certainty:
+	2 : 2 
+fat:
+	2 : 3 
+	1 : 2 
+continued:
+	2 : 1 
+exquisite:
+	2 : 1 
+extended:
+	2 : 1 
+announcing:
+	2 : 1 
+domestic:
+	2 : 1 
+early:
+	2 : 1 
+dried:
+	2 : 1 
+enjoyed:
+	0 : 1 
+friendly:
+	2 : 1 
+dependent:
+	2 : 1 
+colonel:
+	1 : 2 
+	0 : 1 
+abode:
+	2 : 1 
+excited:
+	1 : 1 
+door:
+	2 : 1 
+found:
+	2 : 2 
+bore:
+	2 : 1 
+afford:
+	1 : 1 
+forming:
+	1 : 2 
+eat:
+	0 : 4 
+beloved:
+	0 : 1 
+discretion:
+	1 : 2 
+	2 : 2 
+	0 : 1 
+answer:
+	0 : 1 
+frankness:
+	0 : 1 
+	1 : 1 
+attempt:
+	0 : 1 
+drift:
+	0 : 1 
+astonished:
+	0 : 1 
+civil:
+	0 : 1 
+exeter:
+	0 : 1 
+education:
+	0 : 2 
+	1 : 1 
+	2 : 1 
+equal:
+	1 : 1 
+conviction:
+	0 : 1 
+	1 : 1 
+	2 : 1 
+enquire:
+	0 : 1 
+females:
+	0 : 1 
+detract:
+	0 : 1 
+	1 : 1 
+expression:
+	1 : 1 
+conduct:
+	0 : 1 
+delay:
+	0 : 1 
+assistance:
+	0 : 1 
+began:
+	0 : 2 
+ample:
+	2 : 2 
+	0 : 1 
+dear:
+	0 : 1 
+conveying:
+	0 : 2 
+	1 : 1 
+	2 : 1 
+comfort:
+	0 : 2 
+	2 : 1 
+delighted:
+	0 : 1 
+cultivated:
+	0 : 1 
+country:
+	1 : 1 
+delivered:
+	0 : 1 
+	2 : 1 
+furniture:
+	0 : 3 
+death:
+	0 : 1 
+entreaties:
+	1 : 1 
+disposing:
+	0 : 1 
+	1 : 1 
+	2 : 1 
+considered:
+	0 : 1 
+	1 : 1 
+arrived:
+	1 : 1 
+forbade:
+	1 : 2 
+drew:
+	1 : 1 
+call:
+	0 : 1 
+	1 : 1 
+denied:
+	0 : 1 
+comparison:
+	1 : 2 
+	0 : 1 
+	2 : 1 
+cordial:
+	1 : 2 
+	0 : 1 
+age:
+	1 : 3 
+	0 : 1 
+	2 : 1 
+affixed:
+	0 : 1 
+	1 : 1 
+diverted:
+	0 : 1 
+	1 : 1 
+attending:
+	0 : 1 
+	1 : 1 
+father:
+	0 : 1 
+	1 : 1 
+folly:
+	0 : 1 
+	1 : 1 
+	2 : 1 
+denote:
+	0 : 1 
+	1 : 1 
+added:
+	0 : 1 
+dissimilar:
+	1 : 2 
+acuteness:
+	0 : 1 
+	2 : 1 
+earnestly:
+	0 : 2 
+	1 : 1 
+commanded:
+	0 : 1 
+	2 : 1 
+chiefly:
+	0 : 1 
+distrusts:
+	0 : 2 
+	2 : 1 
+enable:
+	0 : 1 
+	2 : 1 
+addition:
+	0 : 1 
+	2 : 1 
+excellent:
+	0 : 1 
+elegance:
+	1 : 1 
+	2 : 1 
+earnest:
+	1 : 1 
+collecting:
+	1 : 1 
+	2 : 1 
+alteration:
+	1 : 1 
+downs:
+	0 : 1 
+friends:
+	1 : 2 
+farther:
+	1 : 1 
+court:
+	1 : 1 
+asked:
+	1 : 1 
+distant:
+	1 : 1 
+	2 : 1 
+continuing:
+	1 : 1 
+fifteen:
+	0 : 1 
+excellence:
+	1 : 1 
+consisted:
+	1 : 1 
+branched:
+	1 : 1 
+chapter:
+	0 : 1 
+apartments:
+	1 : 1 
+	2 : 1 
+depart:
+	1 : 2 
+enjoy:
+	2 : 2 
+enjoyment:
+	1 : 1 
+desirous:
+	2 : 2 
+	0 : 1 
+believing:
+	1 : 1 
+engrossed:
+	0 : 1 
+	1 : 1 
+easily:
+	1 : 1 
+advantage:
+	1 : 1 
+clothes:
+	2 : 1 
+concern:
+	1 : 1 
+distance:
+	2 : 1 
+frequently:
+	1 : 2 
+	2 : 1 
+felicity:
+	1 : 1 
+	2 : 1 
+departure:
+	0 : 2 
+attachment:
+	1 : 2 
+acceptance:
+	1 : 1 
+	2 : 1 
+branch:
+	1 : 1 
+furnished:
+	0 : 2 
+appetite:
+	1 : 1 
+	2 : 1 
+Partition 2 ===> 
+
+change:
+	5 : 1 
+eagerness:
+	5 : 1 
+calm:
+	4 : 1 
+consulted:
+	5 : 1 
+cordial:
+	5 : 1 
+discourse:
+	5 : 1 
+feeling:
+	5 : 1 
+extremely:
+	5 : 1 
+account:
+	3 : 1 
+collected:
+	4 : 1 
+formed:
+	5 : 1 
+additions:
+	4 : 1 
+	5 : 1 
+abode:
+	4 : 1 
+	5 : 1 
+delightful:
+	4 : 1 
+day:
+	4 : 2 
+existence:
+	4 : 2 
+	5 : 1 
+difficulty:
+	4 : 1 
+females:
+	4 : 1 
+effects:
+	4 : 1 
+attention:
+	4 : 2 
+	5 : 1 
+downs:
+	4 : 1 
+alteration:
+	3 : 1 
+	4 : 1 
+	5 : 1 
+desire:
+	4 : 2 
+engrossed:
+	4 : 1 
+believing:
+	5 : 1 
+exertion:
+	5 : 1 
+deal:
+	4 : 1 
+explained:
+	5 : 2 
+	4 : 1 
+direction:
+	4 : 1 
+	5 : 1 
+bed:
+	5 : 2 
+court:
+	4 : 2 
+front:
+	4 : 1 
+case:
+	4 : 1 
+	5 : 1 
+blessing:
+	4 : 1 
+add:
+	3 : 2 
+	4 : 2 
+affronting:
+	5 : 1 
+excellent:
+	5 : 1 
+dispatched:
+	5 : 1 
+extremity:
+	5 : 2 
+dependent:
+	5 : 2 
+adapted:
+	5 : 1 
+furniture:
+	4 : 1 
+full:
+	5 : 2 
+drift:
+	3 : 1 
+expense:
+	5 : 1 
+attacks:
+	4 : 1 
+forty:
+	4 : 1 
+advantage:
+	4 : 1 
+	5 : 1 
+drawn:
+	5 : 1 
+feel:
+	5 : 1 
+found:
+	5 : 1 
+door:
+	5 : 1 
+find:
+	3 : 1 
+	4 : 1 
+acuteness:
+	5 : 2 
+dissimilar:
+	3 : 1 
+	5 : 1 
+apartments:
+	5 : 1 
+allowance:
+	5 : 1 
+early:
+	5 : 1 
+contempt:
+	3 : 1 
+	4 : 1 
+domestic:
+	5 : 1 
+forfeited:
+	5 : 1 
+fact:
+	3 : 1 
+boy:
+	5 : 2 
+	4 : 1 
+extensive:
+	4 : 1 
+	5 : 1 
+connection:
+	5 : 2 
+direct:
+	5 : 2 
+concealed:
+	4 : 1 
+entrance:
+	4 : 1 
+fruit:
+	5 : 1 
+dare:
+	5 : 1 
+distant:
+	5 : 1 
+brother:
+	5 : 1 
+dissuade:
+	3 : 1 
+collecting:
+	4 : 1 
+entered:
+	4 : 1 
+	5 : 1 
+company:
+	4 : 1 
+discretion:
+	3 : 1 
+bred:
+	5 : 1 
+begin:
+	3 : 1 
+enjoyment:
+	5 : 1 
+desirous:
+	3 : 1 
+ashamed:
+	3 : 1 
+enquire:
+	3 : 1 
+	5 : 1 
+beloved:
+	4 : 1 
+blush:
+	3 : 1 
+	4 : 1 
+barton:
+	3 : 1 
+exeter:
+	3 : 2 
+education:
+	4 : 1 
+	5 : 1 
+affixed:
+	4 : 1 
+age:
+	3 : 1 
+	4 : 1 
+	5 : 1 
+fat:
+	3 : 2 
+certainty:
+	4 : 2 
+	5 : 2 
+cottage:
+	3 : 2 
+	4 : 1 
+agreeable:
+	3 : 1 
+behaved:
+	3 : 1 
+	4 : 1 
+	5 : 1 
+drawings:
+	5 : 1 
+end:
+	4 : 4 
+	5 : 3 
+admiration:
+	3 : 2 
+answered:
+	3 : 1 
+confined:
+	3 : 1 
+evil:
+	5 : 1 
+agreed:
+	3 : 2 
+	5 : 1 
+curiosity:
+	4 : 1 
+enabled:
+	3 : 1 
+	4 : 1 
+formal:
+	3 : 1 
+	5 : 1 
+enjoyed:
+	3 : 1 
+dried:
+	3 : 1 
+concerns:
+	3 : 1 
+arrived:
+	4 : 2 
+considered:
+	3 : 1 
+	4 : 1 
+chicken:
+	4 : 1 
+	5 : 1 
+eldest:
+	5 : 1 
+entreaties:
+	4 : 1 
+abilities:
+	3 : 1 
+	5 : 1 
+attended:
+	4 : 1 
+afraid:
+	3 : 1 
+	4 : 1 
+demands:
+	3 : 1 
+draw:
+	5 : 1 
+eyes:
+	3 : 1 
+	4 : 1 
+compass:
+	5 : 1 
+directly:
+	3 : 1 
+burst:
+	4 : 1 
+fortune:
+	3 : 1 
+discovered:
+	4 : 2 
+drew:
+	5 : 1 
+enable:
+	3 : 1 
+explain:
+	4 : 1 
+busy:
+	3 : 1 
+estimable:
+	3 : 1 
+abroad:
+	3 : 1 
+amiable:
+	3 : 1 
+	4 : 1 
+books:
+	4 : 1 
+assurance:
+	3 : 1 
+	5 : 1 
+absolute:
+	4 : 2 
+aware:
+	4 : 1 
+betrayed:
+	3 : 1 
+	4 : 1 
+cordially:
+	3 : 2 
+	5 : 2 
+friends:
+	3 : 1 
+	4 : 1 
+fond:
+	3 : 1 
+	5 : 1 
+cheerful:
+	3 : 2 
+design:
+	3 : 2 
+devonshire:
+	4 : 2 
+	5 : 2 
+conviction:
+	3 : 1 
+	4 : 1 
+depending:
+	4 : 1 
+	5 : 1 
+cheered:
+	4 : 1 
+elderly:
+	3 : 1 
+	4 : 1 
+	5 : 1 
+address:
+	3 : 1 
+dashwood:
+	4 : 2 
+clothes:
+	4 : 2 
+	3 : 1 
+concern:
+	3 : 1 
+behaviour:
+	5 : 1 
+branch:
+	3 : 1 
+charmed:
+	3 : 1 
+future:
+	3 : 1 
+dinner:
+	3 : 1 
+bore:
+	4 : 1 
+eat:
+	4 : 2 
+	3 : 1 
+	5 : 1 
+forming:
+	3 : 2 
+feebly:
+	3 : 1 
+announcing:
+	3 : 1 
+	4 : 1 
+extended:
+	3 : 1 
+	4 : 1 
+	5 : 1 
+chief:
+	4 : 1 
+debating:
+	4 : 1 
+expect:
+	3 : 2 
+fine:
+	5 : 1 
+concluded:
+	4 : 1 
+	5 : 1 
+arranging:
+	4 : 1 
+arise:
+	5 : 1 
+applauded:
+	5 : 1 
+denote:
+	3 : 1 
+delicate:
+	4 : 1 
+children:
+	4 : 1 
+advantages:
+	3 : 1 
+	5 : 1 
+ferrars:
+	3 : 3 
+	5 : 1 
+celebrated:
+	5 : 2 
+	3 : 1 
+dwelling:
+	3 : 1 
+	5 : 1 
+advanced:
+	3 : 1 
+	4 : 1 
+conveying:
+	4 : 1 
+ample:
+	4 : 1 
+dear:
+	4 : 1 
+	5 : 1 
+favourite:
+	3 : 1 
+	4 : 1 
+child:
+	3 : 1 
+	4 : 1 
+	5 : 1 
+active:
+	3 : 1 
+esteem:
+	3 : 2 
+dull:
+	3 : 1 
+breeding:
+	3 : 1 
+fertile:
+	3 : 1 
+comfort:
+	4 : 1 
+cold:
+	3 : 1 
+appetite:
+	3 : 1 
+furnished:
+	4 : 1 
+colonel:
+	4 : 1 
+bachelor:
+	4 : 1 
+convinced:
+	5 : 1 
+country:
+	4 : 1 
+cultivated:
+	5 : 1 
+contained:
+	4 : 1 
+	5 : 1 
+exercise:
+	4 : 1 
+arose:
+	4 : 1 
+depart:
+	5 : 1 
+enjoy:
+	4 : 1 
+	5 : 1 
+friendship:
+	4 : 1 
+	5 : 1 
+decisively:
+	4 : 1 
+	5 : 1 
+exquisite:
+	5 : 1 
+daughter:
+	4 : 1 
+ecstatic:
+	4 : 1 
+dashwoods:
+	4 : 1 
+agreement:
+	5 : 2 
+	4 : 1 
+carriage:
+	4 : 1 
+astonished:
+	4 : 1 
+chamber:
+	5 : 1 
+doubt:
+	4 : 1 
+detract:
+	4 : 1 
+appearance:
+	3 : 1 
+attempt:
+	4 : 1 
+excellence:
+	3 : 2 
+	4 : 1 
+fifteen:
+	4 : 1 
+fully:
+	4 : 1 
+building:
+	4 : 2 
+	3 : 1 
+doubtful:
+	4 : 3 
+declared:
+	4 : 2 
+frequently:
+	4 : 2 
+distance:
+	3 : 1 
+	4 : 1 
+breakfast:
+	4 : 1 
+	5 : 1 
+engaged:
+	4 : 1 
+commanded:
+	5 : 1 
+assistance:
+	3 : 1 
+	4 : 1 
+delay:
+	4 : 1 
+began:
+	4 : 1 
+conduct:
+	4 : 2 
+belonging:
+	4 : 2 
+frankness:
+	4 : 2 
+	5 : 2 
+departure:
+	4 : 2 
+	5 : 1 
+felicity:
+	4 : 1 
+attachment:
+	4 : 2 
+	3 : 1 
+Partition 3 ===> 
+
+exposed:
+	8 : 2 
+contempt:
+	6 : 1 
+	7 : 1 
+daughters:
+	8 : 1 
+departure:
+	7 : 1 
+attachment:
+	6 : 1 
+finished:
+	8 : 1 
+company:
+	6 : 1 
+farther:
+	8 : 1 
+elderly:
+	8 : 1 
+full:
+	8 : 1 
+fond:
+	8 : 1 
+cheerful:
+	8 : 1 
+china:
+	8 : 1 
+advanced:
+	8 : 1 
+dear:
+	8 : 1 
+estimating:
+	8 : 1 
+deny:
+	8 : 1 
+betrayed:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+acuteness:
+	8 : 1 
+earnestly:
+	6 : 1 
+face:
+	8 : 1 
+curiosity:
+	8 : 1 
+dinner:
+	8 : 1 
+chiefly:
+	8 : 1 
+absolute:
+	8 : 1 
+excellent:
+	8 : 1 
+devonshire:
+	8 : 2 
+brother:
+	8 : 1 
+favourable:
+	7 : 2 
+	6 : 1 
+additions:
+	8 : 2 
+declared:
+	8 : 1 
+body:
+	8 : 1 
+expect:
+	8 : 1 
+determine:
+	6 : 1 
+civility:
+	8 : 1 
+court:
+	7 : 1 
+concern:
+	8 : 2 
+behaviour:
+	7 : 1 
+	8 : 1 
+companions:
+	6 : 1 
+enquire:
+	7 : 2 
+	6 : 1 
+boisterous:
+	6 : 2 
+	7 : 2 
+delightful:
+	7 : 1 
+allowance:
+	6 : 1 
+consisted:
+	8 : 1 
+felt:
+	6 : 1 
+calling:
+	6 : 1 
+breakfast:
+	6 : 1 
+	8 : 1 
+convinced:
+	6 : 1 
+dispatched:
+	6 : 1 
+	8 : 1 
+cousin:
+	7 : 1 
+fortune:
+	6 : 1 
+directly:
+	6 : 1 
+continued:
+	6 : 2 
+day:
+	6 : 1 
+	7 : 1 
+confined:
+	6 : 1 
+answered:
+	7 : 1 
+	8 : 1 
+examine:
+	6 : 1 
+fat:
+	8 : 4 
+certainty:
+	8 : 1 
+doubtful:
+	6 : 1 
+feeling:
+	7 : 2 
+admitting:
+	8 : 2 
+delighted:
+	8 : 1 
+cultivated:
+	6 : 1 
+dried:
+	6 : 1 
+	7 : 1 
+f:
+	6 : 1 
+enjoyed:
+	7 : 2 
+	8 : 2 
+furnished:
+	6 : 2 
+covered:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+females:
+	6 : 1 
+bachelor:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+colonel:
+	8 : 2 
+conduct:
+	7 : 2 
+	6 : 1 
+	8 : 1 
+attending:
+	6 : 1 
+frankness:
+	6 : 1 
+elegance:
+	6 : 1 
+admiration:
+	6 : 3 
+article:
+	6 : 1 
+	8 : 1 
+call:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+forbade:
+	6 : 2 
+drew:
+	6 : 1 
+	8 : 1 
+denied:
+	7 : 1 
+dashwoods:
+	6 : 2 
+disposing:
+	6 : 1 
+anxious:
+	8 : 1 
+attended:
+	6 : 1 
+	7 : 1 
+abilities:
+	7 : 1 
+diminution:
+	8 : 1 
+case:
+	6 : 1 
+blessing:
+	6 : 2 
+add:
+	6 : 4 
+	7 : 1 
+	8 : 1 
+equally:
+	6 : 1 
+	7 : 1 
+early:
+	6 : 2 
+death:
+	6 : 1 
+	8 : 1 
+furniture:
+	6 : 2 
+	8 : 2 
+assure:
+	6 : 1 
+	8 : 1 
+adapted:
+	6 : 2 
+	7 : 1 
+entreaties:
+	7 : 2 
+	6 : 1 
+contented:
+	6 : 1 
+admire:
+	8 : 1 
+account:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+extremely:
+	8 : 1 
+entrance:
+	6 : 1 
+	8 : 1 
+carriage:
+	6 : 1 
+	8 : 1 
+cottage:
+	6 : 1 
+	7 : 1 
+agreeable:
+	6 : 1 
+	8 : 1 
+extent:
+	8 : 2 
+	7 : 1 
+friendship:
+	6 : 1 
+consulted:
+	6 : 2 
+	7 : 1 
+	8 : 1 
+expression:
+	6 : 1 
+	8 : 1 
+collecting:
+	8 : 2 
+	7 : 1 
+disposed:
+	8 : 1 
+earnest:
+	6 : 1 
+	8 : 1 
+easy:
+	7 : 1 
+	8 : 1 
+alteration:
+	7 : 2 
+downs:
+	8 : 1 
+adieus:
+	8 : 1 
+discovery:
+	8 : 2 
+	6 : 1 
+end:
+	8 : 2 
+fanny:
+	6 : 1 
+	8 : 1 
+collected:
+	6 : 1 
+	8 : 1 
+dissuade:
+	7 : 1 
+balls:
+	8 : 1 
+acceptance:
+	7 : 1 
+effects:
+	8 : 1 
+attention:
+	6 : 1 
+	8 : 1 
+affection:
+	6 : 3 
+folly:
+	6 : 1 
+excuse:
+	6 : 1 
+	7 : 1 
+discourse:
+	6 : 2 
+astonished:
+	6 : 3 
+fifteen:
+	6 : 1 
+	7 : 1 
+attempt:
+	7 : 1 
+cheered:
+	6 : 1 
+entered:
+	6 : 1 
+	7 : 1 
+chatty:
+	6 : 2 
+	7 : 1 
+bred:
+	6 : 1 
+	7 : 1 
+demesne:
+	7 : 1 
+discretion:
+	7 : 1 
+	8 : 1 
+bringing:
+	6 : 1 
+forfeited:
+	6 : 2 
+	8 : 1 
+boy:
+	6 : 1 
+	7 : 1 
+extensive:
+	7 : 1 
+education:
+	6 : 1 
+age:
+	8 : 3 
+	6 : 2 
+	7 : 1 
+affixed:
+	7 : 1 
+	8 : 1 
+carried:
+	7 : 2 
+	6 : 1 
+arranging:
+	6 : 2 
+fine:
+	7 : 1 
+concluded:
+	8 : 2 
+endeavor:
+	6 : 1 
+	8 : 1 
+cordially:
+	6 : 1 
+civilly:
+	6 : 1 
+express:
+	8 : 2 
+dashwood:
+	6 : 1 
+change:
+	6 : 1 
+behaved:
+	6 : 1 
+feet:
+	6 : 1 
+	7 : 1 
+dependent:
+	8 : 2 
+evil:
+	6 : 1 
+	7 : 1 
+child:
+	7 : 1 
+difficulty:
+	8 : 1 
+effect:
+	7 : 1 
+door:
+	8 : 3 
+	7 : 1 
+defer:
+	8 : 1 
+families:
+	7 : 1 
+	8 : 1 
+branch:
+	7 : 1 
+	8 : 1 
+ferrars:
+	6 : 1 
+celebrated:
+	8 : 2 
+	7 : 1 
+fertile:
+	6 : 1 
+	7 : 1 
+comfort:
+	7 : 1 
+	8 : 1 
+breeding:
+	7 : 2 
+cousins:
+	7 : 1 
+abroad:
+	7 : 1 
+busy:
+	7 : 1 
+	8 : 1 
+explain:
+	7 : 1 
+expense:
+	8 : 1 
+direction:
+	8 : 1 
+compliment:
+	7 : 1 
+decay:
+	8 : 1 
+bed:
+	7 : 3 
+	8 : 2 
+correct:
+	7 : 1 
+draw:
+	8 : 1 
+brandon:
+	7 : 1 
+enjoyment:
+	8 : 1 
+desirous:
+	7 : 1 
+	8 : 1 
+apartments:
+	7 : 1 
+chapter:
+	7 : 1 
+afraid:
+	7 : 2 
+feebly:
+	7 : 1 
+dull:
+	7 : 2 
+delicate:
+	7 : 1 
+children:
+	7 : 2 
+	8 : 1 
+engrossed:
+	6 : 1 
+believing:
+	8 : 2 
+eat:
+	8 : 2 
+	6 : 1 
+	7 : 1 
+forming:
+	6 : 2 
+afford:
+	7 : 1 
+formal:
+	7 : 1 
+	8 : 1 
+frequently:
+	7 : 1 
+	8 : 1 
+distance:
+	6 : 1 
+drawn:
+	7 : 1 
+deficient:
+	8 : 1 
+continuing:
+	6 : 1 
+	7 : 1 
+distant:
+	7 : 1 
+avoid:
+	7 : 1 
+contrasted:
+	7 : 1 
+	8 : 1 
+cold:
+	7 : 2 
+	8 : 2 
+ecstatic:
+	7 : 2 
+	8 : 1 
+dejection:
+	6 : 1 
+difficult:
+	7 : 1 
+	8 : 1 
+deal:
+	7 : 1 
+	8 : 1 
+explained:
+	7 : 2 
+affronting:
+	8 : 2 
+	7 : 1 
+fulfilled:
+	7 : 1 
+distrusts:
+	7 : 1 
+concerns:
+	7 : 2 
+	8 : 2 
+arrived:
+	7 : 1 
+considered:
+	8 : 1 
+built:
+	8 : 1 
+
+
+--------------Index Over--------------
+

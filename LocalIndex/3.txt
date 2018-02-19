@@ -1,0 +1,1365 @@
+
+--------------Index Begin--------------
+
+Partition 0 ===> 
+
+dinner:
+	8 : 1 
+chiefly:
+	8 : 1 
+absolute:
+	8 : 1 
+excellent:
+	8 : 1 
+devonshire:
+	8 : 2 
+brother:
+	8 : 1 
+additions:
+	8 : 2 
+declared:
+	8 : 1 
+expect:
+	8 : 1 
+civility:
+	8 : 1 
+concern:
+	8 : 2 
+companions:
+	6 : 1 
+enquire:
+	7 : 2 
+	6 : 1 
+boisterous:
+	6 : 2 
+	7 : 2 
+delightful:
+	7 : 1 
+allowance:
+	6 : 1 
+consisted:
+	8 : 1 
+felt:
+	6 : 1 
+calling:
+	6 : 1 
+breakfast:
+	6 : 1 
+	8 : 1 
+convinced:
+	6 : 1 
+dispatched:
+	6 : 1 
+	8 : 1 
+cousin:
+	7 : 1 
+fortune:
+	6 : 1 
+directly:
+	6 : 1 
+continued:
+	6 : 2 
+day:
+	6 : 1 
+	7 : 1 
+confined:
+	6 : 1 
+answered:
+	7 : 1 
+	8 : 1 
+examine:
+	6 : 1 
+fat:
+	8 : 4 
+certainty:
+	8 : 1 
+doubtful:
+	6 : 1 
+favourable:
+	7 : 2 
+	6 : 1 
+delighted:
+	8 : 1 
+cultivated:
+	6 : 1 
+dried:
+	6 : 1 
+	7 : 1 
+f:
+	6 : 1 
+enjoyed:
+	7 : 2 
+	8 : 2 
+furnished:
+	6 : 2 
+covered:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+females:
+	6 : 1 
+bachelor:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+colonel:
+	8 : 2 
+conduct:
+	7 : 2 
+	6 : 1 
+	8 : 1 
+attending:
+	6 : 1 
+frankness:
+	6 : 1 
+elegance:
+	6 : 1 
+admiration:
+	6 : 3 
+article:
+	6 : 1 
+	8 : 1 
+call:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+forbade:
+	6 : 2 
+drew:
+	6 : 1 
+	8 : 1 
+denied:
+	7 : 1 
+dashwoods:
+	6 : 2 
+disposing:
+	6 : 1 
+anxious:
+	8 : 1 
+attended:
+	6 : 1 
+	7 : 1 
+abilities:
+	7 : 1 
+diminution:
+	8 : 1 
+case:
+	6 : 1 
+add:
+	6 : 4 
+	7 : 1 
+	8 : 1 
+blessing:
+	6 : 2 
+equally:
+	6 : 1 
+	7 : 1 
+early:
+	6 : 2 
+death:
+	6 : 1 
+	8 : 1 
+furniture:
+	6 : 2 
+	8 : 2 
+assure:
+	6 : 1 
+	8 : 1 
+adapted:
+	6 : 2 
+	7 : 1 
+entreaties:
+	7 : 2 
+	6 : 1 
+contented:
+	6 : 1 
+admire:
+	8 : 1 
+extremely:
+	8 : 1 
+account:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+entrance:
+	6 : 1 
+	8 : 1 
+carriage:
+	6 : 1 
+	8 : 1 
+cottage:
+	6 : 1 
+	7 : 1 
+agreeable:
+	6 : 1 
+	8 : 1 
+extent:
+	8 : 2 
+	7 : 1 
+friendship:
+	6 : 1 
+consulted:
+	6 : 2 
+	7 : 1 
+	8 : 1 
+expression:
+	6 : 1 
+	8 : 1 
+collecting:
+	8 : 2 
+	7 : 1 
+downs:
+	8 : 1 
+adieus:
+	8 : 1 
+alteration:
+	7 : 2 
+discovery:
+	8 : 2 
+	6 : 1 
+end:
+	8 : 2 
+fanny:
+	6 : 1 
+	8 : 1 
+collected:
+	6 : 1 
+	8 : 1 
+dissuade:
+	7 : 1 
+balls:
+	8 : 1 
+acceptance:
+	7 : 1 
+effects:
+	8 : 1 
+attention:
+	6 : 1 
+	8 : 1 
+affection:
+	6 : 3 
+folly:
+	6 : 1 
+excuse:
+	6 : 1 
+	7 : 1 
+discourse:
+	6 : 2 
+astonished:
+	6 : 3 
+fifteen:
+	6 : 1 
+	7 : 1 
+attempt:
+	7 : 1 
+cheered:
+	6 : 1 
+entered:
+	6 : 1 
+	7 : 1 
+chatty:
+	6 : 2 
+	7 : 1 
+bred:
+	6 : 1 
+	7 : 1 
+demesne:
+	7 : 1 
+discretion:
+	7 : 1 
+	8 : 1 
+bringing:
+	6 : 1 
+forfeited:
+	6 : 2 
+	8 : 1 
+boy:
+	6 : 1 
+	7 : 1 
+extensive:
+	7 : 1 
+education:
+	6 : 1 
+age:
+	8 : 3 
+	6 : 2 
+	7 : 1 
+affixed:
+	7 : 1 
+	8 : 1 
+carried:
+	7 : 2 
+	6 : 1 
+arranging:
+	6 : 2 
+fine:
+	7 : 1 
+concluded:
+	8 : 2 
+determine:
+	6 : 1 
+endeavor:
+	6 : 1 
+	8 : 1 
+cordially:
+	6 : 1 
+civilly:
+	6 : 1 
+express:
+	8 : 2 
+dashwood:
+	6 : 1 
+change:
+	6 : 1 
+behaved:
+	6 : 1 
+feet:
+	6 : 1 
+	7 : 1 
+dependent:
+	8 : 2 
+evil:
+	6 : 1 
+	7 : 1 
+child:
+	7 : 1 
+difficulty:
+	8 : 1 
+effect:
+	7 : 1 
+easy:
+	7 : 1 
+	8 : 1 
+door:
+	8 : 3 
+	7 : 1 
+defer:
+	8 : 1 
+families:
+	7 : 1 
+	8 : 1 
+feeling:
+	7 : 2 
+admitting:
+	8 : 2 
+branch:
+	7 : 1 
+	8 : 1 
+ferrars:
+	6 : 1 
+celebrated:
+	8 : 2 
+	7 : 1 
+fertile:
+	6 : 1 
+	7 : 1 
+comfort:
+	7 : 1 
+	8 : 1 
+breeding:
+	7 : 2 
+cousins:
+	7 : 1 
+behaviour:
+	7 : 1 
+	8 : 1 
+earnest:
+	6 : 1 
+	8 : 1 
+disposed:
+	8 : 1 
+abroad:
+	7 : 1 
+busy:
+	7 : 1 
+	8 : 1 
+explain:
+	7 : 1 
+expense:
+	8 : 1 
+direction:
+	8 : 1 
+decay:
+	8 : 1 
+compliment:
+	7 : 1 
+bed:
+	7 : 3 
+	8 : 2 
+correct:
+	7 : 1 
+draw:
+	8 : 1 
+brandon:
+	7 : 1 
+desirous:
+	7 : 1 
+	8 : 1 
+enjoyment:
+	8 : 1 
+apartments:
+	7 : 1 
+chapter:
+	7 : 1 
+afraid:
+	7 : 2 
+feebly:
+	7 : 1 
+dull:
+	7 : 2 
+delicate:
+	7 : 1 
+children:
+	7 : 2 
+	8 : 1 
+engrossed:
+	6 : 1 
+believing:
+	8 : 2 
+forming:
+	6 : 2 
+eat:
+	8 : 2 
+	6 : 1 
+	7 : 1 
+afford:
+	7 : 1 
+formal:
+	7 : 1 
+	8 : 1 
+distance:
+	6 : 1 
+frequently:
+	7 : 1 
+	8 : 1 
+body:
+	8 : 1 
+drawn:
+	7 : 1 
+deficient:
+	8 : 1 
+continuing:
+	6 : 1 
+	7 : 1 
+distant:
+	7 : 1 
+avoid:
+	7 : 1 
+contrasted:
+	7 : 1 
+	8 : 1 
+cold:
+	7 : 2 
+	8 : 2 
+court:
+	7 : 1 
+ecstatic:
+	7 : 2 
+	8 : 1 
+dejection:
+	6 : 1 
+difficult:
+	7 : 1 
+	8 : 1 
+deal:
+	7 : 1 
+	8 : 1 
+explained:
+	7 : 2 
+affronting:
+	8 : 2 
+	7 : 1 
+fulfilled:
+	7 : 1 
+distrusts:
+	7 : 1 
+concerns:
+	7 : 2 
+	8 : 2 
+arrived:
+	7 : 1 
+considered:
+	8 : 1 
+built:
+	8 : 1 
+curiosity:
+	8 : 1 
+face:
+	8 : 1 
+earnestly:
+	6 : 1 
+acuteness:
+	8 : 1 
+betrayed:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+deny:
+	8 : 1 
+estimating:
+	8 : 1 
+dear:
+	8 : 1 
+advanced:
+	8 : 1 
+china:
+	8 : 1 
+cheerful:
+	8 : 1 
+fond:
+	8 : 1 
+full:
+	8 : 1 
+elderly:
+	8 : 1 
+farther:
+	8 : 1 
+company:
+	6 : 1 
+finished:
+	8 : 1 
+attachment:
+	6 : 1 
+departure:
+	7 : 1 
+daughters:
+	8 : 1 
+contempt:
+	6 : 1 
+	7 : 1 
+exposed:
+	8 : 2 
+Partition 1 ===> 
+
+green:
+	8 : 1 
+improved:
+	8 : 1 
+ladies:
+	8 : 1 
+instantly:
+	8 : 1 
+imprudence:
+	8 : 1 
+garrets:
+	8 : 1 
+hastened:
+	7 : 1 
+	8 : 1 
+limited:
+	7 : 1 
+john:
+	8 : 1 
+greatly:
+	7 : 3 
+	8 : 1 
+ladyship:
+	7 : 2 
+listening:
+	8 : 2 
+hard:
+	7 : 1 
+interested:
+	7 : 1 
+house:
+	7 : 1 
+horses:
+	7 : 1 
+justice:
+	8 : 1 
+inquiry:
+	7 : 1 
+	8 : 1 
+handsome:
+	8 : 1 
+late:
+	7 : 1 
+	8 : 1 
+hold:
+	7 : 1 
+hearing:
+	8 : 2 
+income:
+	8 : 1 
+impossible:
+	7 : 1 
+	8 : 1 
+half:
+	7 : 1 
+	8 : 1 
+goodness:
+	7 : 1 
+kind:
+	6 : 1 
+limits:
+	6 : 1 
+hunted:
+	6 : 1 
+incommode:
+	8 : 3 
+led:
+	7 : 2 
+	6 : 1 
+	8 : 1 
+improve:
+	7 : 1 
+looked:
+	7 : 2 
+law:
+	8 : 2 
+	7 : 1 
+lasted:
+	8 : 1 
+high:
+	6 : 1 
+graceful:
+	7 : 1 
+gay:
+	8 : 3 
+	6 : 1 
+	7 : 1 
+happiness:
+	7 : 1 
+hours:
+	6 : 1 
+held:
+	8 : 1 
+horrible:
+	7 : 1 
+	8 : 1 
+intention:
+	6 : 1 
+lived:
+	8 : 1 
+ignorant:
+	6 : 1 
+landlord:
+	7 : 3 
+	6 : 1 
+length:
+	7 : 1 
+longer:
+	7 : 1 
+invitation:
+	6 : 1 
+	8 : 1 
+loud:
+	7 : 3 
+instrument:
+	6 : 1 
+	7 : 1 
+hastily:
+	6 : 1 
+	7 : 1 
+joy:
+	8 : 3 
+	7 : 2 
+greater:
+	6 : 2 
+inhabiting:
+	7 : 1 
+jokes:
+	8 : 1 
+gentleman:
+	8 : 1 
+inhabit:
+	6 : 1 
+general:
+	6 : 2 
+	8 : 1 
+ham:
+	6 : 2 
+	8 : 2 
+	7 : 1 
+lain:
+	6 : 1 
+happy:
+	6 : 1 
+introduced:
+	8 : 3 
+	7 : 2 
+laughing:
+	8 : 1 
+hour:
+	6 : 1 
+	8 : 1 
+increasing:
+	6 : 1 
+	8 : 1 
+inquietude:
+	8 : 1 
+knew:
+	6 : 1 
+	7 : 1 
+garret:
+	8 : 1 
+left:
+	7 : 1 
+impression:
+	7 : 1 
+long:
+	7 : 2 
+lively:
+	7 : 1 
+humoured:
+	7 : 1 
+journey:
+	7 : 1 
+	8 : 1 
+literature:
+	7 : 3 
+	6 : 1 
+lose:
+	7 : 1 
+give:
+	7 : 1 
+laughter:
+	6 : 2 
+	7 : 1 
+	8 : 1 
+lady:
+	7 : 1 
+insensible:
+	7 : 1 
+	8 : 1 
+hearted:
+	6 : 1 
+linen:
+	7 : 1 
+knowledge:
+	6 : 1 
+girl:
+	7 : 1 
+good:
+	7 : 1 
+highly:
+	7 : 1 
+Partition 2 ===> 
+
+rendered:
+	8 : 1 
+rapid:
+	8 : 1 
+material:
+	8 : 1 
+remain:
+	8 : 1 
+respect:
+	8 : 1 
+offered:
+	8 : 1 
+park:
+	8 : 1 
+opinions:
+	8 : 1 
+pretend:
+	8 : 1 
+passage:
+	8 : 1 
+request:
+	8 : 1 
+pleased:
+	8 : 1 
+rose:
+	8 : 1 
+property:
+	8 : 1 
+outweigh:
+	8 : 1 
+moonlight:
+	8 : 2 
+made:
+	7 : 1 
+reached:
+	7 : 1 
+promotion:
+	7 : 1 
+object:
+	7 : 2 
+pleasant:
+	7 : 1 
+raising:
+	6 : 1 
+	7 : 1 
+norland:
+	6 : 3 
+man:
+	6 : 1 
+	8 : 1 
+performed:
+	6 : 1 
+real:
+	6 : 1 
+position:
+	8 : 2 
+matters:
+	6 : 1 
+pianoforte:
+	6 : 2 
+	7 : 1 
+	8 : 1 
+missed:
+	7 : 1 
+minutes:
+	8 : 1 
+projection:
+	6 : 1 
+	7 : 1 
+proposal:
+	6 : 1 
+	8 : 1 
+reasonable:
+	6 : 1 
+principle:
+	7 : 1 
+observe:
+	6 : 1 
+resembled:
+	6 : 1 
+picture:
+	6 : 1 
+	8 : 1 
+recommend:
+	8 : 1 
+match:
+	6 : 1 
+	7 : 1 
+prepare:
+	6 : 1 
+	7 : 1 
+manor:
+	6 : 1 
+plate:
+	7 : 1 
+	8 : 1 
+received:
+	7 : 2 
+	6 : 1 
+maids:
+	7 : 1 
+merits:
+	7 : 2 
+	6 : 1 
+	8 : 1 
+put:
+	7 : 2 
+	6 : 1 
+	8 : 1 
+rooms:
+	7 : 1 
+	8 : 1 
+resolve:
+	6 : 1 
+musical:
+	7 : 1 
+recurred:
+	6 : 1 
+	8 : 1 
+replied:
+	7 : 3 
+natural:
+	6 : 1 
+	8 : 1 
+propriety:
+	8 : 1 
+manner:
+	7 : 1 
+preference:
+	6 : 1 
+	7 : 1 
+projecting:
+	7 : 1 
+prospect:
+	6 : 1 
+	7 : 1 
+raptures:
+	6 : 1 
+months:
+	6 : 2 
+	8 : 1 
+marianne:
+	7 : 2 
+	6 : 1 
+parties:
+	6 : 1 
+	7 : 1 
+remaining:
+	6 : 1 
+play:
+	6 : 1 
+perpetual:
+	6 : 1 
+resolution:
+	6 : 1 
+piqued:
+	8 : 1 
+offended:
+	7 : 1 
+	8 : 1 
+parlors:
+	8 : 2 
+	6 : 1 
+preferred:
+	6 : 1 
+place:
+	6 : 1 
+prevent:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+mr:
+	6 : 6 
+	8 : 3 
+	7 : 2 
+mrs:
+	6 : 2 
+	8 : 2 
+	7 : 1 
+met:
+	8 : 1 
+paid:
+	6 : 1 
+	7 : 1 
+produced:
+	6 : 1 
+	7 : 1 
+proceed:
+	7 : 1 
+prosperous:
+	7 : 1 
+quiet:
+	8 : 2 
+	7 : 1 
+point:
+	8 : 1 
+rapturous:
+	7 : 1 
+resolving:
+	8 : 1 
+room:
+	6 : 1 
+objection:
+	6 : 1 
+	8 : 1 
+motionless:
+	7 : 2 
+	6 : 1 
+	8 : 1 
+peculiar:
+	7 : 3 
+	8 : 2 
+resources:
+	6 : 1 
+northward:
+	8 : 1 
+round:
+	8 : 2 
+nay:
+	8 : 3 
+	6 : 2 
+	7 : 1 
+perceive:
+	6 : 1 
+	7 : 1 
+possession:
+	6 : 1 
+party:
+	7 : 1 
+pleasure:
+	6 : 1 
+	7 : 1 
+plan:
+	6 : 1 
+regard:
+	7 : 1 
+moments:
+	6 : 1 
+post:
+	6 : 1 
+removing:
+	8 : 1 
+nature:
+	7 : 1 
+merit:
+	7 : 1 
+music:
+	7 : 1 
+mother:
+	7 : 1 
+moderate:
+	8 : 1 
+means:
+	7 : 1 
+marry:
+	7 : 1 
+	8 : 1 
+read:
+	7 : 1 
+power:
+	6 : 1 
+prepared:
+	7 : 1 
+present:
+	7 : 1 
+reserved:
+	7 : 1 
+	8 : 1 
+neglected:
+	7 : 1 
+pulled:
+	7 : 1 
+manners:
+	7 : 1 
+	8 : 1 
+precaution:
+	8 : 1 
+numerous:
+	7 : 1 
+	8 : 1 
+occasion:
+	7 : 1 
+	8 : 1 
+men:
+	8 : 3 
+	6 : 2 
+	7 : 2 
+pasture:
+	7 : 1 
+minuter:
+	6 : 1 
+remainder:
+	7 : 1 
+	8 : 1 
+narrow:
+	7 : 2 
+open:
+	7 : 2 
+	8 : 2 
+principles:
+	7 : 1 
+raillery:
+	8 : 2 
+	7 : 1 
+pretty:
+	7 : 1 
+outlived:
+	7 : 1 
+placing:
+	7 : 1 
+	8 : 1 
+quit:
+	7 : 1 
+	8 : 1 
+offending:
+	8 : 2 
+partiality:
+	7 : 1 
+produce:
+	7 : 1 
+remark:
+	7 : 1 
+provided:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+make:
+	7 : 2 
+questions:
+	8 : 2 
+neat:
+	7 : 1 
+needed:
+	8 : 1 
+occasional:
+	7 : 3 
+	8 : 1 
+Partition 3 ===> 
+
+wisdom:
+	8 : 1 
+world:
+	8 : 1 
+welcomed:
+	8 : 1 
+wanted:
+	8 : 2 
+wandered:
+	8 : 1 
+week:
+	8 : 1 
+zealously:
+	8 : 2 
+settled:
+	8 : 1 
+thrown:
+	8 : 1 
+stuff:
+	8 : 1 
+supplied:
+	8 : 1 
+strangers:
+	8 : 1 
+sir:
+	8 : 2 
+wholly:
+	8 : 1 
+walk:
+	8 : 1 
+son:
+	8 : 2 
+shutters:
+	6 : 1 
+started:
+	8 : 1 
+trifling:
+	8 : 1 
+speaking:
+	7 : 1 
+unwilling:
+	7 : 1 
+	8 : 1 
+unlocked:
+	6 : 1 
+	8 : 1 
+spot:
+	6 : 1 
+	7 : 1 
+wound:
+	6 : 1 
+scarcely:
+	6 : 1 
+worth:
+	7 : 1 
+wrong:
+	6 : 1 
+tedious:
+	6 : 1 
+	7 : 1 
+uneasy:
+	7 : 1 
+talked:
+	7 : 1 
+totally:
+	6 : 1 
+visited:
+	8 : 1 
+sitting:
+	6 : 1 
+sell:
+	8 : 1 
+sweetness:
+	6 : 2 
+	8 : 1 
+talking:
+	6 : 1 
+uncommonly:
+	6 : 2 
+	8 : 1 
+timed:
+	6 : 1 
+supply:
+	7 : 1 
+	8 : 1 
+sentiments:
+	6 : 1 
+	7 : 1 
+turned:
+	6 : 1 
+ye:
+	7 : 8 
+	6 : 3 
+	8 : 2 
+wondered:
+	6 : 1 
+wishing:
+	6 : 2 
+	7 : 1 
+vicinity:
+	8 : 2 
+spoke:
+	8 : 2 
+	6 : 1 
+unpleasing:
+	7 : 1 
+unknown:
+	7 : 1 
+	8 : 1 
+sex:
+	7 : 3 
+	8 : 2 
+	6 : 1 
+shameless:
+	6 : 2 
+share:
+	8 : 1 
+surrounded:
+	7 : 2 
+village:
+	6 : 2 
+	7 : 2 
+sake:
+	6 : 1 
+sportsmen:
+	6 : 1 
+	8 : 1 
+vulgar:
+	6 : 1 
+	7 : 1 
+shewing:
+	6 : 1 
+	7 : 1 
+suppose:
+	7 : 1 
+set:
+	6 : 1 
+	8 : 1 
+shy:
+	6 : 1 
+	8 : 1 
+staying:
+	8 : 1 
+stimulated:
+	6 : 2 
+	7 : 2 
+	8 : 1 
+twenty:
+	6 : 1 
+	7 : 1 
+warmth:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+valley:
+	6 : 1 
+simplicity:
+	8 : 1 
+settle:
+	7 : 1 
+securing:
+	7 : 2 
+	8 : 1 
+voice:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+steepest:
+	6 : 1 
+visit:
+	7 : 1 
+	8 : 1 
+unpleasant:
+	6 : 1 
+visitor:
+	7 : 2 
+sufficient:
+	7 : 1 
+wicket:
+	7 : 1 
+	8 : 1 
+sociable:
+	6 : 2 
+	8 : 1 
+smallest:
+	7 : 1 
+	8 : 1 
+solicitude:
+	6 : 1 
+	7 : 1 
+small:
+	6 : 1 
+suspected:
+	6 : 1 
+travelling:
+	8 : 2 
+	7 : 1 
+tears:
+	8 : 1 
+smile:
+	6 : 1 
+	8 : 1 
+taste:
+	7 : 1 
+waiting:
+	7 : 1 
+	8 : 1 
+weeks:
+	6 : 1 
+	7 : 1 
+smart:
+	7 : 1 
+	8 : 1 
+waited:
+	7 : 1 
+written:
+	6 : 1 
+	7 : 1 
+	8 : 1 
+worthy:
+	7 : 1 
+	8 : 1 
+ten:
+	8 : 3 
+	7 : 2 
+wished:
+	8 : 2 
+	7 : 1 
+sympathize:
+	7 : 1 
+	8 : 1 
+striking:
+	6 : 1 
+wooded:
+	7 : 1 
+sang:
+	7 : 1 
+terminated:
+	6 : 1 
+throwing:
+	7 : 1 
+unsatiable:
+	8 : 2 
+	7 : 1 
+uncivil:
+	7 : 1 
+shyness:
+	7 : 1 
+	8 : 1 
+wishes:
+	6 : 1 
+table:
+	7 : 1 
+sold:
+	7 : 1 
+tall:
+	7 : 1 
+settling:
+	8 : 1 
+shortly:
+	7 : 2 
+snug:
+	7 : 1 
+sportsman:
+	7 : 1 
+sister:
+	7 : 1 
+tolerably:
+	8 : 2 
+	7 : 1 
+weddings:
+	8 : 1 
+simple:
+	6 : 1 
+unaffected:
+	7 : 2 
+sincerity:
+	8 : 2 
+stanhill:
+	8 : 1 
+stairs:
+	6 : 1 
+window:
+	8 : 1 
+
+
+--------------Index Over--------------
+
