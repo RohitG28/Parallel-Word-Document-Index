@@ -262,8 +262,6 @@ sense:
 	-1 : 1 
 Partition 1 ===> 
 
-warrant:
-	1 : 1 
 shot:
 	1 : 1 
 terminated:
@@ -307,8 +305,6 @@ strictly:
 	1 : 1 
 windows:
 	1 : 1 
-warmly:
-	0 : 1 
 suppose:
 	1 : 2 
 	0 : 1 
@@ -333,9 +329,13 @@ set:
 views:
 	0 : 1 
 	2 : 1 
-tears:
-	0 : 2 
+young:
+	0 : 1 
 	1 : 1 
+smallness:
+	2 : 1 
+woman:
+	0 : 1 
 sight:
 	0 : 1 
 	1 : 1 
@@ -346,14 +346,23 @@ side:
 sportsman:
 	1 : 2 
 	0 : 1 
-servants:
-	0 : 1 
+wisdom:
 	1 : 1 
-unpleasant:
-	1 : 2 
+2eat:
 	0 : 1 
-waiting:
-	0 : 1 
+wishes:
+	1 : 1 
+ye:
+	0 : 3 
+	2 : 2 
+	1 : 1 
+walls:
+	0 : 2 
+	2 : 1 
+sex:
+	0 : 3 
+	1 : 1 
+	2 : 1 
 size:
 	2 : 1 
 west:
@@ -384,8 +393,6 @@ sentiments:
 surrounded:
 	0 : 2 
 	1 : 1 
-wise:
-	2 : 1 
 sons:
 	2 : 1 
 till:
@@ -415,22 +422,13 @@ walk:
 	0 : 1 
 supply:
 	1 : 1 
-walls:
-	0 : 2 
-	2 : 1 
 unaffected:
 	2 : 2 
 sincerity:
 	1 : 1 
 strongly:
 	1 : 1 
-ye:
-	0 : 3 
-	2 : 2 
-	1 : 1 
-wishes:
-	1 : 1 
-wisdom:
+warrant:
 	1 : 1 
 son:
 	1 : 2 
@@ -454,6 +452,8 @@ strangers:
 	0 : 2 
 worthy:
 	0 : 1 
+1result:
+	0 : 1 
 written:
 	2 : 1 
 ten:
@@ -465,55 +465,37 @@ shortly:
 settling:
 	0 : 1 
 	1 : 1 
+tears:
+	0 : 2 
+	1 : 1 
+stanhill:
+	0 : 1 
+stairs:
+	2 : 1 
 visit:
 	0 : 1 
 vicinity:
 	0 : 1 
 unpleasing:
 	0 : 1 
+suffer:
+	1 : 1 
 total:
 	0 : 1 
 unfeeling:
 	0 : 1 
 	1 : 1 
 	2 : 1 
-suffer:
-	1 : 1 
-scale:
+warmly:
 	0 : 1 
-	1 : 1 
-sex:
-	0 : 3 
-	1 : 1 
-	2 : 1 
-sing:
-	0 : 2 
-	2 : 1 
 suffering:
 	2 : 1 
 state:
 	1 : 1 
-uncommonly:
-	1 : 1 
-talking:
-	1 : 1 
-spirit:
-	2 : 1 
-venture:
-	1 : 1 
-suspected:
-	0 : 3 
-sooner:
-	1 : 1 
-sufficient:
-	2 : 1 
-wicket:
-	0 : 1 
-	1 : 1 
-visitor:
+sweetness:
 	0 : 1 
 	2 : 1 
-society:
+shade:
 	0 : 1 
 unsatiable:
 	0 : 1 
@@ -540,22 +522,32 @@ solicitude:
 	1 : 2 
 	2 : 2 
 	0 : 1 
-stanhill:
+1234:
 	0 : 1 
-stairs:
+wise:
 	2 : 1 
+sufficient:
+	2 : 1 
+wicket:
+	0 : 1 
+	1 : 1 
+visitor:
+	0 : 1 
+	2 : 1 
+sooner:
+	1 : 1 
+society:
+	0 : 1 
 spot:
 	0 : 2 
 	1 : 1 
-young:
-	0 : 1 
-	1 : 1 
-smallness:
-	2 : 1 
 thrown:
 	0 : 1 
 	1 : 1 
 	2 : 1 
+unwilling:
+	0 : 1 
+	1 : 1 
 satisfied:
 	0 : 2 
 	2 : 2 
@@ -565,23 +557,6 @@ tolerably:
 	0 : 1 
 	1 : 1 
 	2 : 1 
-sweetness:
-	0 : 1 
-	2 : 1 
-shade:
-	0 : 1 
-woman:
-	0 : 1 
-september:
-	0 : 3 
-sportsmen:
-	0 : 1 
-speaking:
-	0 : 1 
-	2 : 1 
-unwilling:
-	0 : 1 
-	1 : 1 
 shed:
 	2 : 1 
 uneasy:
@@ -590,6 +565,37 @@ uneasy:
 wrong:
 	2 : 2 
 	0 : 1 
+september:
+	0 : 3 
+sportsmen:
+	0 : 1 
+speaking:
+	0 : 1 
+	2 : 1 
+waiting:
+	0 : 1 
+unpleasant:
+	1 : 2 
+	0 : 1 
+servants:
+	0 : 1 
+	1 : 1 
+scale:
+	0 : 1 
+	1 : 1 
+suspected:
+	0 : 3 
+venture:
+	1 : 1 
+sing:
+	0 : 2 
+	2 : 1 
+talking:
+	1 : 1 
+uncommonly:
+	1 : 1 
+spirit:
+	2 : 1 
 Partition 2 ===> 
 
 square:

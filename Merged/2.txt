@@ -283,6 +283,11 @@ request:
 	-1 : 2 
 Partition 1 ===> 
 
+remarkably:
+	1 : 2 
+	2 : 1 
+removed:
+	2 : 1 
 pretend:
 	1 : 1 
 passage:
@@ -294,6 +299,11 @@ rest:
 	0 : 1 
 recommend:
 	2 : 1 
+private:
+	1 : 1 
+	2 : 1 
+miles:
+	0 : 1 
 projection:
 	1 : 1 
 plenty:
@@ -353,6 +363,17 @@ make:
 	0 : 1 
 provided:
 	2 : 1 
+point:
+	0 : 1 
+	1 : 1 
+rapturous:
+	2 : 2 
+	0 : 1 
+provision:
+	1 : 1 
+pronounce:
+	1 : 1 
+	2 : 1 
 money:
 	0 : 2 
 	1 : 1 
@@ -365,32 +386,23 @@ questions:
 	1 : 1 
 neat:
 	0 : 1 
-missed:
-	1 : 1 
-roused:
-	2 : 1 
-matters:
+removal:
+	0 : 1 
+manner:
 	0 : 1 
 	1 : 1 
-procured:
-	2 : 1 
-pianoforte:
-	0 : 2 
-pursuit:
+projecting:
 	1 : 2 
-raptures:
 	0 : 1 
-pleasure:
+	2 : 1 
+preference:
+	1 : 2 
+	2 : 2 
+matter:
+	0 : 1 
+perceive:
 	2 : 2 
 	0 : 1 
-point:
-	0 : 1 
-	1 : 1 
-rapturous:
-	2 : 2 
-	0 : 1 
-provision:
-	1 : 1 
 parish:
 	1 : 1 
 marked:
@@ -403,34 +415,24 @@ promotion:
 neglected:
 	0 : 1 
 	2 : 1 
-pronounce:
-	1 : 1 
-	2 : 1 
-middleton:
-	0 : 1 
-	2 : 1 
-moments:
-	0 : 1 
-	1 : 1 
-regard:
-	0 : 1 
 resolve:
 	1 : 1 
 melancholy:
 	1 : 1 
 procuring:
 	0 : 1 
+raptures:
+	0 : 1 
+pursuit:
+	1 : 2 
 principles:
 	0 : 1 
+precaution:
+	1 : 1 
+received:
+	2 : 1 
 prosperous:
 	1 : 2 
-	2 : 1 
-middletons:
-	2 : 2 
-	1 : 1 
-marriage:
-	2 : 1 
-received:
 	2 : 1 
 roof:
 	2 : 3 
@@ -556,11 +558,9 @@ mistress:
 	1 : 1 
 returned:
 	1 : 1 
-removed:
-	2 : 1 
-remarkably:
-	1 : 2 
-	2 : 1 
+pleasure:
+	2 : 2 
+	0 : 1 
 moderate:
 	2 : 1 
 regular:
@@ -568,8 +568,6 @@ regular:
 	1 : 1 
 marry:
 	2 : 1 
-result:
-	0 : 1 
 man:
 	0 : 1 
 	1 : 1 
@@ -583,6 +581,14 @@ points:
 observe:
 	0 : 1 
 	2 : 1 
+middleton:
+	0 : 1 
+	2 : 1 
+regard:
+	0 : 1 
+moments:
+	0 : 1 
+	1 : 1 
 polite:
 	0 : 2 
 regret:
@@ -590,29 +596,17 @@ regret:
 	2 : 1 
 prepared:
 	0 : 1 
-required:
+pianoforte:
+	0 : 2 
+roused:
 	2 : 1 
-person:
-	0 : 1 
-precaution:
+missed:
 	1 : 1 
-private:
-	1 : 1 
-	2 : 1 
-miles:
-	0 : 1 
-projecting:
-	1 : 2 
-	0 : 1 
-	2 : 1 
-preference:
-	1 : 2 
-	2 : 2 
-manner:
+matters:
 	0 : 1 
 	1 : 1 
-removal:
-	0 : 1 
+procured:
+	2 : 1 
 residence:
 	1 : 1 
 	2 : 1 
@@ -632,11 +626,6 @@ occasional:
 	1 : 1 
 packages:
 	0 : 1 
-perceive:
-	2 : 2 
-	0 : 1 
-matter:
-	0 : 1 
 put:
 	0 : 2 
 	2 : 2 
@@ -653,6 +642,15 @@ partiality:
 	0 : 3 
 	2 : 2 
 	1 : 1 
+marriage:
+	2 : 1 
+middletons:
+	2 : 2 
+	1 : 1 
+required:
+	2 : 1 
+person:
+	0 : 1 
 Partition 2 ===> 
 
 opinions:

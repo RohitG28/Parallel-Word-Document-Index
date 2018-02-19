@@ -30,6 +30,13 @@ sang:
 	7 : 1 
 simple:
 	6 : 1 
+window:
+	8 : 1 
+wrote:
+	5 : 1 
+scarcely:
+	5 : 1 
+	6 : 1 
 tolerably:
 	-2 : 2 
 	5 : 2 
@@ -69,9 +76,6 @@ west:
 	-3 : 2 
 	-2 : 1 
 	2 : 1 
-scarcely:
-	5 : 1 
-	6 : 1 
 shew:
 	-2 : 1 
 strangers:
@@ -296,6 +300,8 @@ wisdom:
 	-1 : 1 
 	1 : 1 
 	8 : 1 
+2eat:
+	0 : 1 
 sincerity:
 	5 : 3 
 	-1 : 2 
@@ -385,6 +391,8 @@ trees:
 	0 : 1 
 	2 : 1 
 	5 : 1 
+1result:
+	0 : 1 
 situation:
 	-2 : 1 
 	0 : 1 
@@ -472,8 +480,6 @@ thrown:
 stuff:
 	-1 : 1 
 	8 : 1 
-wrote:
-	5 : 1 
 sake:
 	-1 : 1 
 	6 : 1 
@@ -678,9 +684,6 @@ walk:
 windows:
 	1 : 1 
 	5 : 1 
-warmly:
-	0 : 1 
-	5 : 1 
 weddings:
 	0 : 1 
 	1 : 1 
@@ -692,10 +695,6 @@ sportsman:
 	0 : 1 
 	5 : 1 
 	7 : 1 
-waiting:
-	0 : 1 
-	7 : 1 
-	8 : 1 
 shameless:
 	6 : 2 
 	4 : 1 
@@ -721,9 +720,6 @@ unreserved:
 years:
 	5 : 2 
 	2 : 1 
-wise:
-	2 : 1 
-	3 : 1 
 shy:
 	-2 : 3 
 	4 : 3 
@@ -776,6 +772,14 @@ settling:
 	1 : 1 
 	4 : 1 
 	8 : 1 
+stanhill:
+	0 : 1 
+	3 : 1 
+	8 : 1 
+stairs:
+	2 : 1 
+	3 : 1 
+	6 : 1 
 timed:
 	6 : 1 
 visit:
@@ -793,16 +797,35 @@ water:
 total:
 	0 : 1 
 	5 : 1 
-sportsmen:
-	-1 : 2 
-	-2 : 1 
+warmly:
 	0 : 1 
-	6 : 1 
-	8 : 1 
-uncommonly:
-	6 : 2 
-	1 : 1 
 	5 : 1 
+totally:
+	0 : 1 
+	2 : 1 
+	3 : 1 
+	6 : 1 
+separate:
+	0 : 1 
+1234:
+	0 : 1 
+wise:
+	2 : 1 
+	3 : 1 
+wholly:
+	0 : 1 
+	5 : 1 
+	8 : 1 
+throwing:
+	7 : 1 
+speaking:
+	0 : 1 
+	2 : 1 
+	5 : 1 
+	7 : 1 
+waiting:
+	0 : 1 
+	7 : 1 
 	8 : 1 
 sociable:
 	6 : 2 
@@ -814,6 +837,17 @@ talking:
 	1 : 1 
 	5 : 1 
 	6 : 1 
+sportsmen:
+	-1 : 2 
+	-2 : 1 
+	0 : 1 
+	6 : 1 
+	8 : 1 
+uncommonly:
+	6 : 2 
+	1 : 1 
+	5 : 1 
+	8 : 1 
 son:
 	1 : 2 
 	2 : 2 
@@ -827,34 +861,6 @@ son:
 spirit:
 	3 : 2 
 	2 : 1 
-totally:
-	0 : 1 
-	2 : 1 
-	3 : 1 
-	6 : 1 
-separate:
-	0 : 1 
-stanhill:
-	0 : 1 
-	3 : 1 
-	8 : 1 
-stairs:
-	2 : 1 
-	3 : 1 
-	6 : 1 
-window:
-	8 : 1 
-wholly:
-	0 : 1 
-	5 : 1 
-	8 : 1 
-throwing:
-	7 : 1 
-speaking:
-	0 : 1 
-	2 : 1 
-	5 : 1 
-	7 : 1 
 strongly:
 	1 : 1 
 terms:

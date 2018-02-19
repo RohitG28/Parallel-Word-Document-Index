@@ -47,6 +47,7 @@ using namespace std;
 5. DOCID 
 6. partition
 7. document size
+8. special characters
 
 ************************************************************************************************************************************/
 
@@ -267,7 +268,7 @@ int main(int argc, char** argv)
 				    {
 				        // check whether parsing character is punctuation or not
 				        //if (ispunct(currentWord[j]))
-				        if(!((currentWord[j]>='a' && currentWord[j]<='z')||(currentWord[j]>='A' && currentWord[j]<='Z')))
+				        if(!((currentWord[j]>='a' && currentWord[j]<='z')||(currentWord[j]>='A' && currentWord[j]<='Z')||(currentWord[j]>='0' && currentWord[j]<='9')))
 				        {
 				            currentWord.erase(j--, 1);
 				            len = currentWord.size();
@@ -304,9 +305,11 @@ int main(int argc, char** argv)
 	        	currentWord = mapItr->first;
 	        	wordFreq = mapItr->second;
 
-	        	correspondingPartition = partitionIndex[currentWord[0]-LOWEST_ALPHABET_ASCII];
-				//printf("%d %d %c\n",correspondingPartition,processId,currentWord[0]);
-	        	
+	        	if(currentWord[0] >= 48 && currentWord[0] <= 57)
+	        		correspondingPartition = noOfProcesses-1;
+	        	else
+	        		correspondingPartition = partitionIndex[currentWord[0]-LOWEST_ALPHABET_ASCII];
+				
 	        	//If the currentWord doesn't exist in invertedIndexMap
 	        	if(invertedIndexMap[correspondingPartition].find(currentWord) == invertedIndexMap[correspondingPartition].end())
 	        	{

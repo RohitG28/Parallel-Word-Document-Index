@@ -341,6 +341,10 @@ literature:
 	2 : 1 
 lose:
 	2 : 2 
+happiness:
+	0 : 3 
+hours:
+	2 : 1 
 girl:
 	0 : 2 
 knowledge:
@@ -360,10 +364,6 @@ high:
 insipidity:
 	0 : 1 
 	1 : 1 
-	2 : 1 
-happiness:
-	0 : 3 
-hours:
 	2 : 1 
 horses:
 	1 : 2 

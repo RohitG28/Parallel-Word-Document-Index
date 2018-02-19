@@ -72,10 +72,6 @@ arose:
 	2 : 1 
 continual:
 	0 : 3 
-discovery:
-	0 : 1 
-	1 : 1 
-	2 : 1 
 dull:
 	0 : 1 
 extremely:
@@ -91,6 +87,8 @@ children:
 disposal:
 	0 : 1 
 	2 : 1 
+females:
+	0 : 1 
 depending:
 	0 : 2 
 blessing:
@@ -104,6 +102,10 @@ ferrars:
 	0 : 2 
 adapted:
 	1 : 1 
+discovery:
+	0 : 1 
+	1 : 1 
+	2 : 1 
 front:
 	0 : 1 
 	1 : 1 
@@ -154,28 +156,10 @@ bed:
 	0 : 3 
 	2 : 3 
 	1 : 1 
-carried:
+commanded:
 	0 : 1 
-	1 : 1 
-arranging:
-	0 : 1 
-	1 : 1 
-concluded:
-	1 : 2 
-	0 : 1 
-boy:
-	0 : 2 
 	2 : 1 
-fact:
-	0 : 1 
-extensive:
-	1 : 1 
-determine:
-	0 : 1 
-	1 : 1 
-	2 : 1 
-colonel:
-	1 : 2 
+chiefly:
 	0 : 1 
 calm:
 	2 : 1 
@@ -195,6 +179,15 @@ extent:
 	1 : 1 
 	2 : 1 
 extremity:
+	0 : 1 
+	1 : 1 
+concluded:
+	1 : 2 
+	0 : 1 
+carried:
+	0 : 1 
+	1 : 1 
+arranging:
 	0 : 1 
 	1 : 1 
 directly:
@@ -219,6 +212,17 @@ difficulty:
 admitted:
 	0 : 1 
 	1 : 1 
+boy:
+	0 : 2 
+	2 : 1 
+fact:
+	0 : 1 
+extensive:
+	1 : 1 
+determine:
+	0 : 1 
+	1 : 1 
+	2 : 1 
 curiosity:
 	0 : 1 
 agreed:
@@ -242,20 +246,42 @@ frankness:
 	1 : 1 
 attempt:
 	0 : 1 
-drift:
+colonel:
+	1 : 2 
 	0 : 1 
-astonished:
+conveying:
+	0 : 2 
+	1 : 1 
+	2 : 1 
+ample:
+	2 : 2 
 	0 : 1 
-civil:
-	0 : 1 
-exeter:
+dear:
 	0 : 1 
 education:
 	0 : 2 
 	1 : 1 
 	2 : 1 
+exeter:
+	0 : 1 
 equal:
 	1 : 1 
+age:
+	1 : 3 
+	0 : 1 
+	2 : 1 
+affixed:
+	0 : 1 
+	1 : 1 
+diverted:
+	0 : 1 
+	1 : 1 
+astonished:
+	0 : 1 
+civil:
+	0 : 1 
+drift:
+	0 : 1 
 enjoyed:
 	0 : 1 
 conviction:
@@ -263,8 +289,6 @@ conviction:
 	1 : 1 
 	2 : 1 
 enquire:
-	0 : 1 
-females:
 	0 : 1 
 detract:
 	0 : 1 
@@ -282,15 +306,6 @@ began:
 case:
 	0 : 1 
 	2 : 1 
-ample:
-	2 : 2 
-	0 : 1 
-dear:
-	0 : 1 
-conveying:
-	0 : 2 
-	1 : 1 
-	2 : 1 
 comfort:
 	0 : 2 
 	2 : 1 
@@ -307,8 +322,6 @@ furniture:
 	0 : 3 
 death:
 	0 : 1 
-entreaties:
-	1 : 1 
 disposing:
 	0 : 1 
 	1 : 1 
@@ -329,22 +342,14 @@ call:
 	1 : 1 
 denied:
 	0 : 1 
+cordial:
+	1 : 2 
+	0 : 1 
 comparison:
 	1 : 2 
 	0 : 1 
 	2 : 1 
-cordial:
-	1 : 2 
-	0 : 1 
-age:
-	1 : 3 
-	0 : 1 
-	2 : 1 
-affixed:
-	0 : 1 
-	1 : 1 
-diverted:
-	0 : 1 
+entreaties:
 	1 : 1 
 attending:
 	0 : 1 
@@ -361,19 +366,14 @@ denote:
 	1 : 1 
 added:
 	0 : 1 
-dissimilar:
-	1 : 2 
-acuteness:
-	0 : 1 
-	2 : 1 
 earnestly:
 	0 : 2 
 	1 : 1 
-commanded:
+acuteness:
 	0 : 1 
 	2 : 1 
-chiefly:
-	0 : 1 
+dissimilar:
+	1 : 2 
 distrusts:
 	0 : 2 
 	2 : 1 
@@ -441,10 +441,10 @@ engrossed:
 	1 : 1 
 easily:
 	1 : 1 
-eat:
-	0 : 4 
 afford:
 	1 : 1 
+eat:
+	0 : 3 
 forming:
 	1 : 2 
 advantage:
@@ -597,10 +597,6 @@ jointure:
 	1 : 1 
 horses:
 	1 : 2 
-hours:
-	2 : 1 
-happiness:
-	0 : 3 
 insipidity:
 	0 : 1 
 	1 : 1 
@@ -621,6 +617,10 @@ knowledge:
 	2 : 1 
 girl:
 	0 : 2 
+hours:
+	2 : 1 
+happiness:
+	0 : 3 
 lose:
 	2 : 2 
 literature:
@@ -853,11 +853,9 @@ offices:
 	1 : 1 
 motionless:
 	1 : 2 
-removed:
-	2 : 1 
-remarkably:
-	1 : 2 
-	2 : 1 
+pleasure:
+	2 : 2 
+	0 : 1 
 promise:
 	0 : 1 
 reasonable:
@@ -886,6 +884,14 @@ rooms:
 	0 : 1 
 properly:
 	0 : 1 
+middleton:
+	0 : 1 
+	2 : 1 
+regard:
+	0 : 1 
+moments:
+	0 : 1 
+	1 : 1 
 polite:
 	0 : 2 
 regret:
@@ -898,35 +904,21 @@ observe:
 	2 : 1 
 points:
 	0 : 1 
+pianoforte:
+	0 : 2 
+procured:
+	2 : 1 
+matters:
+	0 : 1 
+	1 : 1 
+roused:
+	2 : 1 
+missed:
+	1 : 1 
 passed:
 	0 : 2 
 place:
 	0 : 1 
-required:
-	2 : 1 
-person:
-	0 : 1 
-precaution:
-	1 : 1 
-preference:
-	1 : 2 
-	2 : 2 
-projecting:
-	1 : 2 
-	0 : 1 
-	2 : 1 
-manner:
-	0 : 1 
-	1 : 1 
-removal:
-	0 : 1 
-result:
-	0 : 1 
-miles:
-	0 : 1 
-private:
-	1 : 1 
-	2 : 1 
 residence:
 	1 : 1 
 	2 : 1 
@@ -958,11 +950,6 @@ musical:
 	0 : 1 
 	1 : 1 
 	2 : 1 
-matter:
-	0 : 1 
-perceive:
-	2 : 2 
-	0 : 1 
 put:
 	0 : 2 
 	2 : 2 
@@ -993,7 +980,17 @@ middletons:
 prosperous:
 	1 : 2 
 	2 : 1 
+required:
+	2 : 1 
+person:
+	0 : 1 
+precaution:
+	1 : 1 
 principles:
+	0 : 1 
+pursuit:
+	1 : 2 
+raptures:
 	0 : 1 
 procuring:
 	0 : 1 
@@ -1001,17 +998,6 @@ melancholy:
 	1 : 1 
 resolve:
 	1 : 1 
-regard:
-	0 : 1 
-moments:
-	0 : 1 
-	1 : 1 
-middleton:
-	0 : 1 
-	2 : 1 
-pronounce:
-	1 : 1 
-	2 : 1 
 neglected:
 	0 : 1 
 	2 : 1 
@@ -1024,32 +1010,23 @@ marked:
 	2 : 1 
 parish:
 	1 : 1 
-provision:
-	1 : 1 
-rapturous:
+perceive:
 	2 : 2 
 	0 : 1 
-point:
+matter:
 	0 : 1 
-	1 : 1 
-pleasure:
-	2 : 2 
-	0 : 1 
-raptures:
-	0 : 1 
-pursuit:
+preference:
 	1 : 2 
-pianoforte:
-	0 : 2 
-procured:
+	2 : 2 
+projecting:
+	1 : 2 
+	0 : 1 
 	2 : 1 
-matters:
+manner:
 	0 : 1 
 	1 : 1 
-roused:
-	2 : 1 
-missed:
-	1 : 1 
+removal:
+	0 : 1 
 neat:
 	0 : 1 
 questions:
@@ -1061,6 +1038,17 @@ remark:
 	0 : 1 
 money:
 	0 : 2 
+	1 : 1 
+pronounce:
+	1 : 1 
+	2 : 1 
+provision:
+	1 : 1 
+rapturous:
+	2 : 2 
+	0 : 1 
+point:
+	0 : 1 
 	1 : 1 
 provided:
 	2 : 1 
@@ -1121,6 +1109,11 @@ plenty:
 	0 : 1 
 projection:
 	1 : 1 
+miles:
+	0 : 1 
+private:
+	1 : 1 
+	2 : 1 
 recommend:
 	2 : 1 
 rest:
@@ -1132,6 +1125,11 @@ passage:
 	0 : 1 
 pretend:
 	1 : 1 
+removed:
+	2 : 1 
+remarkably:
+	1 : 2 
+	2 : 1 
 Partition 3 ===> 
 
 size:
@@ -1149,8 +1147,6 @@ years:
 welcomed:
 	2 : 1 
 stood:
-	2 : 1 
-wise:
 	2 : 1 
 sons:
 	2 : 1 
@@ -1181,17 +1177,8 @@ strongly:
 	1 : 1 
 talent:
 	1 : 1 
-ye:
-	0 : 3 
-	2 : 2 
+warrant:
 	1 : 1 
-wishes:
-	1 : 1 
-wisdom:
-	1 : 1 
-walls:
-	0 : 2 
-	2 : 1 
 son:
 	1 : 2 
 	2 : 2 
@@ -1216,6 +1203,8 @@ stimulated:
 	2 : 1 
 written:
 	2 : 1 
+1result:
+	0 : 1 
 worthy:
 	0 : 1 
 ten:
@@ -1226,6 +1215,9 @@ shortly:
 	1 : 2 
 settling:
 	0 : 1 
+	1 : 1 
+tears:
+	0 : 2 
 	1 : 1 
 visit:
 	0 : 1 
@@ -1238,38 +1230,25 @@ winter:
 water:
 	0 : 2 
 	2 : 1 
+suffer:
+	1 : 1 
 total:
 	0 : 1 
 unfeeling:
 	0 : 1 
 	1 : 1 
 	2 : 1 
-suffer:
-	1 : 1 
-scale:
+warmly:
 	0 : 1 
-	1 : 1 
-sex:
-	0 : 3 
-	1 : 1 
-	2 : 1 
-sing:
-	0 : 2 
-	2 : 1 
 suffering:
 	2 : 1 
 state:
 	1 : 1 
-spirit:
+sweetness:
+	0 : 1 
 	2 : 1 
-uncommonly:
-	1 : 1 
-talking:
-	1 : 1 
-venture:
-	1 : 1 
-suspected:
-	0 : 3 
+shade:
+	0 : 1 
 unsatiable:
 	0 : 1 
 	2 : 1 
@@ -1288,6 +1267,10 @@ trees:
 totally:
 	0 : 1 
 	2 : 1 
+wise:
+	2 : 1 
+1234:
+	0 : 1 
 separate:
 	0 : 1 
 shutters:
@@ -1295,6 +1278,12 @@ shutters:
 	1 : 1 
 studied:
 	1 : 2 
+sentiments:
+	1 : 4 
+	0 : 1 
+surrounded:
+	0 : 2 
+	1 : 1 
 stairs:
 	2 : 1 
 stanhill:
@@ -1322,6 +1311,9 @@ thrown:
 	0 : 1 
 	1 : 1 
 	2 : 1 
+unwilling:
+	0 : 1 
+	1 : 1 
 satisfied:
 	0 : 2 
 	2 : 2 
@@ -1331,34 +1323,6 @@ tolerably:
 	0 : 1 
 	1 : 1 
 	2 : 1 
-sentiments:
-	1 : 4 
-	0 : 1 
-surrounded:
-	0 : 2 
-	1 : 1 
-smallness:
-	2 : 1 
-young:
-	0 : 1 
-	1 : 1 
-sweetness:
-	0 : 1 
-	2 : 1 
-shade:
-	0 : 1 
-woman:
-	0 : 1 
-september:
-	0 : 3 
-sportsmen:
-	0 : 1 
-speaking:
-	0 : 1 
-	2 : 1 
-unwilling:
-	0 : 1 
-	1 : 1 
 shed:
 	2 : 1 
 uneasy:
@@ -1367,6 +1331,13 @@ uneasy:
 wrong:
 	2 : 2 
 	0 : 1 
+september:
+	0 : 3 
+sportsmen:
+	0 : 1 
+speaking:
+	0 : 1 
+	2 : 1 
 walk:
 	2 : 2 
 	0 : 1 
@@ -1378,6 +1349,39 @@ unpleasant:
 servants:
 	0 : 1 
 	1 : 1 
+scale:
+	0 : 1 
+	1 : 1 
+suspected:
+	0 : 3 
+venture:
+	1 : 1 
+sing:
+	0 : 2 
+	2 : 1 
+spirit:
+	2 : 1 
+talking:
+	1 : 1 
+uncommonly:
+	1 : 1 
+sex:
+	0 : 3 
+	1 : 1 
+	2 : 1 
+walls:
+	0 : 2 
+	2 : 1 
+ye:
+	0 : 3 
+	2 : 2 
+	1 : 1 
+wishes:
+	1 : 1 
+2eat:
+	0 : 1 
+wisdom:
+	1 : 1 
 sportsman:
 	1 : 2 
 	0 : 1 
@@ -1388,8 +1392,12 @@ sold:
 sight:
 	0 : 1 
 	1 : 1 
-tears:
-	0 : 2 
+woman:
+	0 : 1 
+smallness:
+	2 : 1 
+young:
+	0 : 1 
 	1 : 1 
 views:
 	0 : 1 
@@ -1414,8 +1422,6 @@ style:
 	2 : 1 
 suppose:
 	1 : 2 
-	0 : 1 
-warmly:
 	0 : 1 
 windows:
 	1 : 1 
@@ -1459,8 +1465,6 @@ terminated:
 	2 : 2 
 	1 : 1 
 shot:
-	1 : 1 
-warrant:
 	1 : 1 
 
 
