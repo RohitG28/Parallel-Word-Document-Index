@@ -129,7 +129,6 @@ void printMaps(vector<unordered_map<string, vector<pair<long int,string>>>> rece
 }
 
 
-
 /***********************************************************************************************************************/
 
 
@@ -260,56 +259,38 @@ int main(int argc, char** argv)
 			sprintf(filename,"%d/%s",processId,ep->d_name);
 			inputFile.open(filename);
 
-   			//Reading the document
-   			while(!inputFile.eof())
-   			{
-   				//Reading document line by line 
-   			 	getline(inputFile, readLine);
+   		
 
-   			 	if(readLine.empty())
-   			 	{	 
-   			 		continue;
-   			 	}
+		 	while(getline(inputFile, readLine))
+			{
+			    if(readLine.empty())
+			    {    
+			        continue;
+			    }
 
-   			 	istringstream iss(readLine);///////////////////////////////////////////////////////////
+			    char* lineString = &readLine[0];
+			    char* token = strtok(lineString,",./;-!?@&(){}[]<>:'\" \r");
 
-   			 	while(iss >> currentWord)
-   			 	{
-   			 		//Remove special characters and check if its a stopword
-				    for (int j = 0, len = currentWord.size(); j < len; j++)
-				    {
-				        // check whether parsing character is punctuation or not
-				        //if (ispunct(currentWord[j]))
-				        if(!((currentWord[j]>='a' && currentWord[j]<='z')||(currentWord[j]>='A' && currentWord[j]<='Z')||(currentWord[j]>='0' && currentWord[j]<='9')))
-				        {
-				            currentWord.erase(j--, 1);
-				            len = currentWord.size();
-				        }
-				        else
-				        {
-				        	currentWord[j] = tolower(currentWord[j]);
-				        }
-				    }
+			    while(token != NULL)
+			    {
+			        for(long int k=0;k<strlen(token);k++)
+			        {
+			            token[k] = tolower(token[k]);
+			        }
 
-				    if(currentWord.empty() || currentWord.size()==1)
-				    	continue;
-				    
-				    
-				    //Check for stopword
-					if(stopwords.find(currentWord)!=stopwords.end())
-					{
-						//Ignore the stopword
-						continue;
-					}
-					
-
-					//Update its frequency
-		            wordCountMap[currentWord]++;
-   			 	}
-
-   			 	//Deallocating Memory
-   			 	iss.str().clear();
-   			}
+			        string str(token); 
+			        if((token[0]>='a' && token[0]<='z')||(token[0]>='A' && token[0]<='Z')||(token[0]>='0' && token[0]<='9'))
+			        {
+			            //Check for stopword
+			            if(stopwords.find(str)==stopwords.end())
+			            {
+			                //Update its frequency
+			            	wordCountMap[str]++;
+			            }             
+			        }
+			        token = strtok(NULL,",./;-!?@&(){}[]<>:'\" \r");
+			    }
+			}
 
    			//Closing the file
    			inputFile.close();
@@ -462,7 +443,7 @@ int main(int argc, char** argv)
 		
 		for(int k=0;k<noOfProcesses;k++)
 		{
-			serializeFile.open(to_string(k)+to_string(processId), std::ofstream::out | std::ofstream::trunc);
+			serializeFile.open("SerializedFiles/"+to_string(k)+to_string(processId), std::ofstream::out | std::ofstream::trunc);
 			outArchive(invertedIndexMap[k]);
 			serializeFile.close();
 		}
@@ -473,7 +454,7 @@ int main(int argc, char** argv)
 		cereal::BinaryInputArchive inArchive(inputSerializeFile);
 		for(int k=0;k<noOfProcesses;k++)
 		{
-			inputSerializeFile.open(to_string(processId)+to_string(k));
+			inputSerializeFile.open("SerializedFiles/"+to_string(processId)+to_string(k));
 			inArchive(invertedIndexMap[k]);
 			inputSerializeFile.close();
 		}
