@@ -140,6 +140,7 @@ int main(int argc, char** argv)
 	int processId,noOfProcesses;
 	string currentFolder = ".";
 	string parentFolder = "..";
+	double elapsedTime;
 
 	//Hard Coded Variable for the time being
 	long int noOfFiles = 3;
@@ -153,6 +154,8 @@ int main(int argc, char** argv)
 	//Get Rank and Total no of processes
 	err = MPI_Comm_rank(MPI_COMM_WORLD, &processId);
 	err = MPI_Comm_size(MPI_COMM_WORLD, &noOfProcesses);
+	
+	elapsedTime = -MPI_Wtime();
 
    	//Inverted Index Map for whole documents in the local node
    	vector<unordered_map<string, vector<pair<long int,string>>>> invertedIndexMap(noOfProcesses);
@@ -530,7 +533,7 @@ int main(int argc, char** argv)
 		}	
 
 	}
-
+	elapsedTime += MPI_Wtime();
 	/*****************************************************Final Map is Ready********************************************/
 
 	//Now write it into file
@@ -568,6 +571,8 @@ int main(int argc, char** argv)
 	fprintf(fp,"\n\n--------------Index Over--------------\n\n");
 
 	fclose(fp);
+	
+	printf("Total time: %lf",elapsedTime);
 
 	err = MPI_Finalize();
 	return 0;
