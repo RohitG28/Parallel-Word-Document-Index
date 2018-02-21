@@ -139,7 +139,7 @@ int main(int argc, char** argv)
 	int processId,noOfProcesses;
 	string currentFolder = ".";
 	string parentFolder = "..";
-	double elapsedTime;
+	double elapsedTime,elapsedTimeLocal;
 
 	//Hard Coded Variable for the time being
 	long int noOfFiles = 3;
@@ -155,6 +155,7 @@ int main(int argc, char** argv)
 	err = MPI_Comm_size(MPI_COMM_WORLD, &noOfProcesses);
 	
 	elapsedTime = -MPI_Wtime();
+	elapsedTimeLocal = -MPI_Wtime();
 
    	//Inverted Index Map for whole documents in the local node
    	vector<unordered_map<string, vector<pair<long int,string>>>> invertedIndexMap(noOfProcesses);
@@ -192,7 +193,7 @@ int main(int argc, char** argv)
 
 	//There is a directory for each node
 	char directoryName[MAX_FILE_NAME_SIZE];
-	sprintf(directoryName,"%d/",processId);
+	sprintf(directoryName,argv[1]);
 
 	DIR *dp; 
 	struct dirent *ep;    
@@ -256,10 +257,9 @@ int main(int argc, char** argv)
 
 			//Current file read
 
-			sprintf(filename,"%d/%s",processId,ep->d_name);
+			sprintf(filename,"%s/%s",directoryName,ep->d_name);
 			inputFile.open(filename);
 
-   		
 
 		 	while(getline(inputFile, readLine))
 			{
@@ -322,17 +322,9 @@ int main(int argc, char** argv)
 	        		documentsWithWord.push_back(make_pair(wordFreq,documentID));
 	        		invertedIndexMap[correspondingPartition][currentWord] = documentsWithWord;
 	        	}
-
-	        	//Only for printing
-	        	documentsWithWord = invertedIndexMap[correspondingPartition][currentWord];
-			    
-			    for (vecItr = documentsWithWord.begin(); vecItr != documentsWithWord.end(); vecItr++)
-			    {
-			    	//cout << " DOC ID: " << vecItr->second << "  ==>  FREQ: " << vecItr->first << endl;
-			    }
 	        }
 
-	        cout << "One Document over from Process: "<<filename<<" : " <<processId << endl;
+	        // cout << "One Document over from Process: "<<filename<<" : " <<processId << endl;
 	        
 	        //Clearing the wordCountMap for processing new document
 	        wordCountMap.clear();
@@ -349,6 +341,10 @@ int main(int argc, char** argv)
 	    perror("Couldn't open the directory");
 	}
 
+	elapsedTimeLocal += MPI_Wtime();
+
+	printf("Local Index time: %lf\n",elapsedTimeLocal);
+
 	/****************************************************Sorting the vectors in the local Map******************************************/
 
 	unordered_map<string, vector<pair<long int,string>>>::iterator mapItr1;
@@ -362,7 +358,7 @@ int main(int argc, char** argv)
 	}
 
 	//Only for debugging - i.e printing local index into the files
-	printMaps(invertedIndexMap, noOfProcesses, processId, "LocalIndex");
+	// printMaps(invertedIndexMap, noOfProcesses, processId, "LocalIndex");
 
 	//*******************************************ALL DOCUMENTS IN NODE ARE PROCESSESED****************************************//
 
@@ -460,13 +456,9 @@ int main(int argc, char** argv)
 		}
 	}
 
-	printMaps(invertedIndexMap, noOfProcesses, processId, "Merged");
+	// printMaps(invertedIndexMap, noOfProcesses, processId, "Merged");
 
 	//**************** end ************************//
-
-
-
-
 
 	
 	//*****************************************************REDUCE PHASE BEGINS******************************************************//
